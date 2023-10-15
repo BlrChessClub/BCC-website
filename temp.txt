@@ -1,0 +1,33 @@
+Home page (~A)
+- Logo
+- small motto
+- Name/font
+- images animation
+- remove carousel
+
+upcoming Events (~k)
+- Add carousel
+- Event image 
+- Event details
+- Reg link / button
+
+statistics (~A)
+- total meetups- count
+- member count 
+- colabs 
+
+Features (~k)
+- 3 screenshots
+- Hindu, HT, CBI 
+
+Testimonials
+- template 
+
+About us (follow us)
+- writeup
+- instagram, whatsapp and youtube links
+- some pics
+
+Gallery
+- find template for good gallery organization
+- pics in Kbs
