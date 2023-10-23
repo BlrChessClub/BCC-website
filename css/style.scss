@@ -24,6 +24,11 @@ $textCol: #1f1f1f;
   &:hover {
     background-color: darken($color: $col1, $amount: 15);
   }
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0077B5; /* Change the text color on hover */
+  }
+  
 }
 
 @mixin upperBold {
@@ -463,10 +468,10 @@ a:focus {
       margin-top: 15px;
     }
 
-    a {
-      @include hero_btn($primary1, $white, 10px, 45px, 0px);
-      margin-top: 15px;
-    }
+    // a {
+    //   @include hero_btn($primary1, $white, 10px, 45px, 0px);
+    //   margin-top: 15px;
+    // }
   }
 }
 
