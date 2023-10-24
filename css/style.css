@@ -69,7 +69,19 @@ a:focus {
   box-shadow: none;
 }
 
+.bg_img_box {
+  background-image: url("images/Editable Website Header.svg");
+  background-size: cover; /* or contain, depending on your needs */
+  background-position: center center;
+}
+
 /*header section*/
+ /* Set the width and height of the image by a percentage */
+ .scaled-image {
+  width: 50%; /* Set the desired width as a percentage */
+  height: auto; /* Auto-adjust the height to maintain aspect ratio */
+}
+
 .hero_area {
   position: relative;
   min-height: 100vh;
@@ -213,6 +225,10 @@ a:focus {
   width: 100%;
   position: unset;
 }
+.slider_section #customCarousel1 {
+  width: 100%;
+  position: unset;
+}
 .slider_section .detail-box {
   color: #00204a;
 }
@@ -311,7 +327,8 @@ a:focus {
 }
 .service_section .box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: 15px;
   align-items: center;
   text-align: center;
   margin-top: 45px;
@@ -664,3 +681,42 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }/*# sourceMappingURL=style.css.map */
+
+
+.achievements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  background-color: #00ffff;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.achievement_img {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%; */
+}
+
+.achievement_info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 18px;
+}
+
