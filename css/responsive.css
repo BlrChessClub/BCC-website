@@ -30,6 +30,42 @@
     margin: 5px 0;
   }
 
+  .service_section .box {
+    flex-direction: column;
+  }
+
+  .service_section .box .img-box {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .achievements {
+    flex-direction: column; /* Stack achievements vertically */
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Increase the gap for mobile */
+  }
+
+
+  .achievement {
+    flex-direction: column; /* Stack image, number, and label vertically */
+    gap: 10px;
+    padding: 15px; /* Reduce padding for mobile */
+  }
+
+  .achievement_img {
+    width: 70px; /* Adjust image size for mobile */
+    height: 70px;
+  }
+
+  .number {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  .label {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
 
 }
 
@@ -93,7 +129,7 @@
   }
 
   .service_section .box .img-box {
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 15px;
   }
 }
