@@ -720,3 +720,11 @@ a:focus {
   font-size: 18px;
 }
 
+.hoverable-text {
+  text-decoration: none; /* Remove default text underline */
+}
+
+.hoverable-text:hover {
+  text-decoration: underline; /* Underline the text on hover */
+  cursor: pointer; /* Change the cursor to a pointer on hover to indicate it's clickable */
+}
