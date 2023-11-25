@@ -403,6 +403,34 @@ a:focus {
   margin-top: 15px;
 }
 
+.events_section {
+  background-color: #00204a;
+}
+
+.events_section .heading_container {
+  margin-bottom: 45px;
+}
+.events_section .row {
+  align-items: center;
+}
+.events_section .img-box img {
+  max-width: 100%;
+}
+.events_section .detail-box h3 {
+  font-weight: bold;
+
+}
+.events_section .detail-box p {
+  margin-top: 15px;
+
+}
+
+.events_section .detail-box h1,
+.events_section .detail-box p,
+.events_section .detail-box a {
+  color: #000000 !important; /* Set text color for headings, paragraphs, and links */
+}
+
 .why_section .box {
   margin-top: 45px;
   display: flex;
