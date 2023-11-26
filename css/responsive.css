@@ -19,6 +19,10 @@
     padding: 45px 0 75px 0;
   }
 
+  .header_section_new {
+      padding: 45px 0 75px 0;
+    }
+
   .custom_nav-container .navbar-nav {
     padding-top: 15px;
     align-items: center;
@@ -40,31 +44,32 @@
   }
 
   .achievements {
-    flex-direction: column; /* Stack achievements vertically */
-    align-items: center;
-    text-align: center;
-    gap: 20px; /* Increase the gap for mobile */
-  }
+      flex-direction: column; /* Stack items in a column on smaller screens */
+      align-items: center;
+      text-align: center;
+      gap: 20px; /* Increase the gap for mobile */
+      height: auto; /* Let the height adjust based on content */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
 
+    .achievement {
+      flex-direction: column; /* Stack image, number, and label vertically */
+      gap: 10px;
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
 
-  .achievement {
-    flex-direction: column; /* Stack image, number, and label vertically */
-    gap: 10px;
-    padding: 15px; /* Reduce padding for mobile */
-  }
+    .achievement_img {
+      width: 40px; /* Decrease image size on smaller screens */
+      height: 40px;
+    }
 
-  .achievement_img {
-    width: 70px; /* Adjust image size for mobile */
-    height: 70px;
-  }
+    .number {
+      font-size: 18px; /* Decrease font size on smaller screens */
+    }
 
-  .number {
-    font-size: 18px; /* Adjust font size for mobile */
-  }
-
-  .label {
-    font-size: 16px; /* Adjust font size for mobile */
-  }
+    .label {
+      font-size: 14px; /* Decrease font size on smaller screens */
+    }
 
 
 }
@@ -76,6 +81,9 @@
   .events_section .img-box {
       margin-bottom: 45px;
     }
+  .home-title .line {
+   font-size: 6vw; /* Adjust the font size for smaller screens */
+  }
 
 }
 
@@ -104,12 +112,21 @@
     position: unset;
     margin: 0 2.5px;
   }
+  .home-title .line {
+     font-size: 6vw; /* Adjust the font size for smaller screens */
+    }
+
 }
 
 @media (max-width: 480px) {
   .slider_section .detail-box h1 {
     font-size: 2rem;
   }
+
+  .header_section_new .detail-box h1 {
+      font-size: 2rem;
+    }
+
 
   .track_section form {
     flex-direction: column;
@@ -124,6 +141,10 @@
     padding: 10px 60px;
     margin-top: 10px;
   }
+  .home-title .line {
+     font-size: 6vw; /* Adjust the font size for smaller screens */
+    }
+
 }
 
 @media (max-width: 420px) {

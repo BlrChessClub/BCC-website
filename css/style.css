@@ -124,6 +124,10 @@ a:focus {
   padding-right: 25px;
   padding-left: 25px;
 }
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Align items vertically at the center */
+}
 
 .navbar-brand span {
   font-weight: bold;
@@ -718,6 +722,8 @@ a:focus {
   justify-content: space-evenly;
   gap: 10px;
   background-color: #00ffff;
+  height: 140px;
+  padding: 10px 45px;
 }
 
 .achievement {
@@ -756,3 +762,151 @@ a:focus {
   text-decoration: underline; /* Underline the text on hover */
   cursor: pointer; /* Change the cursor to a pointer on hover to indicate it's clickable */
 }
+
+.logo-img {
+  max-height: 75px; /* Set the maximum height of the logo */
+  margin-right: 10px; /* Adjust margin for spacing */
+}
+
+
+.header_section_new {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 45px 0 145px 0;
+}
+.header_section_new .row {
+  align-items: center;
+}
+.header_section_new .detail-box {
+  color: #00204a;
+}
+.header_section_new .detail-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.header_section_new .detail-box p {
+  color: #fefefe;
+  font-size: 14px;
+}
+.header_section_new .detail-box .btn-box {
+  display: flex;
+  margin: 0 -5px;
+  margin-top: 25px;
+}
+.header_section_new .detail-box .btn-box a {
+  margin: 5px;
+  text-align: center;
+  width: 165px;
+}
+.header_section_new .detail-box .btn-box .btn1 {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #00bbf0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+  border: none;
+}
+.header_section_new .detail-box .btn-box .btn1:hover {
+  background-color: #007fa4;
+}
+.header_section_new .detail-box .btn-box .btn1 a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #0077B5; /* Change the text color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-title .line {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 3vw; /* Adjust the font size using viewport units (vw) */
+}
+
+.home-title .line:first-of-type {
+  animation: showup 7s infinite;
+}
+
+.home-title .line:last-of-type {
+  width: 0;
+  opacity: 0;
+  animation: reveal 7s infinite;
+}
+
+.home-title .line:last-of-type span {
+  margin-left: -100%; /* Adjust negative margin for responsiveness */
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -100%; /* Adjust negative margin for responsiveness */
+  }
+  20% {
+    margin-left: -100%; /* Adjust negative margin for responsiveness */
+  }
+  35% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 0;
+  }
+  40% {
+    width: 100%; /* Adjust width for responsiveness */
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%; /* Adjust width for responsiveness */
+  }
+}
+
+
