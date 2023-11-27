@@ -65,10 +65,10 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> Chess Connect</a>
+                <a class="nav-link" href="#events_section"> Chess Connect</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Spotlight</a>
+                <a class="nav-link" href="#spotlight">Spotlight</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
@@ -112,7 +112,7 @@
   <!-- about section -->
 
   <!-- slider section -->
-  <section class="events_section layout_padding" style="background-image: url('images/chbg2.png');" >
+  <section id="events_section" class="events_section layout_padding" style="background-image: url('images/chbg2.png');" >
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" >
@@ -321,8 +321,12 @@
   <!-- end Abouts section -->
 
   <!-- feature section -->
+<<<<<<< HEAD
   <!-- feature section -->
 <section class="spotlight section layout_padding" style="background-image: url('images/chbg2.png');">
+=======
+  <section id="spotlight" class ="spotlight section layout_padding"  style="background-image: url('images/chbg2.png'); " >
+>>>>>>> 96167babaf5eb59bf7bdd6f767df99f0535962da
   <div class="container-fluid team-section">
     <div class="heading_container heading_center">
       <div class="achievement">
@@ -806,5 +810,23 @@ The special thing abt the place is that they try new places and based on the fee
   <!-- End Google Map -->
 
 </body>
+
+<script>
+  window.onscroll = function() {
+      // Get the navigation bar
+      var navBar = document.querySelector('.custom_nav-container');
+
+      // Get the offset position of the navigation bar
+      var sticky = navBar.offsetTop;
+
+      // Add the "sticky" class to the navigation bar when you reach its scroll position. Remove "sticky" when you leave the scroll position.
+      if (window.pageYOffset > sticky) {
+          navBar.classList.add('sticky');
+      } else {
+          navBar.classList.remove('sticky');
+      }
+  };
+</script>
+
 
 </html>
