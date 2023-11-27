@@ -15,7 +15,7 @@ $(".client_owl-carousel").owlCarousel({
     dots: false,
     nav: true,
     navText: [],
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
@@ -29,7 +29,7 @@ $(".client_owl-carousel").owlCarousel({
             items: 2
         },
         1000: {
-            items: 2
+            items: 3
         }
     }
 });
