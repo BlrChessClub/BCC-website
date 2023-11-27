@@ -15,7 +15,7 @@ $(".client_owl-carousel").owlCarousel({
     dots: false,
     nav: true,
     navText: [],
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
@@ -29,7 +29,7 @@ $(".client_owl-carousel").owlCarousel({
             items: 2
         },
         1000: {
-            items: 2
+            items: 3
         }
     }
 });
@@ -44,3 +44,18 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+window.onscroll = function() {
+    // Get the navigation bar
+    var navBar = document.getElementById("navbar");
+
+    // Get the offset position of the navigation bar
+    var sticky = navBar.offsetTop;
+
+    // Add the "sticky" class to the navigation bar when you reach its scroll position. Remove "sticky" when you leave the scroll position.
+    if (window.pageYOffset > sticky) {
+        navBar.classList.add('sticky');
+    } else {
+        navBar.classList.remove('sticky');
+    }
+};

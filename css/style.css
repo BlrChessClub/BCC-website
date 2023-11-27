@@ -117,13 +117,11 @@ a:focus {
   display: none;
 }
 
-.header_section {
-  padding: 15px 0;
-}
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
 }
+
 .navbar-brand {
   display: flex;
   align-items: center; /* Align items vertically at the center */
@@ -294,8 +292,8 @@ a:focus {
 }
 .slider_section .img-box img {
   width: 100%;
-  animation: upDown 5s infinite;
 }
+
 @keyframes upDown {
   0% {
     transform: translateY(-45px);
@@ -765,7 +763,6 @@ a:focus {
 
 .logo-img {
   max-height: 75px; /* Set the maximum height of the logo */
-  margin-right: 10px; /* Adjust margin for spacing */
 }
 
 
@@ -819,16 +816,6 @@ a:focus {
   text-decoration: underline; /* Add underline on hover */
   color: #0077B5; /* Change the text color on hover */
 }
-
-
-
-
-
-
-
-
-
-
 
 .home-title {
   display: flex;
@@ -911,14 +898,103 @@ a:focus {
 
 
 /* Add this style to your existing stylesheet or create a new one */
-.custom_nav-container.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar.sticky {
   z-index: 1000;
   background-color: rgba(0, 32, 74,0.5); /* Change this to the background color you want for the sticky header */
-  margin-right: 0; /* Add this line to remove any right margin */
-  margin-left: 0;  /* Add this line to remove any left margin */
-  padding-right: 15px; /* Add this line to set a right padding */
-  padding-left: 15px;  /* Add this line to set a left padding */
+}
+
+.img-box.team-img-box {
+  padding: 15px 0!important;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-img-box img {
+  width: 100%!important;
+  height: 100%!important;
+  object-fit: cover!important;
+  border-radius: 0!important;
+}
+
+.team-img-container {
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #002759, #002b64);
+}
+
+.heading_container .row, .team_container .row {
+  margin-top: 45px;
+}
+
+.client_section .box .img-box img {
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.client_section .box .img-box {
+  width: 100px;
+  height: 100px;
+}
+
+.client_section .box .detail-box {
+  padding: 40px 20px!important;
+  margin-top: 20px;
+  height: 400px;
+}
+
+.client_section .box .client_id .client_info p {
+  color: #777;
+}
+
+.box .detail-box p {
+  margin-top: 10px;
+}
+
+.heading_container h2 {
+  color: #fff;
+}
+
+.spotlight-box-img {
+  height: 500px;
+  padding: 20px;
+}
+
+.spotlight-box-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.spotlight-box .card-body {
+  margin-top: 20px;
+}
+
+.card-body .card-text {
+  font-size: 14px;
+  height: 100px;
+  text-align: left;
+}
+
+.links-container .nav-item .nav-link {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  color: #fff;
+  font-weight: bold;
+}
+
+.links-container .nav-item.active .nav-link, .links-container .nav-item .nav-link:hover {
+  color: #00bbf0;
+}
+
+.navbar {
+  transition: all 0.3s;
+}
+
+section.gallery_section {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
