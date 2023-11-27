@@ -514,10 +514,10 @@ a:focus {
   align-items: center;
 }
 .team_section .team_container .box .img-box img {
-  width: 120px;
-  border-radius: 100%;
+  width: 90%; /* Adjust the width as needed */
   border: 5px solid #ffffff;
 }
+
 .team_section .team_container .box .detail-box {
   margin: 25px 0;
 }
