@@ -44,18 +44,3 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
-
-window.onscroll = function() {
-    // Get the navigation bar
-    var navBar = document.getElementById("navbar");
-
-    // Get the offset position of the navigation bar
-    var sticky = navBar.offsetTop;
-
-    // Add the "sticky" class to the navigation bar when you reach its scroll position. Remove "sticky" when you leave the scroll position.
-    if (window.pageYOffset > sticky) {
-        navBar.classList.add('sticky');
-    } else {
-        navBar.classList.remove('sticky');
-    }
-};

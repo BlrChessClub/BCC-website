@@ -133,9 +133,6 @@ a:focus {
   color: #ffffff;
 }
 
-.custom_nav-container {
-  padding: 0;
-}
 .custom_nav-container .navbar-nav {
   margin-left: auto;
 }
@@ -904,8 +901,7 @@ a:focus {
 }
 
 .img-box.team-img-box {
-  padding: 15px 0!important;
-  width: 400px;
+  padding: 15px!important;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -974,8 +970,8 @@ a:focus {
 
 .card-body .card-text {
   font-size: 14px;
-  height: 100px;
   text-align: left;
+  margin-bottom: 15px;
 }
 
 .links-container .nav-item .nav-link {
@@ -997,4 +993,8 @@ a:focus {
 section.gallery_section {
   padding-top: 100px;
   padding-bottom: 50px;
+}
+
+.spotlight-box {
+  height: 750px;
 }
