@@ -1011,4 +1011,5 @@ section.gallery_section {
   margin-left: 0;  /* Add this line to remove any left margin */
   padding-right: 15px; /* Add this line to set a right padding */
   padding-left: 15px;  /* Add this line to set a left padding */
+  transition :all 0.3s;
 }
