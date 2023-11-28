@@ -70,7 +70,6 @@ a:focus {
 }
 
 .bg_img_box {
-  background-image: url("images/Editable Website Header.svg");
   background-size: cover; /* or contain, depending on your needs */
   background-position: center center;
 }
@@ -770,10 +769,14 @@ a:focus {
   position: relative;
   padding: 45px 0 145px 0;
 }
+.header_section_new .container {
+  width: 100%;
+}
 .header_section_new .row {
   align-items: center;
 }
 .header_section_new .detail-box {
+  padding: 0 0 0 4vw;
   color: #00204a;
 }
 .header_section_new .detail-box h1 {
@@ -785,7 +788,7 @@ a:focus {
 }
 .header_section_new .detail-box p {
   color: #fefefe;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .header_section_new .detail-box .btn-box {
   display: flex;
