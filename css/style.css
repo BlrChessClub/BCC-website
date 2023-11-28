@@ -998,3 +998,17 @@ section.gallery_section {
 .spotlight-box {
   height: 750px;
 }
+/* Add this style to your existing stylesheet or create a new one */
+.custom_nav-container.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0%;
+  left: 0%;
+  z-index: 1000;
+  background-color: rgba(0, 32, 74,0.5); /* Change this to the background color you want for the sticky header */
+  margin-right: 0; /* Add this line to remove any right margin */
+  margin-left: 0;  /* Add this line to remove any left margin */
+  padding-right: 15px; /* Add this line to set a right padding */
+  padding-left: 15px;  /* Add this line to set a left padding */
+}
