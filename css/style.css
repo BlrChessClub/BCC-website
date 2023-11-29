@@ -117,8 +117,8 @@ a:focus {
 }
 
 .header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .navbar-brand {
@@ -1012,7 +1012,7 @@ section.gallery_section {
   background-color: rgba(0, 32, 74,0.5); /* Change this to the background color you want for the sticky header */
   margin-right: 0; /* Add this line to remove any right margin */
   margin-left: 0;  /* Add this line to remove any left margin */
-  padding-right: 15px; /* Add this line to set a right padding */
-  padding-left: 15px;  /* Add this line to set a left padding */
+  padding-right: 16px; /* Add this line to set a right padding */
+  padding-left: 16px;  /* Add this line to set a left padding */
   transition :all 0.3s;
 }
