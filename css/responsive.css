@@ -1,4 +1,9 @@
 @media (max-width: 1300px) {
+    .oval-button {
+            margin: 5px;
+            padding: 8px 12px; /* Adjusted padding for smaller screens */
+            font-size: 14px; /* Adjusted font size for smaller screens */
+       }
 }
 
 @media (max-width: 1120px) {}
@@ -9,7 +14,7 @@
   }
 
   .hero_area {
-    background: url('../images/chbg2.png') ;
+/*    background: url('../images/chbg2.png') ;*/
   }
 
   .hero_area .hero_bg_box {
