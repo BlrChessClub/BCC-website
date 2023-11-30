@@ -83,7 +83,7 @@ a:focus {
 
 .hero_area {
   position: relative;
-  min-height: 100vh;
+  min-height: 102vh;
   display: flex;
   flex-direction: column;
 }
@@ -382,7 +382,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a;
+  /*background-color: #00204a;*/
   color: #ffffff;
 }
 .about_section .heading_container {
@@ -401,8 +401,14 @@ a:focus {
   margin-top: 15px;
 }
 
+body{
+  background-image: url('../images/chbg2.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: 150%;
+  background-repeat:repeat;
+}
+
 .events_section {
-  background-color: #00204a;
+  /*background-color: #00204a;*/
 }
 
 .events_section .heading_container {
@@ -485,7 +491,7 @@ a:focus {
 /*team section */
 .team_section {
   text-align: center;
-  background-color: #00204a;
+  /*background-color: #00204a;*/
   color: #ffffff;
 }
 .team_section .heading_container {
@@ -1021,7 +1027,8 @@ section.gallery_section {
 }
 
 
-
+.oval-button-container{
+}
 .oval-button {
   display: inline-block;
   margin: 10px; /* Add margin for spacing between buttons */
