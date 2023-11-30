@@ -426,7 +426,7 @@ a:focus {
 .events_section .detail-box h1,
 .events_section .detail-box p,
 .events_section .detail-box a {
-  color: #000000 !important; /* Set text color for headings, paragraphs, and links */
+  color: white !important; /* Set text color for headings, paragraphs, and links */
 }
 
 .why_section .box {
@@ -1015,4 +1015,30 @@ section.gallery_section {
   padding-right: 16px; /* Add this line to set a right padding */
   padding-left: 16px;  /* Add this line to set a left padding */
   transition :all 0.3s;
+}
+
+
+
+.oval-button {
+  display: inline-block;
+  margin: 10px; /* Add margin for spacing between buttons */
+  padding: 10px 20px;
+  border-radius: 50px; /* Use half of the button's height to create an oval shape */
+  color: #fff; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.oval-button:hover {
+  border-color: #fff; /* Change border color on hover */
+}
+
+.oval-button:nth-child(1):hover {
+  background-color: #128C7E; /* Change hover color for the first button */
+}
+
+.oval-button:nth-child(2):hover {
+  background-color: #5B51D8; /* Change hover color for the second button */
 }
