@@ -942,6 +942,7 @@ a:focus {
   padding: 40px 20px!important;
   margin-top: 20px;
   height: 400px;
+  border-radius: 10px;
 }
 
 .client_section .box .client_id .client_info p {
@@ -950,6 +951,7 @@ a:focus {
 
 .box .detail-box p {
   margin-top: 10px;
+  font-style: italic;
 }
 
 .heading_container h2 {
@@ -1000,6 +1002,7 @@ section.gallery_section {
 
 .spotlight-box {
   height: 750px;
+  border-radius: 15px;
 }
 /* Add this style to your existing stylesheet or create a new one */
 .custom_nav-container.sticky {
