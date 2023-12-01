@@ -14,8 +14,13 @@
   }
 
   .hero_area {
+       min-height: auto;
+       height: 100vh;
 /*    background: url('../images/chbg2.png') ;*/
   }
+  .events_section.layout_padding {
+      padding: 0; /* Set padding to 0 for mobile screens */
+    }
 
   .hero_area .hero_bg_box {
     display: none;
@@ -113,6 +118,22 @@
   .home-title .line {
    font-size: 6vw; /* Adjust the font size for smaller screens */
   }
+
+  .spotlight-box {
+      height: auto; /* Set height to auto for smaller screens */
+    }
+
+    .spotlight-box-img {
+      height: auto; /* Set height to auto for smaller screens */
+    }
+
+    .card-body {
+      padding: 20px; /* Add padding to the card body for better spacing on smaller screens */
+    }
+
+    .card-body .card-text {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
 
 }
 
