@@ -100,6 +100,16 @@
       font-size: 14px; /* Decrease font size on smaller screens */
     }
 
+    .spotlight-box {
+      margin-bottom: 20px; /* Adjust spacing for smaller screens */
+      padding: 10px;
+    }
+
+    .col-md-4 {
+      flex: 0 0 100%; /* Make columns stack on smaller screens */
+      padding: 10px;
+    }
+
 
 }
 
