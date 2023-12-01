@@ -14,8 +14,13 @@
   }
 
   .hero_area {
+       min-height: auto;
+       height: 100vh;
 /*    background: url('../images/chbg2.png') ;*/
   }
+  .events_section.layout_padding {
+      padding: 0; /* Set padding to 0 for mobile screens */
+    }
 
   .hero_area .hero_bg_box {
     display: none;
