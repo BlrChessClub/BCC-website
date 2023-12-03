@@ -31,7 +31,9 @@
   }
 
  .header_section_new {
-    padding: 30px 0; /* Adjust padding for a more balanced mobile layout */
+    display: flex;
+    padding: 0 0 15% 0; /* Adjust padding for a more balanced mobile layout */
+    align-items: center;
   }
 
   .header_section_new .detail-box {
@@ -215,7 +217,7 @@
       max-width:100%
     }
   .header_section_new .detail-box p {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
   }
   .container {
     max-width: 1170px;
