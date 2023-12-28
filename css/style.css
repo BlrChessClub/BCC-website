@@ -249,7 +249,7 @@ a:focus {
 .slider_section .detail-box .btn-box a {
   margin: 5px;
   text-align: center;
-  width: 165px;
+  width: 225px;
 }
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
@@ -1052,3 +1052,27 @@ section.gallery_section {
 .oval-button:nth-child(2):hover {
   background-color: #5B51D8; /* Change hover color for the second button */
 }
+
+
+
+.offer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width:400px;
+  }
+
+  .offer i {
+    margin-right: 10px;
+    color: #28a745; /* Green color for the check icon */
+  }
+
+  .offer span {
+    font-weight: bold;
+    color: #333;
+
+  }
+
