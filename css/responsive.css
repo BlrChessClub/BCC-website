@@ -29,6 +29,9 @@
   .slider_section {
     padding: 45px 0 75px 0;
   }
+  .slider_section .detail-box .btn-box {
+    justify-content: center; /* Center the content horizontally */
+  }
 
  .header_section_new {
     display: flex;
@@ -183,6 +186,8 @@
 @media (max-width: 480px) {
   .slider_section .detail-box h1 {
     font-size: 2rem;
+    text-align:center;
+    justify-content: center;
   }
 
   .header_section_new .detail-box h1 {
