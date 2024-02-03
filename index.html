@@ -42,6 +42,50 @@
 
   gtag('config', 'G-9JEHY8YMR2');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to scroll to a target element with smooth behavior
+    function scrollToTarget(targetElement) {
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    // Check if there is a section parameter in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const section = urlParams.get('section');
+
+    // If the section parameter is present, scroll to the corresponding section immediately
+    if (section) {
+        const targetElement = document.getElementById(section);
+        scrollToTarget(targetElement);
+    }
+
+    // Set up smooth scrolling for links with the 'scroll-link' class
+    var scroll = new SmoothScroll('.scroll-link', {
+        speed: 800, // Adjust the scrolling speed as needed
+        offset: 50, // Adjust the offset if needed
+    });
+
+    // Attach click event listeners to handle smooth scrolling on link clicks
+    var scrollLinks = document.querySelectorAll('.scroll-link');
+    scrollLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Get the target element's ID from the link's href attribute
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            // Scroll to the target element
+            scrollToTarget(targetElement);
+
+            // Update the URL with the section parameter
+            history.pushState(null, null, '?section=' + targetId);
+        });
+    });
+});
+</script>
 
 <body>
 
