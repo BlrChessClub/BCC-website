@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Site Metas -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <title> Bangalore Chess Club </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+
+
+  <style>
+    .event-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
+
+    .banner {
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .text-container {
+        padding: 20px;
+    }
+
+<!--    .event-header {-->
+<!--        background-color: #1166ac;-->
+<!--        color: #fff;-->
+<!--        padding: 20px;-->
+<!--        border-radius: 15px ;-->
+<!--        margin-bottom: 20px;-->
+<!--        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);-->
+<!--        text-align: center;-->
+<!--    }-->
+
+<!--    .event-header .event-title {-->
+<!--        font-size: 2.5em;-->
+<!--        margin-bottom: 10px;-->
+<!--    }-->
+
+    .event-header {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .event-header .event-title {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif; /* Choose a modern sans-serif font */
+        display: inline-block;
+        background: linear-gradient(45deg, #3498db, #e74c3c); /* Gradient from blue to red */
+        -webkit-background-clip: text; /* Clip the background to the text */
+        color: transparent; /* Make the text transparent to show the background gradient */
+        position: relative;
+    }
+
+
+
+
+    .event-description {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .event-section {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-section h2 {
+        color: #1166ac;
+        margin-bottom: 10px;
+    }
+
+    ul, ol {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .book-now-button-container a {
+      margin: 5px;
+      text-align: center;
+      width: 400px;
+
+    }
+
+    .book-now-button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .book-now-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        transition: background 0.3s, transform 0.3s;
+        box-shadow: 0 5px 10px rgba(255, 126, 95, 0.2);
+    }
+
+    .book-now-button:hover {
+        background: linear-gradient(45deg, #feb47b, #ff7e5f);
+        transform: scale(1.05);
+    }
+
+    .event-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+     .location-section {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .location-section h2 {
+        color: #1166ac;
+        margin-bottom: 10px;
+
+    }
+
+    .location-details {
+        flex-grow: 1;
+        margin-right: 20px;
+    }
+
+    .cafe-name {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #cc5500;
+    }
+
+    .address {
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .google-map-link {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        background: #1166ac;
+        transition: background 0.3s, transform 0.3s;
+        box-shadow: 0 5px 10px rgba(17, 102, 172, 0.2);
+    }
+
+    .google-map-link:hover {
+        background: #4CAF50;
+        transform: scale(1.05);
+    }
+
+
+
+
+
+
+
+
+
+    /* Add or update styles as needed */
+
+    .content-container {
+        padding: 20px;
+    }
+
+    .date-time-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .date-time {
+        display: inline-block;
+        background-color: #f7f7f7;
+        padding: 8px 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .date-time .date {
+        font-size: 1.2em;
+        color: #cc5500;
+        font-weight: bold;
+    }
+
+    .date-time .separator {
+        margin: 0 10px;
+        color: #555;
+    }
+
+    .date-time .time {
+        font-size: 1.2em;
+        color: #1166ac;
+        font-weight: bold;
+    }
+
+    /* Additional styling for the event description */
+    .event-description {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-section .highlight {
+        font-weight: bold;
+        color: #cc5500; /* Highlight color */
+    }
+
+
+
+
+    /* Existing styles remain unchanged */
+
+    @media only screen and (max-width: 600px) {
+        /* Adjustments for mobile screens */
+
+        .event-container {
+            border-radius: 15px;
+        }
+        .banner {
+            height: 12em;
+        }
+
+        .banner img {
+            height:100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .event-header {
+            padding: 15px;
+        }
+
+        .event-header .event-title {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .date-time-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .date-time {
+            display: block;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .date-time .date,
+        .date-time .separator,
+        .date-time .time {
+            font-size: 1em;
+        }
+
+        .event-section,
+        .location-section {
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .event-section h2,
+        .location-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+        }
+
+        .event-description {
+            font-size: 16px;
+        }
+
+        .book-now-button {
+            font-size: 18px;
+            padding: 12px 25px;
+        }
+
+        .google-map-link {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        .google-map-link {
+            display: block;
+            text-align:center;
+            width: 50%;
+            padding: 15px 0; /* Increase padding for better touch interaction */
+            font-size: 16px; /* Adjust font size for better readability */
+        }
+        .book-now-button-container a {
+          width: 250px;
+        }
+    .fixed-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #c6e5ee;
+        padding: 10px;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999; /* Adjust the z-index value as needed */
+    }
+
+    .footer-price {
+        font-size: 18px;
+        color: #1166ac;
+    }
+
+    .footer-book-now-button {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        transition: background 0.3s, transform 0.3s;
+        box-shadow: 0 5px 10px rgba(255, 126, 95, 0.2);
+    }
+
+    .footer-book-now-button:hover {
+        background: linear-gradient(45deg, #feb47b, #ff7e5f);
+        transform: scale(1.05);
+    }
+    }
+    @media only screen and (min-width: 601px) {
+    .fixed-footer {
+        display: none; /* Hide the fixed footer on desktop screens */
+    }
+}
+
+
+
+
+    </style>
+
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JEHY8YMR2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9JEHY8YMR2');
+
+
+</script>
+
+<body>
+<!-- header section strats -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav id="navbar" class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_bcc.png" alt="Bangalore Chess Club Logo" width="100px" height="100px">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="links-container navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#events_section"> Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#spotlight">Spotlight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newgallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+<!-- Your HTML code goes here for each event container -->
+
+
+<div class="event-container">
+  <div class="banner">
+    <img src="images/chess_connect_banner2.jpeg" alt="Event Banner">
+  </div>
+
+  <div class="text-container">
+    <div class="event-header">
+      <h1 class="event-title">Chess Connect: Making Chess Fun </h1>
+    </div>
+
+
+    <div class="date-time-container">
+      <div class="date-time">
+        <span class="date">3rd March</span>
+        <span class="separator"> | </span>
+        <span class="time">10:00 AM - 1:00 PM</span>
+      </div>
+    </div>
+    <br>
+
+    <div class="event-section">
+      <h2>Event Details:</h2>
+      <p>Join us at The Hub Bengaluru for our next chess meetup for a fantastic chess spirit!
+        <br>Whether you're a seasoned player or just discovering your love for the game, come embrace the thrill
+        of chess, forge new connections, and make every move count.
+        <br>Let's bring the chessboard to and continue our journey of checkmates and camaraderie! </p>
+    </div>
+
+    <div class="event-section">
+      <h2>What's Included:</h2>
+      <ul>
+        <!--                <li class="highlight">Food and Beverage worth ₹150</li>-->
+        <li>3 Hours of <strong>Blitz Chess</strong> (Format 5+3)</li>
+      </ul>
+    </div>
+
+
+    <div class="event-section">
+      <h2>Game Variations:</h2>
+      <ul>
+        <li><strong>Casual Standard Chess (Swiss Format):</strong> Immerse yourself in the world of traditional
+          chess in an exhilarating Swiss Format tournament. Over 6-7 rounds, face opponents of similar skill
+          levels, and enjoy the games with a mix of banter and a laid-back vibe. It's not just about winning,
+          but about the shared love for the game and the camaraderie that makes every move memorable.
+        </li>
+        <!--                <li><strong>Hand & Brain Chess:</strong> Team up with a partner in this intriguing chess variant where one player becomes the "Brain" and selects a piece type to be moved, while the other player becomes the "Hand" and must execute the chosen moves. It's a test of teamwork, strategy, and communication.</li>-->
+        <!--                <li><strong>Bughouse Chess (Supply Chess):</strong> Brace yourselves for the fast-paced action of Bughouse Chess. Work with a teammate on two chessboards, share captured pieces, and unleash your combined tactical prowess. It's a dynamic chess experience like no other.</li>-->
+      </ul>
+    </div>
+
+    <!--        <div class="event-section">-->
+    <!--            <h2>Is Chess Experience Required?</h2>-->
+    <!--            <p>Absolutely not! Whether you're a beginner or an experienced player, "Coffee and Checkmate" welcomes everyone. This is an opportunity to have fun, learn from others, and experience chess in its various forms.</p>-->
+    <!--        </div>-->
+
+    <div class="location-section">
+      <div class="location-details">
+        <h2>Event Location</h2>
+        <p><span class="cafe-name">The Hub</span><br>Infantry Road,Near MG Road, Bengaluru, India</p>
+      </div>
+      <a href="https://maps.app.goo.gl/tDU3TUT3UhKog3rp8" target="_blank" class="google-map-link">View on Google
+        Maps</a>
+    </div>
+
+    <div class="button-container">
+      <div class="book-now-button-container">
+        <!--                <a href="#" class="book-now-button">Book Your Spot Now</a>-->
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                  data-payment_button_id="pl_NfcR3akHKGVmG6" async></script>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fixed-footer">
+  <div class="footer-price"><strong>PRICE ₹150</strong></div>
+  <form>
+    <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NfcR3akHKGVmG6"
+            async></script>
+  </form>
+</div>
+
+
+<!-- Add more event containers as needed -->
+
+
+<!-- Add more event containers as needed -->
+
+
+<!-- end header section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 info_col">
+        <div class="info_contact">
+          <h4>
+            Address
+          </h4>
+          <div class="contact_link_box">
+            <a href="https://www.google.com/maps/place/Bangalore,India">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                  Bangalore, India
+                </span>
+            </a>
+            <!--<a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +01 1234567890
+              </span>
+            </a> --->
+            <a href="mailto:bangalorechessclubofficial@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                  bangalorechessclubofficial@gmail.com
+                </span>
+            </a>
+          </div>
+        </div>
+        <div class="info_social">
+          <a href="https://www.instagram.com/bangalorechessclub/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/@bangalorechessclub">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/bangalorechessclub">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/Blr_ChessClub">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+
+
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 info_col">
+        <div class="info_detail">
+          <h4>
+            Info
+          </h4>
+          <p>
+            Bangalore Chess Club is the largest offline Chess Community in India where we aim to promote
+            chess as a non competitive sport across ages and skill levels. <br>Always striving to make chess
+            fun.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-2 mx-auto info_col">
+        <div class="info_link_box">
+          <h4>
+            Links
+          </h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              Home
+            </a>
+            <a class="" href="#events_section">
+              Events
+            </a>
+            <a class="" href="#spotlight">
+              Spotlight
+            </a>
+            <a class="" href="newgallery.html">
+              Gallery
+            </a>
+            <!-- <a class="" href="team.html">
+              Team
+            </a> -->
+          </div>
+        </div>
+      </div>
+      <!---<div class="col-md-6 col-lg-3 info_col ">
+        <h4>
+          Subscribe
+        </h4>
+        <form action="#">
+          <input type="text" placeholder="Enter email" />
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div> --->
+    </div>
+  </div>
+</section>
+
+<!-- end info section -->
+
+<!-- footer section -->
+<section class="footer_section" style="background-color: #c6e5ee;">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      Bangalore Chess Club
+    </p>
+  </div>
+</section>
+<!-- footer section -->
+
+<!-- jQery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<!-- bootstrap js -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- owl slider -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<!-- custom js -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+</script>
+<!-- End Google Map -->
+
+</body>
+
+</html>
+
+
+
+
