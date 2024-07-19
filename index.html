@@ -5,6 +5,7 @@
 <html lang="en">
   <head>
     {% include head-tags.html %}
+    <link rel="preload" fetchpriority="high" as="image" href="/images/logo.webp" type="image/webp">
   </head>
 
   {% include ga.html %}
@@ -51,7 +52,7 @@
     <div class="hero_area">
       <div class="hero_bg_box">
         <div class="bg_img_box">
-          <img src="/images/logo.webp" alt="" class="scaled-image" />
+          <img fetchpriority="high" src="/images/logo.webp" alt="" class="scaled-image" />
         </div>
       </div>
 
