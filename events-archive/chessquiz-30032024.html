@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include head-tags.html %} {% include head.html %}
+    {% include head.html %}
   </head>
 
   {% include ga.html %}
@@ -109,29 +109,9 @@
           >
         </div>
 
-        <div class="button-container">
-          <div class="book-now-button-container">
-            <form>
-              <script
-                src="https://checkout.razorpay.com/v1/payment-button.js"
-                data-payment_button_id="pl_NfcR3akHKGVmG6"
-                async
-              ></script>
-            </form>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="fixed-footer">
-      <div class="footer-price"><strong>PRICE ₹200</strong></div>
-      <form>
-        <script
-          src="https://checkout.razorpay.com/v1/payment-button.js"
-          data-payment_button_id="pl_NfcR3akHKGVmG6"
-          async
-        ></script>
-      </form>
-    </div>
+
 
     {% include bottom.html %} {% include footer.html %} {% include scripts.html
     %}
