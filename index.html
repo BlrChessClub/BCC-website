@@ -1,901 +1,1083 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="google-site-verification"
+      content="IXGvIBrzDCSew8EGPk4sbYvRZDB914ehI-gOy0FB4eY"
+    />
+    <link rel="shortcut icon" href="images/favi.png" type="" />
+    <title>Bangalore Chess Club</title>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <meta name="google-site-verification" content="IXGvIBrzDCSew8EGPk4sbYvRZDB914ehI-gOy0FB4eY" />
-  <link rel="shortcut icon" href="images/favi.png" type="">
-  <title> Bangalore Chess Club </title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--owl slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JEHY8YMR2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9JEHY8YMR2');
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Function to scroll to a target element with smooth behavior
-    function scrollToTarget(targetElement) {
+  {% include ga.html %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Function to scroll to a target element with smooth behavior
+      function scrollToTarget(targetElement) {
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+          targetElement.scrollIntoView({ behavior: "smooth" });
         }
-    }
+      }
 
-    // Check if there is a section parameter in the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const section = urlParams.get('section');
+      // Check if there is a section parameter in the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const section = urlParams.get("section");
 
-    // If the section parameter is present, scroll to the corresponding section immediately
-    if (section) {
+      // If the section parameter is present, scroll to the corresponding section immediately
+      if (section) {
         const targetElement = document.getElementById(section);
         scrollToTarget(targetElement);
-    }
+      }
 
-    // Set up smooth scrolling for links with the 'scroll-link' class
-    var scroll = new SmoothScroll('.scroll-link', {
+      // Set up smooth scrolling for links with the 'scroll-link' class
+      var scroll = new SmoothScroll(".scroll-link", {
         speed: 800, // Adjust the scrolling speed as needed
         offset: 50, // Adjust the offset if needed
-    });
+      });
 
-    // Attach click event listeners to handle smooth scrolling on link clicks
-    var scrollLinks = document.querySelectorAll('.scroll-link');
-    scrollLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
+      // Attach click event listeners to handle smooth scrolling on link clicks
+      var scrollLinks = document.querySelectorAll(".scroll-link");
+      scrollLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
 
-            // Get the target element's ID from the link's href attribute
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+          // Get the target element's ID from the link's href attribute
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
 
-            // Scroll to the target element
-            scrollToTarget(targetElement);
+          // Scroll to the target element
+          scrollToTarget(targetElement);
 
-            // Update the URL with the section parameter
-            history.pushState(null, null, '?section=' + targetId);
+          // Update the URL with the section parameter
+          history.pushState(null, null, "?section=" + targetId);
         });
+      });
     });
-});
-</script>
+  </script>
 
-<body>
-
-  <div class="hero_area">
-
-    <div class="hero_bg_box">
-      <div class="bg_img_box">
-        <img src="images/logo.webp" alt="" class="scaled-image">
+  <body>
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <div class="bg_img_box">
+          <img src="images/logo.webp" alt="" class="scaled-image" />
+        </div>
       </div>
+
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav id="navbar" class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/logo_bcc.png"
+                alt="Bangalore Chess Club Logo"
+                width="100px"
+                height="100px"
+              />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="links-container navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#events_section"> Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#spotlight">Spotlight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="newgallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="header_section_new">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="detail-box">
+                <h1 class="home-title">
+                  <span class="line">Making Chess fun with</span>
+                  <span class="line">Bangalore Chess Club ✨</span>
+                </h1>
+                <p>
+                  Step into a world where camaraderie, fun, and friendship take
+                  center stage, <br />and competition fades into the
+                  background.<br /><br />
+                  Rediscover the joy of playing chess with us at the Bangalore
+                  Chess Club.<br /><br />
+                  Join for the sheer delight of the game - where every move
+                  brings not just strategy, but smiles. <br />Play chess,
+                  embrace the joy!
+                </p>
+                <div class="oval-button-container">
+                  <a
+                    href="https://chat.whatsapp.com/CtYnuwHq87ZD8d88fkwoPs"
+                    class="oval-button"
+                    style="background-color: #25d366"
+                    target="_blank"
+                    ><i class="fa fa-whatsapp" aria-hidden="true"></i> Join our
+                    WhatsApp Community
+                  </a>
+                  <a
+                    href="https://www.instagram.com/bangalorechessclub/"
+                    class="oval-button"
+                    style="background-color: #833ab4"
+                    target="_blank"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i> Follow
+                    us on Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav id="navbar" class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo_bcc.png" alt="Bangalore Chess Club Logo" width="100px" height="100px">
-          </a>
+    <!-- about section -->
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
+    <!-- about section -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="links-container navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#events_section"> Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#spotlight">Spotlight</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="newgallery.html" >Gallery</a>
-              </li>              
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-    </header>
-    <!-- end header section -->
     <!-- slider section -->
-    <section class="header_section_new">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="detail-box">
-              <h1 class="home-title">
-                <span class="line">Making Chess fun with</span>
-                <span class="line">Bangalore Chess Club ✨</span>
-              </h1>
-              <p>Step into a world where camaraderie, fun, and friendship take center stage, <br>and competition fades into the background.<br><br>
-                Rediscover the joy of playing chess with us at the Bangalore Chess Club.<br><br>
-                Join for the sheer delight of the game - where every move brings not just strategy, but smiles. <br>Play chess, embrace the joy!
-              </p>
-            <div class="oval-button-container">
-              <a href="https://chat.whatsapp.com/CtYnuwHq87ZD8d88fkwoPs" class="oval-button" style="background-color: #25D366;" target="_blank" ><i class="fa fa-whatsapp" aria-hidden="true"></i>  Join our WhatsApp Community
-              </a>  
-              <a href="https://www.instagram.com/bangalorechessclub/" class="oval-button" style="background-color: #833AB4; " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>  Follow us on Instagram
-            </a>
-            </div>
-        </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+    <section id="events_section" class="events_section layout_padding">
+      <section class="slider_section">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!--            <div class="carousel-item active">-->
+            <!--              <div class="container ">-->
+            <!--                <div class="row">-->
+            <!--                  <div class="col-md-6 ">-->
+            <!--                    <div class="detail-box">-->
+            <!--                      <h1>-->
+            <!--                        Chess Bonanza <br>-->
+            <!--                        <br>-->
+            <!--                      </h1>-->
+            <!--                      <p>-->
+            <!--                        <i class="fa fa-star fa-2x"></i>-->
+            <!--                        <span class="ml-2 lead font-weight-bold">A Month of Chess Magic</span>-->
+            <!--                      </p>-->
+            <!--                      <p>-->
+            <!--                        <i class="fa fa-check-circle fa-2x"></i>-->
+            <!--                        <span class="ml-2 lead font-weight-bold ">Experience the Thrill, Master the Moves</span>-->
+            <!--                      </p>-->
+            <!--                      <p>-->
+            <!--                        <i class="fa fa-tag fa-2x"></i>-->
+            <!--                        <span class="ml-2 lead font-weight-bold">-->
+            <!--                              Irresistible Discounts Await:-->
+            <!--                        </span>-->
 
+            <!--                        <div class="offer">-->
+            <!--                          <i class="fa fa-check"></i>-->
+            <!--                          <span>Unlock ₹75 off on Min Purchase of ₹550</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="offer">-->
+            <!--                          <i class="fa fa-check"></i>-->
+            <!--                          <span>Unlock ₹150 off on Min Purchase of ₹850</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="offer">-->
+            <!--                          <i class="fa fa-check"></i>-->
+            <!--                          <span>Come back early next time ! </span>-->
+            <!--                        </div>-->
 
+            <!--                      </p>-->
+            <!--                      <p class="text-muted small">-->
+            <!--                        * Discount only available on UPI and will be auto-applied at checkout.-->
+            <!--                      </p>-->
+            <!--                      <div class="btn-box">-->
+            <!--                        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OERicQlsMv7BbG" async> </script> </form>-->
+            <!--                      </div>-->
+            <!--                    </div>-->
+            <!--                  </div>-->
+            <!--                  <div class="col-md-6">-->
+            <!--                    <div class="img-box">-->
+            <!--                      <img src="images/june_events.png" alt="">-->
+            <!--                    </div>-->
+            <!--                  </div>-->
+            <!--                </div>-->
+            <!--              </div>-->
+            <!--            </div>-->
 
-  <!-- about section -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>ChessCafe<br /></h1>
 
-
-  <!-- about section -->
-
-  <!-- slider section -->
-  <section id="events_section" class="events_section layout_padding "  >
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" >
-
-<!--            <div class="carousel-item active">-->
-<!--              <div class="container ">-->
-<!--                <div class="row">-->
-<!--                  <div class="col-md-6 ">-->
-<!--                    <div class="detail-box">-->
-<!--                      <h1>-->
-<!--                        Chess Bonanza <br>-->
-<!--                        <br>-->
-<!--                      </h1>-->
-<!--                      <p>-->
-<!--                        <i class="fa fa-star fa-2x"></i>-->
-<!--                        <span class="ml-2 lead font-weight-bold">A Month of Chess Magic</span>-->
-<!--                      </p>-->
-<!--                      <p>-->
-<!--                        <i class="fa fa-check-circle fa-2x"></i>-->
-<!--                        <span class="ml-2 lead font-weight-bold ">Experience the Thrill, Master the Moves</span>-->
-<!--                      </p>-->
-<!--                      <p>-->
-<!--                        <i class="fa fa-tag fa-2x"></i>-->
-<!--                        <span class="ml-2 lead font-weight-bold">-->
-<!--                              Irresistible Discounts Await:-->
-<!--                        </span>-->
-
-<!--                        <div class="offer">-->
-<!--                          <i class="fa fa-check"></i>-->
-<!--                          <span>Unlock ₹75 off on Min Purchase of ₹550</span>-->
-<!--                        </div>-->
-<!--                        <div class="offer">-->
-<!--                          <i class="fa fa-check"></i>-->
-<!--                          <span>Unlock ₹150 off on Min Purchase of ₹850</span>-->
-<!--                        </div>-->
-<!--                        <div class="offer">-->
-<!--                          <i class="fa fa-check"></i>-->
-<!--                          <span>Come back early next time ! </span>-->
-<!--                        </div>-->
-
-<!--                      </p>-->
-<!--                      <p class="text-muted small">-->
-<!--                        * Discount only available on UPI and will be auto-applied at checkout.-->
-<!--                      </p>-->
-<!--                      <div class="btn-box">-->
-<!--                        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OERicQlsMv7BbG" async> </script> </form>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="col-md-6">-->
-<!--                    <div class="img-box">-->
-<!--                      <img src="images/june_events.png" alt="">-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      ChessCafe<br>
-                    </h1>
-
-                    <p>
-                      <br>
-                      <i class="fa fa-calendar fa-2x" ></i>
-                      <span class="ml-2 lead font-weight-bold" >Saturday 20th July</span>
-                    </p>
-                    <p>
-                      <i class="fa fa-clock-o fa-2x" ></i>
-                      <span class="ml-2 lead font-weight-bold" >10:00 AM to 12:30 PM</span>
-                    </p>
-                    <p>
-                      <i class="fa fa-map fa-2x" ></i>
-                      <span class="ml-2 lead font-weight-bold" >
-<!--                          <a class="text-light" href="https://maps.app.goo.gl/Pxqd4mbJ9WzabLe3A" target="_blank" style="text-decoration: underline; color: white;">Cafe Azzure & Merwans Cake Stop</a>-->
-                          <a class="text-light" >Cafe Azzure & Merwans Cake Stop</a>
+                      <p>
+                        <br />
+                        <i class="fa fa-calendar fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold"
+                          >Saturday 20th July</span
+                        >
+                      </p>
+                      <p>
+                        <i class="fa fa-clock-o fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold"
+                          >10:00 AM to 12:30 PM</span
+                        >
+                      </p>
+                      <p>
+                        <i class="fa fa-map fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold">
+                          <!--                          <a class="text-light" href="https://maps.app.goo.gl/Pxqd4mbJ9WzabLe3A" target="_blank" style="text-decoration: underline; color: white;">Cafe Azzure & Merwans Cake Stop</a>-->
+                          <a class="text-light"
+                            >Cafe Azzure & Merwans Cake Stop</a
+                          >
                         </span>
-                    </p>
-                    <div class="btn-box">
-                      <a href="chesscafe-20072024.html" class="btn1">
-                        Register Here
-                      </a>
+                      </p>
+                      <div class="btn-box">
+                        <a href="chesscafe-20072024.html" class="btn1">
+                          Register Here
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="images/ChessCafe_20072024.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/ChessCafe_20072024.png" alt="">
-                  </div>
-                </div>
               </div>
             </div>
+
+            <!--          <div class="carousel-item ">-->
+            <!--            <div class="container ">-->
+            <!--              <div class="row">-->
+            <!--                <div class="col-md-6 ">-->
+            <!--                  <div class="detail-box">-->
+            <!--                    <h1>-->
+            <!--                      Chess <br>-->
+            <!--                      Connect-Blitz-->
+            <!--                    </h1>-->
+            <!--                    <br>-->
+            <!--                    <p>-->
+            <!--                      <i class="fa fa-calendar fa-2x"></i>-->
+            <!--                      <span class="ml-2 lead font-weight-bold">Sunday 23rd June</span>-->
+            <!--                    </p>-->
+            <!--                    <p>-->
+            <!--                      <i class="fa fa-clock-o fa-2x"></i>-->
+            <!--                      <span class="ml-2 lead font-weight-bold">10:00 AM to 1:00 PM</span>-->
+            <!--                    </p>-->
+            <!--                    <p>-->
+            <!--                      <i class="fa fa-map fa-2x"></i>-->
+            <!--                      <span class="ml-2 lead font-weight-bold">-->
+            <!--                        <a class="text-light" href="https://maps.app.goo.gl/hDa666oJ8e7krVbHA" target="_blank" style="text-decoration: underline;">RMZ Ecoworld, Bellandur </a>-->
+            <!--                      </span>-->
+            <!--                    </p>-->
+            <!--                    <div class="btn-box">-->
+            <!--                      <a href="chess-connect-23062024.html" class="btn1">-->
+            <!--                        Register here-->
+            <!--                      </a>-->
+            <!--                    </div>-->
+            <!--                  </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-md-6">-->
+            <!--                  <div class="img-box">-->
+            <!--                    <img src="images/chessconnect_23062024.png" alt="">-->
+            <!--                  </div>-->
+            <!--                </div>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+
+            <!--          <div class="carousel-item ">-->
+            <!--            <div class="container ">-->
+            <!--              <div class="row">-->
+            <!--                <div class="col-md-6 ">-->
+            <!--                  <div class="detail-box">-->
+            <!--                    <h1>-->
+            <!--                      Chess <br>-->
+            <!--                      Connect-Rapid-->
+            <!--                    </h1>-->
+            <!--                    <br>-->
+            <!--                  <p>-->
+            <!--                    <i class="fa fa-calendar fa-2x"></i>-->
+            <!--                      <span class="ml-2 lead font-weight-bold">Sunday 28th July</span>-->
+            <!--                    </p>-->
+            <!--                    <p>-->
+            <!--                      <i class="fa fa-clock-o fa-2x"></i>-->
+            <!--                      <span class="ml-2 lead font-weight-bold">10:00 AM to 3:30 PM</span>-->
+            <!--                    </p>-->
+            <!--                    <p>-->
+            <!--                      <i class="fa fa-map fa-2x"></i>-->
+            <!--                      <span class="ml-2 lead font-weight-bold">-->
+            <!--                        <a class="text-light" href="https://maps.app.goo.gl/hDa666oJ8e7krVbHA"  target="_blank" style="text-decoration: underline;">RMZ EcoWorld, Bellandur</a>-->
+            <!--                      </span>-->
+            <!--                  </p>-->
+            <!--                    <div class="btn-box">-->
+            <!--                      <a href="chess-connect-28072024.html" class="btn1">-->
+            <!--                        Register here-->
+            <!--                      </a>-->
+            <!--                    </div>-->
+            <!--                  </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-md-6">-->
+            <!--                  <div class="img-box">-->
+            <!--                    <img src="images/chessconnect_28072024.jpeg" alt="">-->
+            <!--                  </div>-->
+            <!--                </div>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+            <!--      </div>-->
+            <!--      <ol class="carousel-indicators">-->
+            <!--        <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>-->
+            <!--        <li data-target="#customCarousel1" data-slide-to="1"></li>-->
+            <!--        <li data-target="#customCarousel1" data-slide-to="2"></li>-->
+            <!--        <li data-target="#customCarousel1" data-slide-to="3"></li>-->
+            <!--      </ol>-->
           </div>
+        </div>
+      </section>
+    </section>
 
-<!--          <div class="carousel-item ">-->
-<!--            <div class="container ">-->
-<!--              <div class="row">-->
-<!--                <div class="col-md-6 ">-->
-<!--                  <div class="detail-box">-->
-<!--                    <h1>-->
-<!--                      Chess <br>-->
-<!--                      Connect-Blitz-->
-<!--                    </h1>-->
-<!--                    <br>-->
-<!--                    <p>-->
-<!--                      <i class="fa fa-calendar fa-2x"></i>-->
-<!--                      <span class="ml-2 lead font-weight-bold">Sunday 23rd June</span>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                      <i class="fa fa-clock-o fa-2x"></i>-->
-<!--                      <span class="ml-2 lead font-weight-bold">10:00 AM to 1:00 PM</span>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                      <i class="fa fa-map fa-2x"></i>-->
-<!--                      <span class="ml-2 lead font-weight-bold">-->
-<!--                        <a class="text-light" href="https://maps.app.goo.gl/hDa666oJ8e7krVbHA" target="_blank" style="text-decoration: underline;">RMZ Ecoworld, Bellandur </a>-->
-<!--                      </span>-->
-<!--                    </p>-->
-<!--                    <div class="btn-box">-->
-<!--                      <a href="chess-connect-23062024.html" class="btn1">-->
-<!--                        Register here-->
-<!--                      </a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6">-->
-<!--                  <div class="img-box">-->
-<!--                    <img src="images/chessconnect_23062024.png" alt="">-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+    <!-- end about section -->
 
-<!--          <div class="carousel-item ">-->
-<!--            <div class="container ">-->
-<!--              <div class="row">-->
-<!--                <div class="col-md-6 ">-->
-<!--                  <div class="detail-box">-->
-<!--                    <h1>-->
-<!--                      Chess <br>-->
-<!--                      Connect-Rapid-->
-<!--                    </h1>-->
-<!--                    <br>-->
-<!--                  <p>-->
-<!--                    <i class="fa fa-calendar fa-2x"></i>-->
-<!--                      <span class="ml-2 lead font-weight-bold">Sunday 28th July</span>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                      <i class="fa fa-clock-o fa-2x"></i>-->
-<!--                      <span class="ml-2 lead font-weight-bold">10:00 AM to 3:30 PM</span>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                      <i class="fa fa-map fa-2x"></i>-->
-<!--                      <span class="ml-2 lead font-weight-bold">-->
-<!--                        <a class="text-light" href="https://maps.app.goo.gl/hDa666oJ8e7krVbHA"  target="_blank" style="text-decoration: underline;">RMZ EcoWorld, Bellandur</a>-->
-<!--                      </span>-->
-<!--                  </p>-->
-<!--                    <div class="btn-box">-->
-<!--                      <a href="chess-connect-28072024.html" class="btn1">-->
-<!--                        Register here-->
-<!--                      </a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6">-->
-<!--                  <div class="img-box">-->
-<!--                    <img src="images/chessconnect_28072024.jpeg" alt="">-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--      </div>-->
-<!--      <ol class="carousel-indicators">-->
-<!--        <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>-->
-<!--        <li data-target="#customCarousel1" data-slide-to="1"></li>-->
-<!--        <li data-target="#customCarousel1" data-slide-to="2"></li>-->
-<!--        <li data-target="#customCarousel1" data-slide-to="3"></li>-->
-<!--      </ol>-->
-    </div>
+    <!-- Statistics section -->
+    <section>
+      <div class="achievements">
+        <div class="achievement">
+          <img
+            class="achievement_img"
+            src="images/a1.gif"
+            loading="lazy"
+            alt="Image 1"
+          />
+          <div class="achievement_info">
+            <span class="number">5,000+</span>
+            <span class="label">Active Members</span>
+          </div>
+        </div>
+        <div class="achievement">
+          <img
+            class="achievement_img"
+            src="images/a2.gif"
+            loading="lazy"
+            alt="Image 2"
+          />
+          <div class="achievement_info">
+            <span class="number">100+</span>
+            <span class="label">Events ands Meetups</span>
+          </div>
+        </div>
+        <div class="achievement">
+          <img
+            class="achievement_img"
+            src="images/a3.gif"
+            loading="lazy"
+            alt="Image 3"
+          />
+          <div class="achievement_info">
+            <span class="number">10+</span>
+            <span class="label">Colabs</span>
+          </div>
+        </div>
       </div>
     </section>
-  </section>
+    <!-- Statistics end section -->
 
-  <!-- end about section -->
+    <!-- About us section -->
 
-
-  <!-- Statistics section -->
-  <section >
-    <div class="achievements">
-      <div class="achievement">
-        <img class="achievement_img" src="images/a1.gif" loading="lazy" alt="Image 1">
-        <div class="achievement_info">
-          <span class="number">5,000+</span>
-          <span class="label">Active Members</span>
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Get to <span>know us</span></h2>
+          <p></p>
         </div>
-      </div>
-      <div class="achievement">
-        <img class="achievement_img" src="images/a2.gif" loading="lazy" alt="Image 2">
-        <div class="achievement_info">
-          <span class="number">100+</span>
-          <span class="label">Events ands Meetups</span>
-        </div>
-      </div>
-      <div class="achievement">
-        <img class="achievement_img" src="images/a3.gif" loading="lazy" alt="Image 3">
-        <div class="achievement_info">
-          <span class="number">10+</span>
-          <span class="label">Colabs</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Statistics end section -->
-
-
-  <!-- About us section -->
-
-  <section class="about_section layout_padding">
-  <div class="container  ">
-    <div class="heading_container heading_center">
-      <h2>
-        Get to <span>know us</span>
-      </h2>
-      <p>
-        
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-md-6 ">
-        <div class="img-box">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/1bAbLvJ8r-k" loading="lazy" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="detail-box">
-          <h3>
-            We Are Bangalore Chess Club
-          </h3>
-          <p>
-            The Bangalore Chess Club, is a vibrant and passionate community of chess enthusiasts in the heart of Bangalore, Karnataka. <br><br>
-            Established with the goal of promoting and nurturing the intellectually
-            stimulating game of chess, this club has grown to become a hub for players of all ages
-            and skill levels.<br>With a rich history of hosting meetups across parks, cafes, malls and other lively spaces, the Bangalore Chess Club is where strategy meets camaraderie, and where knights, rooks, and queens come to life on the 64 squares. <br><br>
-            Whether you're a novice looking to learn the game or a seasoned grandmaster honing your skills,
-            the Bangalore Chess Club welcomes all to be a part of its enduring legacy in the world of chess.
-          </p>
-          <div class="btn-box">
-            <a href="newgallery.html" class="btn btn-primary">
-                View Gallery 
-            </a>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- end Abouts section -->
-
-  <!-- feature section -->
-  <section id="spotlight" class ="spotlight section layout_padding" >
-  <div class="container-fluid team-section">
-      <div class="heading_container heading_center">
-        <div class="achievement">
-        <h2>
-          Spot<span>light</span>
-        </h2>
-      </div>
-
-
         <div class="row">
+          <div class="col-md-6">
+            <div class="img-box">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/1bAbLvJ8r-k"
+                loading="lazy"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="detail-box">
+              <h3>We Are Bangalore Chess Club</h3>
+              <p>
+                The Bangalore Chess Club, is a vibrant and passionate community
+                of chess enthusiasts in the heart of Bangalore, Karnataka.
+                <br /><br />
+                Established with the goal of promoting and nurturing the
+                intellectually stimulating game of chess, this club has grown to
+                become a hub for players of all ages and skill levels.<br />With
+                a rich history of hosting meetups across parks, cafes, malls and
+                other lively spaces, the Bangalore Chess Club is where strategy
+                meets camaraderie, and where knights, rooks, and queens come to
+                life on the 64 squares. <br /><br />
+                Whether you're a novice looking to learn the game or a seasoned
+                grandmaster honing your skills, the Bangalore Chess Club
+                welcomes all to be a part of its enduring legacy in the world of
+                chess.
+              </p>
+              <div class="btn-box">
+                <a href="newgallery.html" class="btn btn-primary">
+                  View Gallery
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Abouts section -->
+
+    <!-- feature section -->
+    <section id="spotlight" class="spotlight section layout_padding">
+      <div class="container-fluid team-section">
+        <div class="heading_container heading_center">
+          <div class="achievement">
+            <h2>Spot<span>light</span></h2>
+          </div>
+
+          <div class="row">
             <div class="col-md-4 col-sm-12">
-              <div class="card mb-3 spotlight-box" style="background-color: #c6e5ee;">
+              <div
+                class="card mb-3 spotlight-box"
+                style="background-color: #c6e5ee"
+              >
                 <div class="spotlight-box-img">
-                  <img src="images/img2.webp" class="card-img-top" alt="..." loading="lazy" fetchpriority="low">
+                  <img
+                    src="images/img2.webp"
+                    class="card-img-top"
+                    alt="..."
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
                 </div>
                 <div class="card-body">
-                   <h5 class="card-title font-weight-bold">Rook and Roll</h5>
-                   <p class="card-text"><b>Chessbase India:</b> A Public Simul in the centre of Garuda Mall, Bangalore. This was the second edition with IM Rakesh Kulkarni playing against 20 players selected via qualifiers and lucky draw. In 2022, we had GM Thejkumar who played the same event at this venue.</p>
-                    <a class="btn btn-primary text-light" href="https://www.chessbase.in/news/Rook-and-Roll-A-Simul-with-IM-Rakesh-Kulkarni?fbclid=PAAaZVAyomsqRR2MyK7xocCo0T-tvdZ30Kw-ikD4ScUsKV8lBUQMqMBb-Lgak_aem_Ad92F8j_6_RfoUFMGarxvpMFcfgvK9dXGjiWVvnDHSYtPtEbtPsjjVNHJgDyNdxCF6w" target="_blank">Read More</a>
+                  <h5 class="card-title font-weight-bold">Rook and Roll</h5>
+                  <p class="card-text">
+                    <b>Chessbase India:</b> A Public Simul in the centre of
+                    Garuda Mall, Bangalore. This was the second edition with IM
+                    Rakesh Kulkarni playing against 20 players selected via
+                    qualifiers and lucky draw. In 2022, we had GM Thejkumar who
+                    played the same event at this venue.
+                  </p>
+                  <a
+                    class="btn btn-primary text-light"
+                    href="https://www.chessbase.in/news/Rook-and-Roll-A-Simul-with-IM-Rakesh-Kulkarni?fbclid=PAAaZVAyomsqRR2MyK7xocCo0T-tvdZ30Kw-ikD4ScUsKV8lBUQMqMBb-Lgak_aem_Ad92F8j_6_RfoUFMGarxvpMFcfgvK9dXGjiWVvnDHSYtPtEbtPsjjVNHJgDyNdxCF6w"
+                    target="_blank"
+                    >Read More</a
+                  >
                 </div>
               </div>
-                <!-- End: Card 1 -->
+              <!-- End: Card 1 -->
             </div>
 
             <div class="col-md-4 col-sm-12">
-                <!-- Start:  Card 2 -->
-                <div class="card mb-3 spotlight-box" style="background-color: #c6e5ee;">
-                  <div class="spotlight-box-img">
-                    <img src="images/img1.webp" class="card-img-top" alt="..." loading="lazy" fetchpriority="low">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">The Right Moves</h5>
-                    <p class="card-text"><b>The Hindu:</b> Bangalore Chess Club creates an enjoyable and informal atmosphere for players of all ages, diverging from the intense competitive chess environment. The club fosters a setting where participants from various age groups can relish the game.</p>
-                      <a class="btn btn-primary text-light" href="https://www.thehindu.com/sport/other-sports/how-bangalore-chess-club-is-making-chess-fun/article66780934.ece" target="_blank">Read More</a>
-                  </div>
+              <!-- Start:  Card 2 -->
+              <div
+                class="card mb-3 spotlight-box"
+                style="background-color: #c6e5ee"
+              >
+                <div class="spotlight-box-img">
+                  <img
+                    src="images/img1.webp"
+                    class="card-img-top"
+                    alt="..."
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
                 </div>
-                <!-- End:  Card 2 -->
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">The Right Moves</h5>
+                  <p class="card-text">
+                    <b>The Hindu:</b> Bangalore Chess Club creates an enjoyable
+                    and informal atmosphere for players of all ages, diverging
+                    from the intense competitive chess environment. The club
+                    fosters a setting where participants from various age groups
+                    can relish the game.
+                  </p>
+                  <a
+                    class="btn btn-primary text-light"
+                    href="https://www.thehindu.com/sport/other-sports/how-bangalore-chess-club-is-making-chess-fun/article66780934.ece"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <!-- End:  Card 2 -->
             </div>
 
             <div class="col-md-4 col-sm-12">
-                <!-- Start: Card 3 -->
-                <div class="card mb-3 spotlight-box" style="background-color: #c6e5ee;">
-                  <div class="spotlight-box-img">
-                    <img src="images/img3.webp" class="card-img-top" alt="..." loading="lazy" fetchpriority="low">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">World Chess Day</h5>
-                    <p class="card-text"><b>Hindustan Times:</b> World Chess Day, established by UNESCO in 1966 and celebrated on July 20, promotes global chess growth. In Bengaluru, increased participation during the pandemic showcases rising interest, especially among children. Bangalore Chess Club playing a key part in it's promotion.</p>
-                    <a class="btn btn-primary text-light" href="https://epaper.hindustantimes.com/Home/ShareArticle?OrgId=207ed12ef26&imageview=0" target="_blank">Read More</a>
-                  </div>
+              <!-- Start: Card 3 -->
+              <div
+                class="card mb-3 spotlight-box"
+                style="background-color: #c6e5ee"
+              >
+                <div class="spotlight-box-img">
+                  <img
+                    src="images/img3.webp"
+                    class="card-img-top"
+                    alt="..."
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
                 </div>
-                <!-- End: Card 3 -->
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">World Chess Day</h5>
+                  <p class="card-text">
+                    <b>Hindustan Times:</b> World Chess Day, established by
+                    UNESCO in 1966 and celebrated on July 20, promotes global
+                    chess growth. In Bengaluru, increased participation during
+                    the pandemic showcases rising interest, especially among
+                    children. Bangalore Chess Club playing a key part in it's
+                    promotion.
+                  </p>
+                  <a
+                    class="btn btn-primary text-light"
+                    href="https://epaper.hindustantimes.com/Home/ShareArticle?OrgId=207ed12ef26&imageview=0"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <!-- End: Card 3 -->
             </div>
+          </div>
+          <!-- End: Team Section -->
         </div>
-        <!-- End: Team Section -->
-    </div>
-  </div>
-  </section>
-
-
-
-
-  <!-- team section -->
-  <section class="team_section layout_padding" >
-    <div class="container-fluid">
-      <div class="heading_container heading_center">
-        <h2 class="">
-          Our <span> Team</span>
-        </h2>
       </div>
+    </section>
 
-      <div class="team_container">
+    <!-- team section -->
+    <section class="team_section layout_padding">
+      <div class="container-fluid">
+        <div class="heading_container heading_center">
+          <h2 class="">Our <span> Team</span></h2>
+        </div>
+
+        <div class="team_container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-img-container">
+                <div class="img-box team-img-box">
+                  <img
+                    src="images/group_pics/group_pic_3.jpeg"
+                    class="img1"
+                    alt=""
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-img-container">
+                <div class="img-box team-img-box">
+                  <img
+                    src="images/group_pics/group_pic_2.jpeg"
+                    class="img1"
+                    alt=""
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-img-container">
+                <div class="img-box team-img-box">
+                  <img
+                    src="images/group_pics/group_pic_1.jpeg"
+                    class="img1"
+                    alt=""
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-img-container">
+                <div class="img-box team-img-box">
+                  <img
+                    src="images/group_pics/group_pic_4.jpeg"
+                    class="img1"
+                    alt=""
+                    loading="lazy"
+                    fetchpriority="low"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end team section -->
+
+    <!-- client section -->
+
+    <section class="client_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>What our <span>Players say</span></h2>
+        </div>
+        <div class="carousel-wrap">
+          <div class="owl-carousel client_owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/ashwin.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Ashwin Subramanian</h6>
+                      <p>Chess Enthusiast</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    One of my favourite quotes is this one by Margaret Mead -
+                    “Never doubt that a small group of thoughtful committed
+                    individuals can change the world. In fact, it's the only
+                    thing that ever has." - I truly believe the Bangalore Chess
+                    Club is a great example of what a few committed individuals
+                    can accomplish! They have and continue to rapidly create a
+                    vibrant chess community in Bangalore!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/mansi.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Mansi Jaiswal</h6>
+                      <p>Chess Parent</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    Bangalore Chess Club has been a remarkable part of my
+                    6-year-old's chess learning journey. The organizers' warmth
+                    and support have made the weekend meet-ups memorable. My son
+                    eagerly anticipates every event, where he not only hones his
+                    chess skills but also makes new friends. This club is more
+                    than just a place to play; it's a nurturing community that
+                    encourages growth and fun.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/lokesh.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Lokesh Natoo</h6>
+                      <p>Chess Promoter</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    Bangalore Chess Club engineered this wonderful idea of Chess
+                    in Cafés in Bangalore. You can see or experience great
+                    energy and chess vibes like never before in these events
+                    held on weekends. It has element of focus, fun, thrill &
+                    joy! Making moves while you sip a beverage or have a bite of
+                    sumptuous snack is just Legendary. Kudos to BCC Team
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/rakshit.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Rakshit Raushan</h6>
+                      <p>Chess Enthusiast</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    The community is lively , tournaments are a frenzy ,
+                    competitions that drove my growth and a journey where I met
+                    many friends. The special thing abt the place is that they
+                    try new places and based on the feedback they promptly
+                    respond to it which makes the place even better.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/shibin.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Shibin Benny</h6>
+                      <p>Chess Player, Coach</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    Just love the different activities (meet-ups, love streams,
+                    tournaments) conducted regularly by the Bangalore Chess
+                    Club. Safe to say BCC is the biggest entity of chess in
+                    Bangalore now.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/supriya_1.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Supriya Gupta</h6>
+                      <p>Chess Enthusiast</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    I recently shifted from mumbai, thought I will miss Mumbai
+                    Chessbase India chessclub. But little did I know that the
+                    Bangalore chessclub would fulfill this gap. There is
+                    something to look forward to on the weekend. It's lovely,
+                    and a good opportunity to interact with people of similar
+                    interest.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/babu.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Babu GS</h6>
+                      <p>Chess Parent</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    Bangalore Chess club meet ups are a great way for chess
+                    lovers to meet and play games. They are organised very
+                    meticulously by a small group of highly motivated
+                    individuals. The event provides great learning opportunities
+                    for youngsters to prepare for FIDE rated events. Kudos to
+                    BCC for giving great platform for Bangalore chess players to
+                    collaborate
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/vismitha.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Vismitha</h6>
+                      <p>Chess Enthusiast</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    BCC has given me countless memories to cherish, and having
+                    something to look forward to on a Sunday morning truly
+                    reflects how fun it is. It's undoubtedly the spot for chill
+                    chess, meeting incredibly fun folks, and having an amazing
+                    time!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/hanu.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Hanu Siddhanth R</h6>
+                      <p>Chess Enthusiast</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    BCC brought a lot of joy into my life via the meetups. It
+                    was always super nice and fulfilling to go to the events and
+                    play against such a wide age range of people from so many
+                    different walks of life. And the WhatsApp group gave me a
+                    community of people I can share my enthusiasm for chess for,
+                    since most of my other friends iny personal life didn't
+                    indulge in this game/sport
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/navya.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Navya Devadiga</h6>
+                      <p>Chess Parent</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    Bangalore Chess club meet ups are a great way for chess
+                    lovers to meet and play games. They are organised very
+                    meticulously by a small group of highly motivated
+                    individuals. The event provides great learning opportunities
+                    for youngsters to prepare for FIDE rated events. Kudos to
+                    BCC for giving great platform for Bangalore chess players to
+                    collaborate
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="images/testimonial/vivek_1.jpeg"
+                    alt=""
+                    loading="lazy"
+                    class="box-img"
+                  />
+                </div>
+                <div class="detail-box" style="background-color: #c6e5ee">
+                  <div class="client_id">
+                    <div class="client_info">
+                      <h6>Vivek Joshi</h6>
+                      <p>Chess Enthusiast</p>
+                    </div>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                  <p>
+                    A community of volunteer Chess enthusiasts whose only aim
+                    behind BCC is to have fun while playing the game and promote
+                    it equally amongst the young and old ones. Once you attend
+                    the offline meetup events you will realise that the passion
+                    is contagious.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end client section -->
+
+    <!-- info section -->
+
+    <section class="info_section layout_padding2">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-img-container">
-              <div class="img-box team-img-box">
-                <img src="images/group_pics/group_pic_3.jpeg" class="img1" alt="" loading="lazy" fetchpriority="low">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-img-container">
-              <div class="img-box team-img-box">
-                <img src="images/group_pics/group_pic_2.jpeg" class="img1" alt="" loading="lazy" fetchpriority="low">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-img-container">
-              <div class="img-box team-img-box">
-                <img src="images/group_pics/group_pic_1.jpeg" class="img1" alt="" loading="lazy" fetchpriority="low">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-img-container">
-              <div class="img-box team-img-box">
-                <img src="images/group_pics/group_pic_4.jpeg" class="img1" alt="" loading="lazy" fetchpriority="low">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end team section -->
-
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding"  >
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          What our <span>Players say</span>
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box" >
-              <div class="img-box" >
-                <img src="images/testimonial/ashwin.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Ashwin Subramanian
-                    </h6>
-                    <p>
-                      Chess Enthusiast
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  One of my favourite quotes is this one by Margaret Mead - “Never doubt that a small group of thoughtful committed individuals can change the world. In fact, it's the only thing that ever has." - I truly believe the Bangalore Chess Club is a great example of what a few committed individuals can accomplish! They have and continue to rapidly create a vibrant chess community in Bangalore! </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/mansi.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Mansi Jaiswal
-                    </h6>
-                    <p>
-                      Chess Parent
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Bangalore Chess Club has been a remarkable part of my 6-year-old's chess learning journey. The organizers' warmth and support have made the weekend meet-ups memorable. My son eagerly anticipates every event, where he not only hones his chess skills but also makes new friends. This club is more than just a place to play; it's a nurturing community that encourages growth and fun. </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/lokesh.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Lokesh Natoo
-                    </h6>
-                    <p>
-                      Chess Promoter
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Bangalore Chess Club engineered this wonderful idea of Chess in Cafés in Bangalore. You can see or experience great energy and chess vibes like never before in these events held on weekends. It has element of focus, fun, thrill & joy! Making moves while you sip a beverage or have a bite of sumptuous snack is just Legendary. Kudos to BCC Team </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box" >
-              <div class="img-box" >
-                <img src="images/testimonial/rakshit.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Rakshit Raushan
-                    </h6>
-                    <p>
-                      Chess Enthusiast
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  The community is lively , tournaments are a frenzy , competitions that drove my growth and a journey where I met many friends.
-The special thing abt the place is that they try new places and based on the feedback they promptly respond to it which makes the place even better. </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/shibin.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Shibin Benny
-                    </h6>
-                    <p>
-                      Chess Player, Coach
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Just love the different activities (meet-ups, love streams, tournaments) conducted regularly by the Bangalore Chess Club. Safe to say BCC is the biggest entity of chess in Bangalore now.  </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/supriya_1.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Supriya Gupta
-                    </h6>
-                    <p>
-                      Chess Enthusiast
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  I recently shifted from mumbai, thought I will miss Mumbai Chessbase India chessclub. But little did I know that the Bangalore chessclub would fulfill this gap. There is something to look forward to on the weekend. It's lovely, and a good opportunity to interact with people of similar interest. </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/babu.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Babu GS
-                    </h6>
-                    <p>
-                      Chess Parent 
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Bangalore Chess club meet ups are a great way for chess lovers to meet and play games. They are organised very meticulously by a small group of highly motivated individuals. The event provides great learning opportunities for youngsters to prepare for FIDE rated events. Kudos to BCC for giving great platform for Bangalore chess players to collaborate </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/vismitha.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Vismitha
-                    </h6>
-                    <p>
-                      Chess Enthusiast
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  BCC has given me countless memories to cherish, and having something to look forward to on a Sunday morning truly reflects how fun it is. It's undoubtedly the spot for chill chess, meeting incredibly fun folks, and having an amazing time! </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/hanu.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Hanu Siddhanth R
-                    </h6>
-                    <p>
-                      Chess Enthusiast
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  BCC brought a lot of joy into my life via the meetups. It was always super nice and fulfilling to go to the events and play against such a wide age range of people from so many different walks of life. And the WhatsApp group gave me a community of people I can share my enthusiasm for chess for, since most of my other friends iny personal life didn't indulge in this game/sport </p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/navya.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Navya Devadiga
-                    </h6>
-                    <p>
-                      Chess Parent
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Bangalore Chess club meet ups are a great way for chess lovers to meet and play games. They are organised very meticulously by a small group of highly motivated individuals. The event provides great learning opportunities for youngsters to prepare for FIDE rated events. Kudos to BCC for giving great platform for Bangalore chess players to collaborate </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/testimonial/vivek_1.jpeg" alt="" loading="lazy" class="box-img">
-              </div>
-              <div class="detail-box" style="background-color: #c6e5ee;">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Vivek Joshi
-                    </h6>
-                    <p>
-                      Chess Enthusiast
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  A community of volunteer Chess enthusiasts whose only aim behind BCC is to have fun while playing the game and promote it equally amongst the young and old ones. Once you attend the offline meetup events you will realise that the passion is contagious. </p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
-
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="https://www.google.com/maps/place/Bangalore,India">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Bangalore, India
-                </span>
-              </a>
-              <!--<a href="">
+          <div class="col-md-6 col-lg-4 info_col">
+            <div class="info_contact">
+              <h4>Address</h4>
+              <div class="contact_link_box">
+                <a href="https://www.google.com/maps/place/Bangalore,India">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> Bangalore, India </span>
+                </a>
+                <!--<a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call +01 1234567890
                 </span>
               </a> --->
-              <a href="mailto:bangalorechessclubofficial@gmail.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  bangalorechessclubofficial@gmail.com  
-                </span>
+                <a href="mailto:bangalorechessclubofficial@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> bangalorechessclubofficial@gmail.com </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="https://www.instagram.com/bangalorechessclub/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.youtube.com/@bangalorechessclub">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.facebook.com/bangalorechessclub">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/Blr_ChessClub">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
             </div>
           </div>
-          <div class="info_social">
-            <a href="https://www.instagram.com/bangalorechessclub/">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/@bangalorechessclub">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.facebook.com/bangalorechessclub">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/Blr_ChessClub">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-
-
+          <div class="col-md-6 col-lg-4 info_col">
+            <div class="info_detail">
+              <h4>Info</h4>
+              <p>
+                Bangalore Chess Club is the largest offline Chess Community in
+                India where we aim to promote chess as a non competitive sport
+                across ages and skill levels. <br />Always striving to make
+                chess fun.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              Bangalore Chess Club is the largest offline Chess Community in India where we aim to promote chess as a non competitive sport across ages and skill levels. <br>Always striving to make chess fun.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="#events_section">
-                Events
-              </a>
-              <a class="" href="#spotlight">
-                Spotlight
-              </a>
-              <a class="" href="newgallery.html">
-                Gallery
-              </a>
-              <!-- <a class="" href="team.html">
+          <div class="col-md-3 col-lg-2 mx-auto info_col">
+            <div class="info_link_box">
+              <h4>Links</h4>
+              <div class="info_links">
+                <a class="active" href="index.html"> Home </a>
+                <a class="" href="#events_section"> Events </a>
+                <a class="" href="#spotlight"> Spotlight </a>
+                <a class="" href="newgallery.html"> Gallery </a>
+                <!-- <a class="" href="team.html">
                 Team
               </a> -->
+              </div>
             </div>
           </div>
-        </div>
-        <!---<div class="col-md-6 col-lg-3 info_col ">
+          <!---<div class="col-md-6 col-lg-3 info_col ">
           <h4>
             Subscribe
           </h4>
@@ -906,40 +1088,42 @@ The special thing abt the place is that they try new places and based on the fee
             </button>
           </form>
         </div> --->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end info section -->
+    <!-- end info section -->
 
-  <!-- footer section -->
-  <section class="footer_section" style="background-color: #c6e5ee;">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-          Bangalore Chess Club
-      </p>
-    </div>
-  </section>
-  <!-- footer section -->
+    <!-- footer section -->
+    <section class="footer_section" style="background-color: #c6e5ee">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By Bangalore
+          Chess Club
+        </p>
+      </div>
+    </section>
+    <!-- footer section -->
 
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
-</body>
-
+    <!-- jQery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    ></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+  </body>
 </html>
