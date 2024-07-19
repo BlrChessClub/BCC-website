@@ -1,5 +1,6 @@
 ---
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   {% include head3.html %} {% include ga.html %}
@@ -26,16 +27,7 @@
         </div>
         <br />
 
-        <div class="event-section">
-          <h2>Event Details:</h2>
-          <p>
-            Join us for an exciting gathering of chess aficionados where we'll
-            be combining our passion for the game with the pleasure of sipping
-            on freshly brewed coffee. This event is all about camaraderie,
-            friendly competition, and enjoying the intellectual challenge that
-            chess brings.
-          </p>
-        </div>
+        {% include coffee-checkmate-common.html %}
 
         <div class="event-section">
           <h2>What's Included:</h2>
@@ -45,31 +37,7 @@
           </ul>
         </div>
 
-        <div class="event-section">
-          <h2>Game Variations:</h2>
-          <ol>
-            <li>
-              <strong>Casual Standard Chess (Knockout Format):</strong> Step
-              into the world of traditional chess and compete in an exhilarating
-              knockout format. Test your skills against fellow enthusiasts and
-              see who emerges as the ultimate chess champion.
-            </li>
-            <li>
-              <strong>Hand & Brain Chess:</strong> Team up with a partner in
-              this intriguing chess variant where one player becomes the "Brain"
-              and selects a piece type to be moved, while the other player
-              becomes the "Hand" and must execute the chosen moves. It's a test
-              of teamwork, strategy, and communication.
-            </li>
-            <li>
-              <strong>Bughouse Chess (Supply Chess):</strong> Brace yourselves
-              for the fast-paced action of Bughouse Chess. Work with a teammate
-              on two chessboards, share captured pieces, and unleash your
-              combined tactical prowess. It's a dynamic chess experience like no
-              other.
-            </li>
-          </ol>
-        </div>
+        {% include variations.html %}
 
         <div class="event-section">
           <h2>Is Chess Experience Required?</h2>
@@ -98,7 +66,6 @@
 
         <div class="button-container">
           <div class="book-now-button-container">
-            <!--                <a href="#" class="book-now-button">Book Your Spot Now</a>-->
             <form>
               <script
                 src="https://checkout.razorpay.com/v1/payment-button.js"
