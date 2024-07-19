@@ -5,3 +5,5 @@ description: |
 
   Always striving to make chess fun.
 email: bangalorechessclubofficial@gmail.com
+plugins:
+  - jekyll-sitemap
