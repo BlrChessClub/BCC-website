@@ -1,370 +1,246 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
+  <head>
+    {% include head-tags.html %}
+  </head>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
-
-  <title> BANGALORE CHESS CLUB </title>
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
-</head>
-
-<body class="sub_page" >
-
-  <div class="hero_area">
-
-    <div class="hero_bg_box">
-      <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
+  <body class="sub_page">
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <div class="bg_img_box">
+          <img src="/images/hero-bg.png" alt="" />
+        </div>
       </div>
+
+      <!-- header section strats -->
+      <header
+        class="header_section"
+        style="background-image: url('images/chbg2.png')"
+      >
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="/images/logo_bcc.png"
+                alt="Bangalore Chess Club Logo"
+                class="logo-img"
+              />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">
+                    chess connect <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">spotlight</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
     </div>
 
-    <!-- header section strats -->
-    <header class="header_section"  style="background-image: url('images/chbg2.png'); " >
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo_bcc.png" alt="Bangalore Chess Club Logo" class="logo-img">
-            <!--            <span>-->
-            <!--              Bangalore Chess Club-->
-            <!--            </span>-->
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-            <ul class="navbar-nav  ">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html"> chess connect <span class="sr-only">(current)</span> </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="why.html">Why Us</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">spotlight</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-              </li>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form> -->
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-
-
-  <!-- slider section -->
-  <section class="events_section layout_padding"  style="background-image: url('images/chbg2.png'); " >
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Upcoming <br>
-                      chess connect
-                    </h1>
-                  <p>
-                    <i class="fa fa-calendar fa-2x"></i>
-                        <span class="ml-2 lead font-weight-bold">Sunday 17th September</span>
-                      </p>
-                      <p>
-                        <i class="fa fa-clock-o fa-2x"></i>
-                        <span class="ml-2 lead font-weight-bold">10am to 1pm</span>
-                      </p>
-                      <p>
-                        <i class="fa fa-map fa-2x"></i>
-                        <span class="ml-2 lead font-weight-bold">
-                          <a class="text-light" href="https://google.com" target="_blank" style="text-decoration: underline;">Lahe Lahe</a>
-                        </span>
-                  </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Register Here
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/WhatsApp Image 2023-10-16 at 12.58.21 PM.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          
-
-            <div class="carousel-item ">
-              <div class="container ">
+    <!-- slider section -->
+    <section
+      class="events_section layout_padding"
+      style="background-image: url('images/chbg2.png')"
+    >
+      <section class="slider_section">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
                 <div class="row">
-                  <div class="col-md-6 ">
+                  <div class="col-md-6">
                     <div class="detail-box">
                       <h1>
-                        Upcoming <br>
+                        Upcoming <br />
                         chess connect
                       </h1>
                       <p>
                         <i class="fa fa-calendar fa-2x"></i>
-                            <span class="ml-2 lead font-weight-bold">Sunday 17th September</span>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o fa-2x"></i>
-                            <span class="ml-2 lead font-weight-bold">10am to 1pm</span>
-                          </p>
-                          <p>
-                            <i class="fa fa-map fa-2x"></i>
-                            <span class="ml-2 lead font-weight-bold">
-                              <a class="text-light" href="https://google.com" target="_blank" style="text-decoration: underline;">Lahe Lahe</a>
-                            </span>
+                        <span class="ml-2 lead font-weight-bold"
+                          >Sunday 17th September</span
+                        >
+                      </p>
+                      <p>
+                        <i class="fa fa-clock-o fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold"
+                          >10am to 1pm</span
+                        >
+                      </p>
+                      <p>
+                        <i class="fa fa-map fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold">
+                          <a
+                            class="text-light"
+                            href="https://google.com"
+                            target="_blank"
+                            style="text-decoration: underline"
+                            >Lahe Lahe</a
+                          >
+                        </span>
                       </p>
                       <div class="btn-box">
-                        <a href="" class="btn1">
-                          Register Here
-                        </a>
+                        <a href="" class="btn1"> Register Here </a>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="img-box">
-                      <img src="images/WhatsApp Image 2023-10-16 at 12.58.21 PM.png" alt="">
+                      <img
+                        src="/images/WhatsApp Image 2023-10-16 at 12.58.21 PM.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Upcoming <br />
+                        chess connect
+                      </h1>
+                      <p>
+                        <i class="fa fa-calendar fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold"
+                          >Sunday 17th September</span
+                        >
+                      </p>
+                      <p>
+                        <i class="fa fa-clock-o fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold"
+                          >10am to 1pm</span
+                        >
+                      </p>
+                      <p>
+                        <i class="fa fa-map fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold">
+                          <a
+                            class="text-light"
+                            href="https://google.com"
+                            target="_blank"
+                            style="text-decoration: underline"
+                            >Lahe Lahe</a
+                          >
+                        </span>
+                      </p>
+                      <div class="btn-box">
+                        <a href="" class="btn1"> Register Here </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img
+                        src="/images/WhatsApp Image 2023-10-16 at 12.58.21 PM.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="container ">
+              <div class="container">
                 <div class="row">
-                  <div class="col-md-6 ">
+                  <div class="col-md-6">
                     <div class="detail-box">
                       <h1>
-                        Upcoming <br>
+                        Upcoming <br />
                         Chess connect
                       </h1>
-                    <p>
-                      <i class="fa fa-calendar fa-2x"></i>
-                        <span class="ml-2 lead font-weight-bold">Sunday 17th September</span>
+                      <p>
+                        <i class="fa fa-calendar fa-2x"></i>
+                        <span class="ml-2 lead font-weight-bold"
+                          >Sunday 17th September</span
+                        >
                       </p>
                       <p>
                         <i class="fa fa-clock-o fa-2x"></i>
-                        <span class="ml-2 lead font-weight-bold">10am to 1pm</span>
+                        <span class="ml-2 lead font-weight-bold"
+                          >10am to 1pm</span
+                        >
                       </p>
                       <p>
                         <i class="fa fa-map fa-2x"></i>
                         <span class="ml-2 lead font-weight-bold">
-                          <a class="text-light" href="https://google.com" target="_blank" style="text-decoration: underline;">Lahe Lahe</a>
+                          <a
+                            class="text-light"
+                            href="https://google.com"
+                            target="_blank"
+                            style="text-decoration: underline"
+                            >Lahe Lahe</a
+                          >
                         </span>
-                    </p>
+                      </p>
                       <div class="btn-box">
-                        <a href="" class="btn1">
-                          Register here
-                        </a>
+                        <a href="" class="btn1"> Register here </a>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="img-box">
-                      <img src="images/WhatsApp Image 2023-10-16 at 12.58.21 PM.png" alt="">
+                      <img
+                        src="/images/WhatsApp Image 2023-10-16 at 12.58.21 PM.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li
+              data-target="#customCarousel1"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
         </div>
-        <ol class="carousel-indicators">
-          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li>
-        </ol>
-      </div>
-
+      </section>
     </section>
-  </section>
-  <!-- end slider section -->
+    <!-- end slider section -->
 
+    <!-- end about section -->
 
-
-  <!-- end about section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Bangalore, India
-                </span>
-              </a>
-              <!--<a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a> --->
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  bangalorechessclubofficial@gmail.com  
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="https://www.instagram.com/bangalorechessclub/">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/@bangalorechessclub">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.facebook.com/bangalorechessclub">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/Blr_ChessClub">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-
-
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              Largest Physical Chess Community in India, striving to make chess fun.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                Chess Connect
-              </a>
-              <a class="" href="team.html">
-                Spotlight
-              </a>
-              <a class="" href="gallery.html">
-                Gallery
-              </a>
-              <!-- <a class="" href="team.html">
-                Team
-              </a> -->
-            </div>
-          </div>
-        </div>
-        <!---<div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div> --->
-      </div>
-    </div>
-  </section>
-
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-          Bangalore Chess Club
-      </p>
-    </div>
-  </section>
-  <!-- footer section -->
-
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
-</body>
-
+    {% include bottom.html %} {% include footer.html %} {% include scripts.html
+    %}
+  </body>
 </html>

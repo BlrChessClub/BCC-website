@@ -35,28 +35,40 @@ $(".client_owl-carousel").owlCarousel({
     }
 });
 
+// Get the navigation bar
+var navBar = document.querySelector('.custom_nav-container');
 
+// Get the offset position of the navigation bar once
+var sticky = navBar.offsetTop;
 
-/** google_map js **/
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
+// Throttle function to limit the frequency of the scroll event handler
+function throttle(func, limit) {
+    let lastFunc;
+    let lastRan;
+    return function() {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+            func.apply(context, args);
+            lastRan = Date.now();
+        } else {
+            clearTimeout(lastFunc);
+            lastFunc = setTimeout(function() {
+                if ((Date.now() - lastRan) >= limit) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                }
+            }, limit - (Date.now() - lastRan));
+        }
     };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
-window.onscroll = function() {
-    // Get the navigation bar
-    var navBar = document.querySelector('.custom_nav-container');
-
-    // Get the offset position of the navigation bar
-    var sticky = navBar.offsetTop;
-
-    // Add the "sticky" class to the navigation bar when you reach its scroll position. Remove "sticky" when you leave the scroll position.
+function checkSticky() {
     if (window.pageYOffset > sticky) {
         navBar.classList.add('sticky');
     } else {
         navBar.classList.remove('sticky');
     }
-};
+}
+
+window.onscroll = throttle(checkSticky, 100);
