@@ -19,8 +19,8 @@ $(".client_owl-carousel").owlCarousel({
     autoplayHoverPause: true,
     slideBy: 'page',
     navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        '<i class="icon icon-angle-left" aria-hidden="true"></i>',
+        '<i class="icon icon-angle-right" aria-hidden="true"></i>'
     ],
     responsive: {
         0: {
