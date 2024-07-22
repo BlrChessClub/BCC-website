@@ -1,3 +1,5 @@
+---
+---
 // to get current year
 function getYear() {
     var currentDate = new Date();
@@ -72,3 +74,6 @@ function checkSticky() {
 }
 
 window.onscroll = throttle(checkSticky, 100);
+
+// We include this using Liquid to avoid an extra network request
+{% include js/lite-yt-embed.js %}
