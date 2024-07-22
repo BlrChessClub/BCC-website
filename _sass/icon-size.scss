@@ -1,0 +1,5 @@
+// we switched from font-awesome to fontello
+// which doesn't include a fa-2x style.
+.fa-2x,.icon-2x,.icon-large {
+	font-size: 2em;
+}

@@ -7,3 +7,8 @@ description: |
 email: bangalorechessclubofficial@gmail.com
 plugins:
   - jekyll-sitemap
+sass:
+  # Change to compressed once stable
+  style: expanded
+  sourcemap: development
+  quiet_deps: true
