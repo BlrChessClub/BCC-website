@@ -128,6 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.3)
+  jekyll-sass-converter (~> 3.0)
   jekyll-sitemap (~> 1.4)
   json (~> 2.7)
 

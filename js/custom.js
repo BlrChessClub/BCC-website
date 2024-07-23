@@ -1,3 +1,5 @@
+---
+---
 // to get current year
 function getYear() {
     var currentDate = new Date();
@@ -19,8 +21,8 @@ $(".client_owl-carousel").owlCarousel({
     autoplayHoverPause: true,
     slideBy: 'page',
     navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        '<i class="icon icon-angle-left" aria-hidden="true"></i>',
+        '<i class="icon icon-angle-right" aria-hidden="true"></i>'
     ],
     responsive: {
         0: {
@@ -72,3 +74,6 @@ function checkSticky() {
 }
 
 window.onscroll = throttle(checkSticky, 100);
+
+// We include this using Liquid to avoid an extra network request
+{% include js/lite-yt-embed.js %}
