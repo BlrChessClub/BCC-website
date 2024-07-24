@@ -1,0 +1,77 @@
+{% assign upcomingEvents = site.pages | where: 'layout', 'newevent' %}
+{% assign upcomingEvents = upcomingEvents | push:upcomingEvents[0] %}
+{% if upcomingEvents.size > 0 %}
+<section id="events_section" class="events_section layout_padding">
+  <section class="slider_section">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      
+      <div class="carousel-inner">
+        
+        {% for event in upcomingEvents %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="detail-box">
+                  <h1>{{event.title}}</h1>
+                  <br />
+                  <p>
+                    <i class="icon icon-calendar fa-2x"></i>
+                    <span class="ml-2 lead font-weight-bold"
+                      >{{event.startsAt | date:"%A"}} {{event.startsAt | date_to_long_string: "ordinal" | split:" " | slice:0,2 | join:" "}}</span
+                    >
+                  </p>
+                  <p>
+                    <i class="icon icon-clock-o fa-2x"></i>
+                    <span class="ml-2 lead font-weight-bold"
+                      >{{event.startsAt |date:"%l:%M %p"}} to {{event.endsAt|date:"%l:%M %p"}}</span
+                    >
+                  </p>
+                  <p>
+                    <i class="icon icon-map-marker fa-2x"></i>
+                    <span class="ml-2 lead font-weight-bold">
+                      {% for id in event.location %}
+                      {% assign L = site.data.locations[id] %}
+                      {% if L.link %}
+                      <a href="{{L.link}}"
+                        class="text-light"
+                        style="text-decoration: underline"
+                        target="_blank"
+                      >{{L.name}}</a>
+                      {% else %}
+                      <span class="text-light">{{L.name}}></span>
+                      {% endif %}
+
+                      {% endfor %}
+                    </span>
+                  </p>
+                  <div class="btn-box">
+                    <a href="{{event.url}}" class="btn1">
+                      Register here
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-box">
+                  <img src="/images/{{event.image}}" alt="Poster for {{event.title}}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+      {% if upcomingEvents.size > 1 %}
+      <ol class="carousel-indicators">
+        {% for _ in upcomingEvents %}
+        <li data-target="#customCarousel1" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{%endif%}"></li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+    </div>
+  </section>
+</section>
+{% endif %}

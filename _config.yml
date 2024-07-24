@@ -5,6 +5,7 @@ description: |
 
   Always striving to make chess fun.
 email: bangalorechessclubofficial@gmail.com
+url: https://bangalorechessclub.in
 plugins:
   - jekyll-sitemap
 sass:
@@ -36,3 +37,4 @@ collections:
   # (FOR NOW)
   locations:
     output: false
+timezone: Asia/Kolkata
