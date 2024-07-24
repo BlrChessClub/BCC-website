@@ -29,6 +29,16 @@ defaults:
       path: "images/team/*"
     values:
       teamPic: true
+  - scope:
+      path: "events-archive/chesscafe*"
+    values:
+      beginnerFriendly: true
+      type: Chess Cafe
+  - scope:
+      path: "events-archive/coffee*"
+    values:
+      beginnerFriendly: true
+      type: Coffee & Checkmate
 collections:
   # We do not want a page for every testimonial
   testimonials:
