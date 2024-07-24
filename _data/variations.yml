@@ -7,6 +7,10 @@ standard-swiss:
         a laid-back vibe. It's not just about winning, but about the
         shared love for the game and the camaraderie that makes every move
         memorable.
+standard-swiss-5-rounds:
+    name: Standard Chess
+    description: 5 Rounds of Swiss Chess followed by a Semi Final and Finale!
+        All games will be 5+3 Blitz
 standard-knockout:
     name: Casual Standard Chess (Knockout Format)
     description: |
