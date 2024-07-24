@@ -11,7 +11,11 @@
 <meta name="description" content="{{site.description}}" />
 <meta name="author" content="Bangalore Chess Club" />
 <link rel="shortcut icon" href="images/favicon.png" type="" />
+{% if page.title %}
+<title>{{page.title}} | Bangalore Chess Club</title>
+{% else %}
 <title>Bangalore Chess Club</title>
+{% endif %}
 <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css" />
 
 <!-- icons generated via fontello to match existing font-awesome styles + names -->
