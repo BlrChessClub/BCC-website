@@ -1,0 +1,65 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="event-container">
+      <div class="banner">
+        <img src="/images/{{page.image}}" alt="Event Banner" />
+      </div>
+      <div class="text-container">
+        <div class="event-header">
+          <h1 class="event-title">{{page.title}}</h1>
+        </div>
+
+        {% assign d = page.startsAt | date: "%-d"%}
+        {% case d %}
+        {% when 1 or 21 or 31 %}{% assign day =  d | append: "st" %}
+        {% when 2 or 22 %}{% assign day =  d | append: "nd" %}
+        {% when 3 or 23 %}{% assign day =  d | append: "rd" %}
+        {% else %}{% assign day =  d | append: "th" %}
+        {% endcase %}
+      
+        <div class="date-time-container">
+          <div class="date-time">
+            <span class="date">{{day}} {{ page.startsAt | date: "%B %Y (%a)" }}</span>
+            <span class="separator"> | </span>
+            <span class="time">{{page.startsAt | date:"%l:%M %p"}} - {{page.endsAt | date: "%l:%M %p"}}</span>
+          </div>
+        </div>
+        
+        {{content | markdownify}}
+
+        {% include variations.html %}
+
+        {% include locations.html %}
+
+        {% if page.payment %}
+
+        <div class="button-container">
+          <div class="book-now-button-container">
+            {% include razorpay-payment.html id=page.payment.razorpay %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      
+    </div>
+    {% if page.payment %}
+
+    <div class="fixed-footer">
+      <div class="footer-price"><strong>PRICE ₹{{page.payment.price}}</strong></div>
+      {% include razorpay-payment.html id=page.payment.razorpay %}
+    </div>
+    {% endif %}
+
+    {% include bottom.html %} {% include footer.html %} {% include scripts.html
+    %}
+  </body>
+</html>
