@@ -22,3 +22,7 @@ defaults:
       path: "images/gallery/*"
     values:
       gallery: true
+  - scope:
+      path: "images/team/*"
+    values:
+      teamPic: true

@@ -1,0 +1,33 @@
+<!-- team section -->
+<section class="team_section layout_padding">
+  <div class="container-fluid">
+    <div class="heading_container heading_center">
+      <h2 class="">Our <span> Team</span></h2>
+    </div>
+  </div>
+
+  <div class="team_container container-fluid">
+    <div class="row">
+      {% assign teamPics = site.static_files | where: "teamPic", true %}
+      {% for pic in teamPics %}
+      <div class="col-lg-3 col-sm-6">
+        <div class="team-img-container">
+          <div class="img-box team-img-box">
+            
+            <img
+              src="{{pic.path}}"
+              class="img1 img-fluid"
+              alt=""
+              loading="lazy"
+              fetchpriority="low"
+            />
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+
+    </div>
+  </div>
+</section>
+<!-- end team section -->
