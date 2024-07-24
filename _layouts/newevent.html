@@ -32,8 +32,30 @@
             <span class="time">{{page.startsAt | date:"%l:%M %p"}} - {{page.endsAt | date: "%l:%M %p"}}</span>
           </div>
         </div>
+
+
+
+{% comment %}
+The following code is somewhat hacky, and can be moved to a Ruby Filter
+later if we decide to allow Ruby in the codebase. It does two things:
+
+1. Split the HTML for the document by <h2> tags, and then wrap it
+   using div class=event-section.
+2. Change all <code> tags to <mark> tags. This lets us use
+   the simple `inline` syntax for highlighting text
+{% endcomment %}
+
         
-        {{content | markdownify}}
+        {% assign c = content | markdownify %}
+        {% assign sections = c| split: "<h2" %}
+        {% for section in sections %}
+        {% assign s = section | replace:"<code","<mark"|replace:"</code>","</mark>" |strip %}
+        {% unless s == "" %}
+        <div class=event-section><h2
+          {{s}}
+        </div>
+        {%endunless %}
+        {% endfor %}
 
         {% include variations.html %}
 

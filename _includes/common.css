@@ -201,9 +201,15 @@ ol {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.event-section .highlight {
+.event-section .highlight, .event-section mark {
   font-weight: bold;
-  color: #cc5500; /* Highlight color */
+  color: #cc5500;
+  padding: unset;
+  background-color: unset;
+}
+
+.event-section h2 mark {
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 600px) {
