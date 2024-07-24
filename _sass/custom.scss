@@ -5,7 +5,7 @@ $color_4: #ffffff;
 $color_5: #00bbf0;
 $color_6: #00204a;
 $color_7: #fefefe;
-$color_8: #0077B5;
+$color_8: #0077b5;
 $color_9: white;
 $color_10: #000000;
 $color_11: inherit;
@@ -13,7 +13,8 @@ $color_12: #777;
 $color_13: #fff;
 $color_14: #28a745;
 $color_15: #333;
-$sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+$sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+  helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 $background-color_1: #ffffff;
 $background-color_2: #00bbf0;
 $background-color_3: #007fa4;
@@ -23,9 +24,9 @@ $background-color_6: #f8f8f9;
 $background-color_7: #00204a;
 $background-color_8: transparent;
 $background-color_9: #00ffff;
-$background-color_10: rgba(0, 32, 74,0.5);
-$background-color_11: #128C7E;
-$background-color_12: #5B51D8;
+$background-color_10: rgba(0, 32, 74, 0.5);
+$background-color_11: #128c7e;
+$background-color_12: #5b51d8;
 $background-color_13: #f0f0f0;
 $border-color_1: #fff;
 
@@ -72,11 +73,11 @@ body {
 @keyframes slidein {
   0% {
     margin-left: -100%;
-/* Adjust negative margin for responsiveness */
+    /* Adjust negative margin for responsiveness */
   }
   20% {
     margin-left: -100%;
-/* Adjust negative margin for responsiveness */
+    /* Adjust negative margin for responsiveness */
   }
   35% {
     margin-left: 0;
@@ -96,7 +97,7 @@ body {
   }
   40% {
     width: 100%;
-/* Adjust width for responsiveness */
+    /* Adjust width for responsiveness */
     opacity: 0.8;
   }
   90% {
@@ -105,7 +106,7 @@ body {
   100% {
     opacity: 0;
     width: 100%;
-/* Adjust width for responsiveness */
+    /* Adjust width for responsiveness */
   }
 }
 /* Add this style to your existing stylesheet or create a new one */
@@ -115,7 +116,7 @@ body {
   color: $color_1;
   background-color: $background-color_1;
   overflow-x: hidden;
-  background-image: url('../images/chbg2.png');
+  background-image: url("../images/chbg2.png");
   background-size: 150%;
   background-repeat: repeat;
 }
@@ -315,7 +316,7 @@ a {
       }
     }
   }
-  .navbar-toggler[aria-expanded=true] {
+  .navbar-toggler[aria-expanded="true"] {
     transform: rotate(360deg);
     span {
       transform: rotate(45deg);
@@ -1008,7 +1009,7 @@ a {
 }
 #spotlight {
   scroll-margin-top: 60px;
-} 
+}
 .spotlight-box-img {
   height: 500px;
   padding: 20px;

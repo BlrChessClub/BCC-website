@@ -1,8 +1,27 @@
 <head>
-  {% include head-tags.html %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <!-- Site Metas -->
+  <meta name="keywords" content="bangalore, chess, club" />
+  <meta name="description" content="{{site.description}}" />
+  <meta name="author" content="Bangalore Chess Club" />
+  <link rel="shortcut icon" href="images/favicon.png" type="" />
+  {% if page.title and page.startsAt %}
+  <title>{{page.title}} - {{page.startsAt | date:"%d %B"}} | Bangalore Chess Club</title>
+  {% elsif page.title %}
+  <title>{{page.title}} | Bangalore Chess Club</title>
+  {% else %}
+  <title>Bangalore Chess Club</title>
+  {% endif %}
+  <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css" />
 
-  <style>
-    {% include common.css %}
-    {% include head.css %}
-  </style>
+  <!-- icons generated via fontello to match existing font-awesome styles + names -->
+  <link href="/assets/icons/css/fontello.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
 </head>

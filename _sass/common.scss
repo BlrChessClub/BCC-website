@@ -33,7 +33,9 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   display: inline-block;
   background: linear-gradient(
     45deg,
@@ -201,7 +203,8 @@ ol {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.event-section .highlight, .event-section mark {
+.event-section .highlight,
+.event-section mark {
   font-weight: bold;
   color: #cc5500;
   padding: unset;
