@@ -1,0 +1,38 @@
+<!-- client section -->
+
+<section class="client_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>What our <span>Players say</span></h2>
+    </div>
+    <div class="carousel-wrap">
+      <div class="owl-carousel client_owl-carousel">
+        {% for testimonial in site.testimonials %}
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="/images/testimonial/{{testimonial.image}}"
+                alt="Profile photo for {{testimonial.name}}"
+                loading="lazy"
+                class="box-img"
+              />
+            </div>
+            <div class="detail-box" style="background-color: #c6e5ee">
+              <div class="client_id">
+                <div class="client_info">
+                  <h6>{{testimonial.name}}</h6>
+                  <p>{{testimonial.subtitle}}</p>
+                </div>
+                <i class="icon icon-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>{{testimonial.content }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+</section>

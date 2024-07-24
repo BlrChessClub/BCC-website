@@ -26,3 +26,7 @@ defaults:
       path: "images/team/*"
     values:
       teamPic: true
+collections:
+  # We do not want a page for every testimonial
+  testimonials:
+    output: false
