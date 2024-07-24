@@ -17,6 +17,8 @@ exclude:
   - assets/icons/config.json
   - assets/icons/demo.html
   - assets/icons/README.txt
+  - HACKING.md
+  - CONTRIBUTING.md
 defaults:
   - scope:
       path: "images/gallery/*"
