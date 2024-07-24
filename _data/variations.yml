@@ -1,0 +1,40 @@
+standard-swiss:
+    name: Casual Standard Chess (Swiss Format)
+    description: |
+        Immerse yourself in the world of traditional chess in an exhilarating
+        Swiss Format tournament. Over 6-7 rounds, face opponents of
+        similar skill levels, and enjoy the games with a mix of banter and
+        a laid-back vibe. It's not just about winning, but about the
+        shared love for the game and the camaraderie that makes every move
+        memorable.
+standard-knockout:
+    name: Casual Standard Chess (Knockout Format)
+    description: |
+        Step into the
+        world of traditional chess and compete in an exhilarating knockout format.
+        Test your skills against fellow enthusiasts and see who emerges as the
+        ultimate chess champion.
+hand&brain:
+    name: Hand & Brain Chess
+    description: |
+        Team up with a partner in this
+        intriguing chess variant where one player becomes the "Brain" and selects
+        a piece type to be moved, while the other player becomes the "Hand" and
+        must execute the chosen moves. It's a test of teamwork, strategy, and
+        communication.
+bughouse:
+    name: Bughouse Chess (Supply Chess)
+    description: |
+        Brace yourselves for the
+        fast-paced action of Bughouse Chess. Work with a teammate on two
+        chessboards, share captured pieces, and unleash your combined tactical
+        prowess. It's a dynamic chess experience like no other.
+swiss-team-4:
+    name: Swiss Team Chess (Teams of 4)
+    description: |
+        Engage in a
+        Swiss-format tournament designed for teams of four. Over 6-7
+        rounds, your team will compete against others of similar skill
+        levels, fostering a sense of camaraderie and team spirit. It’s not
+        just about winning but enjoying the game and making every move
+        count with your team.

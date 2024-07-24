@@ -1,10 +1,4 @@
-{% if page.location.first %}
-  {% assign locations = page.location %}
-{% else %}
-  {% assign locations = page.location|split:"\n" %}
-{% endif %}
-
-{% for id in locations %}
+{% for id in page.location %}
 {% assign L = site.data.locations[id] %}
 
 <div class="location-section">
