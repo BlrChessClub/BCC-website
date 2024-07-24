@@ -38,3 +38,24 @@ swiss-team-4:
         levels, fostering a sense of camaraderie and team spirit. It’s not
         just about winning but enjoying the game and making every move
         count with your team.
+standard-arena:
+    name: Casual Standard Chess (Arena Format)
+    description: |
+        Welcome to our Arena Format chess tournament, where the excitement
+        never stops! In this dynamic event, participants engage in blitz
+        matches against opponents of all skill levels. With the
+        flexibility to join or leave at any time, and matches happening
+        continuously, players can jump in for a game whenever they please.
+        Whether you're a seasoned player or just starting out, the Arena
+        Format offers an accessible and inclusive environment for everyone
+        to enjoy the thrill of chess. Join us for a fast-paced and
+        exhilarating chess experience where every move matters, and
+        victory awaits the bold!
+simul:
+    name: Simultaneous Chess Exhibition
+    description: |
+        Experience the thrill of a
+        simultaneous chess exhibition, where a skilled player takes on
+        multiple opponents at once. Test your skills against a master
+        player, and see if you have what it takes to outwit them in this
+        exciting and challenging format.

@@ -51,7 +51,7 @@
       </div>
       <div class="text-container">
         <div class="event-header">
-          <h1 class="event-title">{{page.title}}</h1>
+          <h1 class="event-title">{{page.title | newline_to_br}}</h1>
         </div>
 
         {% assign d = page.startsAt | date: "%-d"%}
