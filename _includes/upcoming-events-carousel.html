@@ -1,4 +1,14 @@
-{% assign upcomingEvents = site.pages | where: 'layout', 'newevent' %}
+{% assign now = site.time |date: "%s" %}
+{% assign upcomingEvents = ""|split:"," %}
+
+{% assign events = site.pages | where: 'layout', 'newevent' %}
+{% for E in events %}
+  {% assign eDate = E.startsAt | date:"%s" %}
+  {% if eDate > now %}
+    {% assign upcomingEvents = upcomingEvents | push: E %}
+  {% endif %}
+{% endfor %}
+
 {% if upcomingEvents.size > 0 %}
 <section id="events_section" class="events_section layout_padding">
   <section class="slider_section">
