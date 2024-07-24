@@ -9,34 +9,6 @@ function getYear() {
 
 getYear();
 
-
-// client section owl carousel
-$(".client_owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    dots: false,
-    nav: true,
-    navText: [],
-    autoplay: true,
-    autoplayHoverPause: true,
-    slideBy: 'page',
-    navText: [
-        '<i class="icon icon-angle-left" aria-hidden="true"></i>',
-        '<i class="icon icon-angle-right" aria-hidden="true"></i>'
-    ],
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 3
-        }
-    }
-});
-
 // Get the navigation bar
 var navBar = document.querySelector('.custom_nav-container');
 
@@ -77,3 +49,31 @@ window.onscroll = throttle(checkSticky, 100);
 
 // We include this using Liquid to avoid an extra network request
 {% include js/lite-yt-embed.js %}
+{% include js/owl.carousel.min.js %}
+
+// client section owl carousel
+$(".client_owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    dots: false,
+    nav: true,
+    navText: [],
+    autoplay: true,
+    autoplayHoverPause: true,
+    slideBy: 'page',
+    navText: [
+        '<i class="icon icon-angle-left" aria-hidden="true"></i>',
+        '<i class="icon icon-angle-right" aria-hidden="true"></i>'
+    ],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
