@@ -1,7 +1,9 @@
 ---
 title: "Chess Cafe: A Chess Meetup with a Twist"
+location:
+- azzure-mg
+- merwans
 ---
-
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
@@ -62,35 +64,8 @@ title: "Chess Cafe: A Chess Meetup with a Twist"
             learn from others, and experience chess in its various forms.
           </p>
         </div>
-        <div class="location-section">
-          <div class="location-details">
-            <h2>Event Location</h2>
-            <p>
-              <span class="cafe-name">Cafe Azzure</span><br />MG Road, Shanthala
-              Nagar, Shivaji Nagar, Bengaluru
-            </p>
-          </div>
-          <a
-            href="https://maps.app.goo.gl/1hx85WPZDR45rTNE7"
-            target="_blank"
-            class="google-map-link"
-            >View on Google Maps</a
-          >
-        </div>
-        <div class="location-section">
-          <div class="location-details">
-            <p>
-              <span class="cafe-name">Merwans Cake Stop</span><br />5th Block,
-              Jayanagar, Bengaluru
-            </p>
-          </div>
-          <a
-            href="https://maps.app.goo.gl/eeZ6qoc63ub5NnS37"
-            target="_blank"
-            class="google-map-link"
-            >View on Google Maps</a
-          >
-        </div>
+
+        {% include locations.html %}
 
       </div>
     </div>
