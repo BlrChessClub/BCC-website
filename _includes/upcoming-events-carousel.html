@@ -1,5 +1,4 @@
 {% assign upcomingEvents = site.pages | where: 'layout', 'newevent' %}
-{% assign upcomingEvents = upcomingEvents | push:upcomingEvents[0] %}
 {% if upcomingEvents.size > 0 %}
 <section id="events_section" class="events_section layout_padding">
   <section class="slider_section">
