@@ -33,7 +33,7 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "Roboto", sans-serif; /* Choose a modern sans-serif font */
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
   display: inline-block;
   background: linear-gradient(
     45deg,

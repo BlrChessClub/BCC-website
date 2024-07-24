@@ -1,6 +1,7 @@
 ---
+permalink: /
+title: Bangalore Chess Club
 ---
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -227,40 +228,33 @@
     testimonials.html %} {% include bottom.html %} {% include footer.html %}
 
     <script>
+      
+
       document.addEventListener("DOMContentLoaded", function () {
+        var bsCollapse = new bootstrap.Collapse( document.getElementById('navbarSupportedContent'), {toggle:false});
         // Function to scroll to a target element with smooth behavior
-        function scrollToTarget(targetElement) {
+        function scrollToTarget(href) {
+          let selector = new URL(href, String(window.location)).hash;
+          let targetElement = document.querySelector(selector);
           if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth" });
+            targetElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            bsCollapse.hide()
           }
-        }
-
-        // Check if there is a section parameter in the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const section = urlParams.get("section");
-
-        // If the section parameter is present, scroll to the corresponding section immediately
-        if (section) {
-          const targetElement = document.getElementById(section);
-          scrollToTarget(targetElement);
         }
 
         // Attach click event listeners to handle smooth scrolling on link clicks
         var scrollLinks = document.querySelectorAll(".scroll-link");
         scrollLinks.forEach(function (link) {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
+          // If the link is for the same page
+          if(new URL(link.getAttribute('href'), String(window.location)).pathname == window.location.pathname) {
+            link.addEventListener("click", function (event) {
+              event.preventDefault();
+              scrollToTarget(this.getAttribute("href"));
 
-            // Get the target element's ID from the link's href attribute
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            // Scroll to the target element
-            scrollToTarget(targetElement);
-
-            // Update the URL with the section parameter
-            history.pushState(null, null, "?section=" + targetId);
-          });
+              // Update the URL with the section parameter
+              history.pushState(null, null, this.getAttribute("href"));
+            });
+          }
         });
       });
     </script>

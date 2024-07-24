@@ -13,7 +13,7 @@ $color_12: #777;
 $color_13: #fff;
 $color_14: #28a745;
 $color_15: #333;
-$font-family_1: "Open Sans", sans-serif;
+$sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
 $background-color_1: #ffffff;
 $background-color_2: #00bbf0;
 $background-color_3: #007fa4;
@@ -29,7 +29,11 @@ $background-color_12: #5B51D8;
 $background-color_13: #f0f0f0;
 $border-color_1: #fff;
 
-@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap";
+// This doesn't work for some reason
+// so we instead use the smoothScroll JS in index.html
+body {
+  scroll-behaviour: smooth;
+}
 /*header section*/
 /* Set the width and height of the image by a percentage */
 /*end header section*/
@@ -107,7 +111,7 @@ $border-color_1: #fff;
 /* Add this style to your existing stylesheet or create a new one */
 /* Add this style to your existing stylesheet or create a new one */
 body {
-  font-family: $font-family_1;
+  font-family: $sans;
   color: $color_1;
   background-color: $background-color_1;
   overflow-x: hidden;
@@ -513,6 +517,7 @@ a {
   }
 }
 .events_section {
+  scroll-margin-top: 70px;
   .heading_container {
     margin-bottom: 45px;
   }
@@ -1001,6 +1006,9 @@ a {
     }
   }
 }
+#spotlight {
+  scroll-margin-top: 60px;
+} 
 .spotlight-box-img {
   height: 500px;
   padding: 20px;
