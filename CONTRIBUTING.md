@@ -1,6 +1,12 @@
-# Contribute
+---
+permalink: /contribute/
+title: Contribute
+layout: page
+# This is a sample page with some markdown that uses the page layout
+# it is not published (see _config.yml / exclude) currently
+---
 
-This is a list of common website content changes
+This is a list of common website content changes and how to make them
 
 ## Adding a new picture to the Gallery
 
