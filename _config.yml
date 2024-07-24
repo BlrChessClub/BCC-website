@@ -35,10 +35,12 @@ defaults:
       beginnerFriendly: true
       type: Chess Cafe
   - scope:
-      path: "events-archive/coffee*"
+      path: "events-archive/coffee-checkmate*"
     values:
       beginnerFriendly: true
       type: Coffee & Checkmate
+      # Most are held in MG Road
+      image: coffee_and_checkmate_mg.jpeg
 collections:
   # We do not want a page for every testimonial
   testimonials:
