@@ -3,15 +3,18 @@
 [
 	{% assign now = site.time | date: "%s" %}
 	{% assign event_pages = site.pages|where:'layout', 'event' %}
-	
+	{% assign count = 0 %}
 	{% for page in  event_pages %}
 	{% assign eventStartEpoch = page.startsAt | date: "%s" %}
 	{% if eventStartEpoch > now %}
+	{% unless count == 0 %},{% endunless %}
+	{% assign count =count|plus:1 %}
 	{% for locationId in page.location %}
 	{% include event-schema.json page=page locationId=locationId %}
-	{% unless forloop.last %},{% endunless %}
+	{% assign locationCount = page.location | size %}
+	{% unless forloop.last or locationCount <2  %},{% endunless %}
 	{% endfor %}
-	{% unless forloop.last %},{% endunless %}
+	
 	{% endif %}
 	{% endfor %}
 ]
