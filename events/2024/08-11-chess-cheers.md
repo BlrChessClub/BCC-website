@@ -12,6 +12,9 @@ payment:
   razorpay: pl_OflT3lHyXoYGdd
 startsAt: 2024-08-11T16:00
 endsAt: 2024-08-11T19:00
+permalink: /chess-cheers/2024-08-11/
+redirect_from:
+  - /chess-cheers-11082024.html
 ---
 ## Event Details
 

@@ -8,6 +8,7 @@ email: bangalorechessclubofficial@gmail.com
 url: https://bangalorechessclub.in
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 sass:
   # Change to compressed once stable
   style: expanded
