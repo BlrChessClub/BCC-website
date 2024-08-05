@@ -4,14 +4,13 @@ title: |
   OTB Arena | Simul with GM Kannappan
 location: the-market-place
 layout: event
-startAt: 2024-02-25T17:00
+startsAt: 2024-02-25T17:00
 endsAt: 2024-02-25T20:00
 image: fresstyle_chess_poster.jpeg
 permalink: /freestyle-chess/2024-02-25/
 variations:
 - standard-arena
 - simul
-
 ---
 ## Event Details:
 

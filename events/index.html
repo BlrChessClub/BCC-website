@@ -1,0 +1,40 @@
+---
+layout: page
+permalink: /events/
+title: All Events
+---
+<h1>All Events</h1>
+{% assign eventsByYearMonth = site.pages | where:"layout", "event" | sort:'startsAt' | reverse | group_by_exp:"event", "event.startsAt | date: '%b %Y'" %}
+
+{% for yearMonth in eventsByYearMonth %}
+<div class=event-section>
+<h2 >{{ yearMonth.name }}</h2>
+<ul>
+{% for post in yearMonth.items %}
+<li>
+  {% assign dateD = post.startsAt|date:"%e"|plus:0 %}
+  
+  <tt>{% if dateD < 10 %}&nbsp;{%endif %}{{post.startsAt | date_to_long_string: "ordinal" | split:" " | first}} ({{post.startsAt | date:"%a" }}) </tt> 
+  <a href="{{post.url}}">{{post.title}}</a>
+  // {% for id in post.location %}{% assign L = site.data.locations[id] %}
+  <mark>{{L.short}}</mark>
+  {% endfor %}
+
+  
+</li>
+{% endfor %}
+</ul>
+</div>
+{% endfor %}
+
+<h2>API</h2>
+Events are also published at the following two endpoints, in the <a href="https://schema.org/Event">Schema.org/Event</a> schema:
+
+<ul>
+  <li>
+    <a href="/api/events.json">All Events - /api/events.json</a>
+  </li>
+  <li>
+    <a href="/api/upcoming.json">Upcoming Events - /api/upcoming.json</a>
+  </li>
+</ul>

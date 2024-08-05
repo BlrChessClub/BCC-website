@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SocialEvent",
+  "name": {{include.page.title | append: " - Bangalore Chess Club" | jsonify}},
+  "startDate": "{{include.page.startsAt | date_to_xmlschema}}",
+  "endDate": "{{include.page.endsAt | date_to_xmlschema}}",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+
+  "location": {
+    "@type": "Place",
+    "name": {{site.data.locations[include.locationId].name | jsonify}},
+    "address": {{site.data.locations[include.locationId].address | append:", Bengaluru, India" | jsonify}}
+  },
+  "isAccessibleForFree": false,
+  {% if include.page.payment.razorpay and include.page.payment.price %}
+  "offers": [{
+    "@type": "Offer",
+    "price": "{{include.page.payment.price}}",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://razorpay.com/payment-button/{{include.page.payment.razorpay}}/view/"
+  }],
+  {% endif %}
+  "organizer": {
+    "@type": "Organization",
+    "name": "Bangalore Chess Club",
+    "url": "https://bangalorechessclub.in"
+  },
+  "keywords": ["bangalore chess club", "chess"],
+  "image": "{{include.page.image|prepend:'images/' | absolute_url}}",
+  "url": "{{include.page.url | absolute_url}}"
+}

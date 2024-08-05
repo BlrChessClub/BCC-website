@@ -9,38 +9,7 @@
   <body>
     {% for locationId in page.location %}
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SocialEvent",
-        "name": "{{page.title}} - Bangalore Chess Club",
-        "startDate": "{{page.startsAt | date_to_xmlschema}}",
-        "endDate": "{{page.endsAt | date_to_xmlschema}}",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-
-        "location": {
-          "@type": "Place",
-          "name": "{{site.data.locations[locationId].name}}",
-          "address": "{{site.data.locations[locationId].address}}, Bengaluru, India"
-        },
-        "isAccessibleForFree": {% if page.payment.price %}false{% else %}true{% endif %},
-        {% if page.payment.razorpay and page.payment.price %}
-        "offers": [{
-          "@type": "Offer",
-          "price": "{{page.payment.price}}",
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock",
-          "url": "https://razorpay.com/payment-button/{{page.payment.razorpay}}/view/"
-        }],
-        {% endif %}
-        "organizer": {
-          "@type": "Organization",
-          "name": "Bangalore Chess Club",
-          "url": "https://bangalorechessclub.in"
-        },
-        "keywords": ["bangalore chess club", "chess"],
-        "image": "{{page.image|prepend:'images/' | absolute_url}}",
-        "url": "{{page.url | absolute_url}}"
-      }
+      {% include event-schema.json page=page locationId=locationId %}
     </script>
     {% endfor %}
     {% include header.html %}

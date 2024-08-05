@@ -1,0 +1,17 @@
+---
+---
+[
+	{% assign now = site.time | date: "%s" %}
+	{% assign event_pages = site.pages|where:'layout', 'event' %}
+	
+	{% for page in  event_pages %}
+	{% assign eventStartEpoch = page.startsAt | date: "%s" %}
+	{% if eventStartEpoch > now %}
+	{% for locationId in page.location %}
+	{% include event-schema.json page=page locationId=locationId %}
+	{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+	{% unless forloop.last %},{% endunless %}
+	{% endif %}
+	{% endfor %}
+]
