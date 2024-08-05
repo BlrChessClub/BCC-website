@@ -1,7 +1,7 @@
 {% assign now = site.time |date: "%s" %}
 {% assign upcomingEvents = ""|split:"," %}
 
-{% assign events = site.pages | where: 'layout', 'newevent' %}
+{% assign events = site.pages | where: 'layout', 'event' %}
 {% for E in events %}
   {% assign eDate = E.startsAt | date:"%s" %}
   {% if eDate > now %}
