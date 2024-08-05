@@ -32,7 +32,7 @@
         {% endcase %}
         {% assign today = site.time | date: "%s" %}
         {% assign eventStartEpoch = page.startsAt | date: "%s" %}
-      
+      <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
         <div class="date-time-container">
           <div class="date-time">
             {%comment%}
@@ -47,6 +47,15 @@
             <span class="time">{{page.startsAt | date:"%l:%M %p"}} - {{page.endsAt | date: "%l:%M %p"}}</span>
           </div>
         </div>
+        <div style="float: right;margin-top:-65px"><add-to-calendar-button
+  name="Bangalore Chess Club Events"
+  options="'Apple', 'Google', 'iCal', 'Microsoft365', 'MicrosoftTeams', 'Outlook.com', 'Yahoo'"
+  startDate="2024-01-01"
+  timeZone="Asia/Kolkata"
+  subscribe=true
+  icsFile="{{'calendar.ics' | absolute_url}}"
+  label="Add to Calendar"
+></add-to-calendar-button></div>
 
 {% comment %}
 The following code is somewhat hacky, and can be moved to a Ruby Filter

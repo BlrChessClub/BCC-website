@@ -1,0 +1,36 @@
+---
+# This contains all the upcoming events in ICS format
+# as a subscribable calendar
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:bangalorechessclub.in/events
+CALSCALE:GREGORIAN
+NAME:Bangalore Chess Club
+X-WR-CALNAME:Bangalore Chess Club
+X-ORIGINAL-URL:{{page.url | absolute_url}}
+X-WR-CALDESC:Bangalore Chess Club Events
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-Robots-Tag:index
+X-PUBLISHED-TTL:PT1H
+TIMEZONE-ID:Asia/Kolkata
+X-WR-TIMEZONE:Asia/Kolkata
+{% assign event_pages = site.pages|where:'layout', 'event'|sort:'startsAt'|desc %}
+{% for page in  event_pages %}
+{% for id in page.location %}
+{% assign L=site.data.locations[id] %}
+BEGIN:VEVENT
+UID:{{ page.url | absolute_url }}
+URL:{{page.url | absolute_url}}
+DTSTAMP:{{site.time | date: "%Y%m%dT%H%M%S+05:30"}}
+DTSTART:{{ page.startsAt | date: "%Y%m%dT%H%M%S+05:30" }}
+DTEND:{{ page.endsAt | date: "%Y%m%dT%H%M%S+05:30" }}
+SUMMARY:{{ page.title | strip_newlines }} - Bangalore Chess Club
+DESCRIPTION:{{ page.content | strip_html | strip_newlines }}
+LOCATION:{{ L.name  | strip_newlines}} {{L.address | strip_newlines}}, Bengaluru, India
+{% if page.image %}ATTACH:{{page.image|prepend:"images/" | absolute_url}}{% endif %}
+END:VEVENT
+{% endfor %}
+{% endfor %}
+END:VCALENDAR
