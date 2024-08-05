@@ -2,8 +2,9 @@
 title: Chess Connect
 location: lahe-lahe
 variations: standard-swiss
-layout: newevent
+layout: event
 image: chess-connect-2023-09-10.png
+permalink: /chess-connect/2024-09-17/
 startsAt: 2023-09-17T10:00
 endsAt: 2023-09-17T13:00
 ---

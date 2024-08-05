@@ -1,16 +1,16 @@
 ---
 title: "Chess Connect - Rapid"
-location: the-market-place-rmz-infinity
+location: the-market-place
 variations: standard-swiss
-layout: newevent
-startsAt: 2024-06-30T10:00
-endsAt: 2024-06-30T15:30
-image: chessconnect_30062024.png
-permalink: /chess-connect/2024-06-30/
+layout: event
+image: chessconnect_28042024.png
+startsAt: 2024-04-28T10:00
+endsAt: 2024-04-28T15:30
+permalink: /chess-connect/2024-04-28/
 ---
 ## Event Details
 
-Join us at RMZ Infinity, Bennigana Halli for our next chess meetup for a
+Join us at RMZ Ecoworld, Bellandur for our next chess meetup for a
 fantastic chess spirit! Whether you're a seasoned player or just discovering
 your love for the game, come embrace the thrill of chess, forge new
 connections, and make every move count. Let's bring the chessboard to and

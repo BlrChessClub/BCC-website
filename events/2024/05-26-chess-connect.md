@@ -2,10 +2,11 @@
 title: "Chess Connect: Making Chess Fun"
 location: the-market-place-rmz-infinity
 variations: standard-swiss
-layout: newevent
+layout: event
+image: chessconnect_26052024.png
+permalink: /chess-connect/2024-05-26/
 startsAt: 2024-05-26T10:00
 endsAt: 2024-05-26T13:30
-image: chessconnect_26052024.png
 ---
 ## Event Details
 

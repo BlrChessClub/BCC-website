@@ -1,7 +1,7 @@
 ---
 title: Checkmate Park
 location: spinny-park
-layout: newevent
+layout: event
 image: Checkmate-Park-1000x300.jpg
 # opengraph image, currently unused
 ogImage: Checkmate-Park.jpg

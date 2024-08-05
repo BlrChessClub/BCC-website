@@ -7,7 +7,7 @@ variations:
 - standard-knockout
 - hand&brain
 - bughouse
-layout: newevent
+layout: event
 image: ChessCafe_20072024.png
 startsAt: 2024-07-20T10:00
 endsAt: 2024-07-20T12:30

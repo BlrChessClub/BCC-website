@@ -6,7 +6,7 @@ variations:
 - standard-knockout
 - hand&brain
 - bughouse
-layout: newevent
+layout: event
 payment:
   price: 600
   razorpay: pl_OflT3lHyXoYGdd

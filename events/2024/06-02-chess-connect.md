@@ -2,8 +2,9 @@
 title: "Chess Connect: Team Battle"
 location: underline
 variations: swiss-team-4
-layout: newevent
+layout: event
 image: chessconnect_02062024.png
+permalink: /chess-connect/2024-06-02/
 startsAt: 2024-06-02T10:00
 endsAt: 2024-06-02T13:00
 ---

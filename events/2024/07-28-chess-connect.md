@@ -4,10 +4,8 @@ title: "Chess Connect Rapid"
 image: chessconnect_28072024.jpeg
 variations:
 - standard-swiss
-layout: newevent
-payment:
-  price: 250
-  razorpay: pl_OT5SsIPvJBThGj
+layout: event
+permalink: /chess-connect/2024-07-28/
 startsAt: 2024-07-28T10:00
 endsAt: 2024-07-28T15:30
 ---

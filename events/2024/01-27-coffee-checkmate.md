@@ -1,14 +1,15 @@
 ---
 title: "Coffee and Checkmate: A Chess Meetup with a Twist"
-location: azzure-mg
+location: azzure-hsr
 variations:
 - standard-knockout
 - hand&brain
 - bughouse
-layout: newevent
-startsAt: 2024-05-05T10:00
-endsAt: 2024-05-05T12:30
-permalink: /coffee-checkmate/2024-05-05/
+image: coffee_and_checkmate_hsr.jpeg
+layout: event
+startsAt: 2024-01-27T10:00
+endsAt: 2024-01-27T12:30
+permalink: /coffee-checkmate/2024-01-27/
 ---
 ## Event Details
 

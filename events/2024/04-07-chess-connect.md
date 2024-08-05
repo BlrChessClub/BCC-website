@@ -2,10 +2,11 @@
 title: "Chess Connect: Making Chess Fun"
 location: the-hub
 variations: standard-swiss
-layout: newevent
-image: chessconnect_09062024.png
-startsAt: 2024-06-09T10:00
-endsAt: 2024-06-09T13:00
+layout: event
+image: chessconnect_07042024.png
+permalink: /chess-connect/2024-04-07/
+startsAt: 2024-04-07T10:00
+endsAt: 2024-04-07T13:00
 ---
 ## Event Details:
 

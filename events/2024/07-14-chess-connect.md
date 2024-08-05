@@ -1,11 +1,12 @@
 ---
 title: "Chess Connect: Making Chess Fun"
-location: the-market-place
+location: the-market-place-rmz-millenia
 variations: standard-swiss
-layout: newevent
-image: chessconnect_19052024.png
-startsAt: 2024-05-19T10:00
-endsAt: 2024-05-19T13:00
+layout: event
+image: chessconnect_14072024.jpeg
+permalink: /chess-connect/2024-07-14/
+startsAt: 2024-07-14T10:00
+endsAt: 2024-07-14T13:00
 ---
 ## Event Details:
 

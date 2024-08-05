@@ -1,8 +1,9 @@
 ---
 title: Chess Trivia Quiz
 location: azzure-hsr
-layout: newevent
+layout: event
 image: ChessQuiz_30032024.jpeg
+permalink: /chess-quiz/2024-03-30/
 startsAt: 2024-03-30T18:00
 endsAt: 2024-03-30T19:00
 ---

@@ -2,8 +2,9 @@
 title: "Chess Connect: Making Chess Fun"
 location: the-market-place
 variations: standard-swiss
-layout: newevent
+layout: event
 image: chessconnect_23062024.png
+permalink: /chess-connect/2024-06-23/
 startsAt: 2024-06-23T10:00
 endsAt: 2024-06-23T13:00
 ---

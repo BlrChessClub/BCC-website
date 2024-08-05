@@ -1,15 +1,16 @@
 ---
 title: "Chess Connect: Making Chess Fun"
-location: the-hub
+location: the-market-place
 variations: standard-swiss
-layout: newevent
-image: chess_connect_banner2.jpeg
-startsAt: 2024-02-11T10:00
-endsAt: 2024-02-11T13:00
+layout: event
+image: chessconnect_19052024.png
+permalink: /chess-connect/2024-05-19/
+startsAt: 2024-05-19T10:00
+endsAt: 2024-05-19T13:00
 ---
 ## Event Details:
 
-Join us at The Hub Bengaluru for our next chess meetup for a fantastic chess
+Join us for our next chess meetup for a fantastic chess
 spirit!
 
 Whether you're a seasoned player or just discovering your love

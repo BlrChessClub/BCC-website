@@ -5,7 +5,7 @@ variations:
 - standard-knockout
 - hand&brain
 - bughouse
-layout: newevent
+layout: event
 startsAt: 2024-02-18T10:00
 endsAt: 2024-02-18T12:30
 permalink: /coffee-checkmate/2024-02-18/
