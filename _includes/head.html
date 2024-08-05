@@ -7,13 +7,11 @@
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
-  <!-- Site Metas -->
-  <meta name="keywords" content="bangalore, chess, club" />
-  <meta name="description" content="{{site.description}}" />
+  
   <meta name="author" content="Bangalore Chess Club" />
   <link rel="shortcut icon" href="images/favicon.png" type="" />
-  {% if page.title and page.startsAt %}
-  <title>{{page.title}} - {{page.startsAt | date:"%d %B"}} | Bangalore Chess Club</title>
+  {% if page.title and page.layout == "event" %}
+  <title>{{page.title}} - {{page.layout == "event" | date:"%d %B"}} | Bangalore Chess Club</title>
   {% elsif page.title %}
   <title>{{page.title}} | Bangalore Chess Club</title>
   {% else %}
@@ -24,4 +22,19 @@
   <!-- icons generated via fontello to match existing font-awesome styles + names -->
   <link href="/assets/icons/css/fontello.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet" />
+  <!-- Open Graph Tags -->
+
+  <meta property="og:url" content="{{page.url | absolute_url}}">
+  <meta property="og:type" content="website">
+  {% if page.layout == "event" %}
+  <meta name="keywords" content="bangalore, chess, club, event, {{page.startsAt|date:'%Y-%m-%d'}}, {{page.startsAt|date:'%b %d %Y'}}" />
+  <meta property="og:description" content="{{page.title}} - {{page.startsAt | date:'%Y %m %d'}}. Organized by Bangalore Chess Club. {{page.content | truncatewords: 50}}">
+  {% else %}
+  <meta name="keywords" content="bangalore, chess, club" />
+  <meta property="og:description" content="{{site.description}}">
+  <meta name="description" content="{{site.description}}" />
+  {% endif %}
+  {% if page.image %}
+  <meta property="og:image" content="{{page.image|prepend:'images/' | absolute_url}}">
+  {% endif %}
 </head>

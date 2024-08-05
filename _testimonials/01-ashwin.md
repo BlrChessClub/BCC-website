@@ -3,7 +3,6 @@ image: ashwin.jpeg
 name: Ashwin Subramanian
 subtitle: Chess Enthusiast
 ---
-
 One of my favourite quotes is this one by Margaret Mead -
 “Never doubt that a small group of thoughtful committed
 individuals can change the world. In fact, it's the only

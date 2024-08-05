@@ -30,12 +30,12 @@ defaults:
     values:
       teamPic: true
   - scope:
-      path: "events-archive/chesscafe*"
+      path: "events/*/*chesscafe*"
     values:
       beginnerFriendly: true
       type: Chess Cafe
   - scope:
-      path: "events-archive/coffee-checkmate*"
+      path: "events/*/*coffee-checkmate*"
     values:
       beginnerFriendly: true
       type: Coffee & Checkmate

@@ -16,7 +16,7 @@
         "startDate": "{{page.startsAt | date_to_xmlschema}}",
         "endDate": "{{page.endsAt | date_to_xmlschema}}",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
+
         "location": {
           "@type": "Place",
           "name": "{{site.data.locations[locationId].name}}",
@@ -38,7 +38,7 @@
           "url": "https://bangalorechessclub.in"
         },
         "keywords": ["bangalore chess club", "chess"],
-        "image": "https://bangalorechessclub.in/images/{{page.image}}",
+        "image": "{{page.image|prepend:'images/' | absolute_url}}",
         "url": "{{page.url | absolute_url}}"
       }
     </script>
@@ -78,8 +78,6 @@
             <span class="time">{{page.startsAt | date:"%l:%M %p"}} - {{page.endsAt | date: "%l:%M %p"}}</span>
           </div>
         </div>
-
-
 
 {% comment %}
 The following code is somewhat hacky, and can be moved to a Ruby Filter
