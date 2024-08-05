@@ -6,7 +6,7 @@ title: All Events
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 <h1>All Events</h1>
 
-<div style="float: right;margin-top:-60px"><add-to-calendar-button
+<add-to-calendar-button
   name="Bangalore Chess Club Events"
   options="'Apple', 'Google', 'iCal', 'Microsoft365', 'MicrosoftTeams', 'Outlook.com', 'Yahoo'"
   startDate="2024-01-01"
@@ -14,8 +14,7 @@ title: All Events
   subscribe=true
   icsFile="{{'calendar.ics' | absolute_url}}"
   label="Subscribe"
-></add-to-calendar-button></div>
-
+></add-to-calendar-button>
 
 {% assign eventsByYearMonth = site.pages | where:"layout", "event" | sort:'startsAt' | reverse | group_by_exp:"event", "event.startsAt | date: '%b %Y'" %}
 
