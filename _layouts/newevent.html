@@ -61,10 +61,19 @@
         {% when 3 or 23 %}{% assign day =  d | append: "rd" %}
         {% else %}{% assign day =  d | append: "th" %}
         {% endcase %}
+        {% assign today = site.time | date: "%s" %}
+        {% assign eventStartEpoch = page.startsAt | date: "%s" %}
       
         <div class="date-time-container">
           <div class="date-time">
+            {%comment%}
+            We show the year for past events, but not upcoming ones
+            {% endcomment %}
+            {% if eventStartEpoch < today %}
+            <span class="date">{{day}} {{ page.startsAt | date: "%B %Y" }}</span>
+            {% else %}
             <span class="date">{{day}} {{ page.startsAt | date: "%B" }}</span>
+            {% endif %}
             <span class="separator"> | </span>
             <span class="time">{{page.startsAt | date:"%l:%M %p"}} - {{page.endsAt | date: "%l:%M %p"}}</span>
           </div>
