@@ -1,7 +1,7 @@
 ---
 location: uru-brewpark
 title: "Chess and Cheers"
-image: chesscheers_11082024.jpg
+image: chesscheers_11082024.jpeg
 variations:
 - standard-knockout
 - hand&brain
@@ -21,6 +21,7 @@ redirect_from:
 Join us for a one-of-a-kind chess event at Uru Brewery,
 Whether you're a grandmaster or a beginner, this is your chance to enjoy the game in a relaxed and friendly environment.
 Sip on some of the finest beverages, meet fellow chess enthusiasts, and engage in thrilling matches.
+**Strictly for age 21 and above**
 
 ## What's Included
 
