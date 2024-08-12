@@ -1,12 +1,19 @@
 ---
 ---
 [
-	{% assign event_pages = site.pages|where:'layout', 'event' %}
-	{% for page in  event_pages %}
-	{% for locationId in page.location %}
-	{% include event-schema.json page=page locationId=locationId %}
-	{% unless forloop.last %},{% endunless %}
-	{% endfor %}
-	{% unless forloop.last %},{% endunless %}
-	{% endfor %}
+  {% assign event_pages = site.pages | where: 'layout', 'event' %}
+  {% assign all_events = '' | split: '' %}
+
+  {% for page in event_pages %}
+    {% assign event_locations = '' | split: '' %}
+    {% for locationId in page.location %}
+      {% capture event_schema %}
+        {% include event-schema.json page=page locationId=locationId %}
+      {% endcapture %}
+      {% assign event_locations = event_locations | push: event_schema %}
+    {% endfor %}
+    {% assign all_events = all_events | concat: event_locations %}
+  {% endfor %}
+
+  {{ all_events | join: ',' }}
 ]

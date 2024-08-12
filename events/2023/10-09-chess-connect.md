@@ -12,7 +12,6 @@ endsAt: 2023-09-17T13:00
 
 Join us at Lahe Lahe for our next chess meetup for a fantastic chess spirit!
 
-
 Whether you're a seasoned player or just discovering your love for the
 game, come embrace the thrill of chess, forge new connections, and make every
 move count. 

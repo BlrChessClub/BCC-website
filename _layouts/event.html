@@ -16,7 +16,12 @@
 
     <div class="event-container">
       <div class="banner">
+        <!-- if image starts with https://  -->
+        {% if page.image contains "https://" %}
+        <img src="{{page.image}}" alt="Event Banner" />
+        {% elsif page.image %}
         <img src="/images/{{page.image}}" alt="Event Banner" />
+        {% endif %}
       </div>
       <div class="text-container">
         <div class="event-header">
@@ -70,12 +75,18 @@ later if we decide to allow Ruby in the codebase. It does two things:
         
         {% assign c = content %}
         {% assign sections = c| split: "<h2" %}
+        {% assign sectionCount = sections|size%}
         {% for section in sections %}
         {% assign s = section | replace:"<code","<mark"|replace:"</code>","</mark>" |strip %}
         {% unless s == "" %}
+        {% if sectionCount > 1 %}
         <div class=event-section><h2
           {{s}}
         </div>
+        {% else %}
+        <h2>Event Details</h2>
+        {{s}}
+        {% endif %}
         {%endunless %}
         {% endfor %}
 

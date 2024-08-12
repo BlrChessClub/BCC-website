@@ -6,7 +6,9 @@
     {% if forloop.first %}<h2>Event Location</h2>{% endif %}
     <p>
       <span class="cafe-name">{{L.name}}</span>
+      {% if id != 'online' %}
       <br />{{L.address}}, Bengaluru, India
+      {% endif %}
     </p>
   </div>
   {% if L.link %}

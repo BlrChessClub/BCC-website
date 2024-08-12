@@ -7,12 +7,17 @@
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 
   "location": {
+    {% if include.locationId == 'online' %}
+    "@type": "VirtualLocation",
+    "name": "Zoom Virtual Meeting",
+    {% else %}
     "@type": "Place",
     "name": {{site.data.locations[include.locationId].name | jsonify}},
     "address": {{site.data.locations[include.locationId].address | append:", Bengaluru, India" | jsonify}}
+    {% endif %}
   },
-  "isAccessibleForFree": false,
-  {% if include.page.payment.razorpay and include.page.payment.price %}
+  "isAccessibleForFree": {% if include.page.payment.price == 0 %}true{% else %}false{% endif %},
+  {% if include.page.payment.razorpay and include.page.payment.price>0 %}
   "offers": [{
     "@type": "Offer",
     "price": "{{include.page.payment.price}}",
@@ -27,6 +32,10 @@
     "url": "https://bangalorechessclub.in"
   },
   "keywords": ["bangalore chess club", "chess"],
-  "image": "{{include.page.image|prepend:'images/' | absolute_url}}",
+  {% if page.image contains "https://" %}
+  "image": {{page.image|jsonify}},
+  {% elsif page.image %}
+  "image": {{include.page.image|prepend:'images/' | absolute_url | jsonify}},
+  {% endif %}
   "url": "{{include.page.url | absolute_url}}"
 }
