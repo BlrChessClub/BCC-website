@@ -9,7 +9,7 @@
   "location": {
     {% if include.locationId == 'online' %}
     "@type": "VirtualLocation",
-    "name": "Zoom Virtual Meeting",
+    "name": "Zoom Virtual Meeting"
     {% else %}
     "@type": "Place",
     "name": {{site.data.locations[include.locationId].name | jsonify}},
