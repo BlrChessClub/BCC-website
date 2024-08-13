@@ -8,7 +8,7 @@ variations:
 - bughouse
 layout: event
 payment:
-  price: 300
+  price: 350
   razorpay: pl_OflT3lHyXoYGdd
 image: ChessCafe_15082024.jpeg
 startsAt: 2024-08-15T16:00
@@ -27,5 +27,5 @@ and challenge of the game.
 
 ## What's Included:
 
-- `Ticket includes food coupon ₹150`
+- `Ticket includes food coupon ₹200`
 - 3 Hours of multiple Fun-filled Chess Variants
