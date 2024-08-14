@@ -2,13 +2,13 @@
 title: "Chess Connect - Rapid"
 location: the-market-place-rmz-infinity
 variations: standard-swiss
-layout: event
+layout: event2
 payment:
     price: 250
     razorpay: pl_OflT3lHyXoYGdd
 startsAt: 2024-08-25T10:00
 endsAt: 2024-08-25T15:30
-image: chessconnect_25082024.jpeg
+image: chessconnect_25082024.png
 permalink: /chess-connect/2024-08-25/
 ---
 ## Event Details
@@ -23,6 +23,7 @@ continue our journey of checkmates and camaraderie!
 
 * 5 Hours of **Rapid Chess** (Format 10+5)
 * `Special Prizes` for the Top 3 Players
+* Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
 * Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
 
 ## Schedule
