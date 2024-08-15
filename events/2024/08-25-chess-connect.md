@@ -2,7 +2,8 @@
 title: "Chess Connect - Rapid"
 location: the-market-place-rmz-infinity
 variations: standard-swiss
-layout: event2
+layout: event
+sponsor: paramountchess
 payment:
     price: 250
     razorpay: pl_OflT3lHyXoYGdd

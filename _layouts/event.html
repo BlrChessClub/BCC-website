@@ -103,6 +103,13 @@ later if we decide to allow Ruby in the codebase. It does two things:
         </div>
         {% endif %}
 
+        {% if page.sponsor %}
+        {% assign sponsorFile = page.sponsor | prepend:"sponsors/"|append:".html" %}
+        <!-- Sponsor Start -->
+        {% include {{sponsorFile}} %}
+        <!--  Sponsor End-->
+        {% endif %}
+
         {% include locations.html %}
 
         {% if page.payment and eventStartTime > now %}
