@@ -30,9 +30,9 @@
 
         {% assign d = page.startsAt | date: "%-d"%}
         {% case d %}
-        {% when 1 or 21 or 31 %}{% assign day =  d | append: "st" %}
-        {% when 2 or 22 %}{% assign day =  d | append: "nd" %}
-        {% when 3 or 23 %}{% assign day =  d | append: "rd" %}
+        {% when '1' or '21' or '31' %}{% assign day =  d | append: "st" %}
+        {% when '2' or '22' %}{% assign day =  d | append: "nd" %}
+        {% when '3' or '23' %}{% assign day =  d | append: "rd" %}
         {% else %}{% assign day =  d | append: "th" %}
         {% endcase %}
         {% assign today = site.time | date: "%s" %}
