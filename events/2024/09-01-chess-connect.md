@@ -32,3 +32,4 @@ new friends, and enjoy a day of strategic fun.
 
 - `Individual registration` : Don’t have a team? No problem! Register as an individual, and we’ll group you with others based on skill levels to form balanced teams for thrilling matchups.
 - `Team registration` : Already have a team of four? Register together and dive straight into the team competition!
+- `Get additional ₹200 discount while registering as a team`
