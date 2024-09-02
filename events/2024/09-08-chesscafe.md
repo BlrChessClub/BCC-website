@@ -8,7 +8,7 @@ variations:
 layout: event
 image: chesscafe_20240908.jpg
 startsAt: 2024-09-08T10:00
-endsAt: 2024-09-08T12:00
+endsAt: 2024-09-08T12:30
 permalink: /chess-cafe/2024-09-08/
 payment:
   price: 300
