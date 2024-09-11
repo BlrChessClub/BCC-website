@@ -20,7 +20,7 @@ Whether you're a seasoned player or just discovering your love
 for the game, come embrace the thrill of chess, forge new connections, and
 make every move count. 
 
-Let's bring the chessboard to and continue our
+Let's bring the chessboard and continue our
 journey of checkmates and camaraderie!
 
 ## What's Included:
