@@ -2,6 +2,7 @@
 title: "Chess Connect: Making Chess Fun"
 location: the-market-place-rmz-millenia
 variations: standard-swiss
+sponsor: paramountchess
 layout: event
 image: chessconnect_20240915.jpg
 permalink: /chess-connect/2024-09-15/
