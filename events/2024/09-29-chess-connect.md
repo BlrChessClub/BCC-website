@@ -17,8 +17,9 @@ permalink: /chess-connect/2024-09-29/
 Join us at RMZ Infinity, Bennigana Halli for our next chess meetup for a
 fantastic chess spirit! Whether you're a seasoned player or just discovering
 your love for the game, come embrace the thrill of chess, forge new
-connections, and make every move count. Let's bring the chessboard to and
-continue our journey of checkmates and camaraderie!
+connections, and make every move count. 
+Mark your calendar, bring your passion for chess, and get ready to create some remarkable memories with fellow chess enthusiasts. We can`t wait to see you at “Chess Connect”!
+
 
 ## What's Included
 
