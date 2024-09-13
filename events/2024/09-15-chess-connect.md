@@ -26,3 +26,6 @@ journey of checkmates and camaraderie!
 
 ## What's Included:
 - 3 Hours of `Blitz Chess` (Format 5+3)
+* `Special Prizes` for the Top 3 Players
+* Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
+* Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
