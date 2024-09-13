@@ -2,7 +2,6 @@
 title: "Chess Connect: Making Chess Fun"
 location: the-market-place-rmz-millenia
 variations: standard-swiss
-sponsor: paramountchess
 layout: event
 image: chessconnect_20240915.jpg
 permalink: /chess-connect/2024-09-15/
@@ -26,6 +25,6 @@ journey of checkmates and camaraderie!
 
 ## What's Included:
 - 3 Hours of `Blitz Chess` (Format 5+3)
-* `Special Prizes` for the Top 3 Players
-* Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
-* Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
+- `Special Prizes` for the Top 3 Players
+- Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
+- Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
