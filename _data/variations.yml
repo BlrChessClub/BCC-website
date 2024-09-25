@@ -33,6 +33,12 @@ bughouse:
         fast-paced action of Bughouse Chess. Work with a teammate on two
         chessboards, share captured pieces, and unleash your combined tactical
         prowess. It's a dynamic chess experience like no other.
+antichess:
+    name: Anti Chess
+    description: |
+        Get ready for a twist on traditional chess with Anti Chess! 
+        The goal is to lose all your pieces or get stalemated,flipping the usual strategy on its head. 
+        Sacrifice and clever tactics are the key in this fun, unpredictable variant.
 swiss-team-4:
     name: Swiss Team Chess (Teams of 4)
     description: |
