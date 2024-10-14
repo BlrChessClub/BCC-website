@@ -24,7 +24,7 @@ new friends, and enjoy a day of strategic fun.
 
 - `Team Format`: Teams of 4 players
 - `Swiss Style`: A Swiss-system tournament to ensure exciting matchups.
-- `Individual Registration`: Don't have a team? Register individually, and we'll help you find one!
+-  Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
 - `Prizes`: Attractive BCC goodies for top teams.
 - `Game Format`: Swiss Team Blitz Chess (Format 5+3)
 
