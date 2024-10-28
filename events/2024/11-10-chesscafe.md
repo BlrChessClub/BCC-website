@@ -9,8 +9,8 @@ variations:
 - antichess
 layout: event
 image: chesscafe_20241110.jpeg
-startsAt: 2024-11-10T09:30
-endsAt: 2024-11-10T12:30
+startsAt: 2023-11-10T09:30
+endsAt: 2023-11-10T12:30
 permalink: /chess-cafe/2024-11-10/
 payment:
   price: 350
