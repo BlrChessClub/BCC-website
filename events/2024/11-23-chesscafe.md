@@ -1,6 +1,6 @@
 ---
 title: "Chess Cafe: A Chess Meetup with a Twist"
-location: qube-jayanagar
+location: qube-koramangala
 variations:
 - standard-knockout
 - hand&brain
