@@ -6,7 +6,7 @@ layout: event
 sponsor: paramountchess
 payment:
     price: 250
-    razorpay: pl_PE9slsUUpvb8Jk
+    razorpay: pl_PE9rQFCtCNSXgB
 startsAt: 2024-11-24T10:00
 endsAt: 2024-11-24T15:30
 image: chessconnect_20241124.jpeg
