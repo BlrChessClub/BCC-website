@@ -16,8 +16,8 @@
     "address": {{site.data.locations[include.locationId].address | append:", Bengaluru, India" | jsonify}}
     {% endif %}
   },
-  "isAccessibleForFree": {% if include.page.payment.price == 0 %}true{% else %}false{% endif %},
-  {% if include.page.payment.razorpay and include.page.payment.price>0 %}
+  "isAccessibleForFree": {% if include.page.payment.price == "0" %}true{% else %}false{% endif %},
+  {% if include.page.payment.razorpay and include.page.payment.price %}
   "offers": [{
     "@type": "Offer",
     "price": "{{include.page.payment.price}}",
