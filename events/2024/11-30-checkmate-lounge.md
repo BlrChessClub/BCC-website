@@ -1,7 +1,7 @@
 ---
 title: "Checkmate Lounge"
 location: 
-- the-market-place
+- the-market-place-rmz-infinity
 - uru-brewpark
 - oyster-hsr
 layout: checkmate_lounge_event
