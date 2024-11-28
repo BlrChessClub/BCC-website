@@ -4,7 +4,7 @@ location:
 - the-market-place
 - uru-brewpark
 - oyster-hsr
-layout: event
+layout: checkmate_lounge_event
 payment:
     price: 150-300
     razorpay: pl_PPap3pzSwsMUWH

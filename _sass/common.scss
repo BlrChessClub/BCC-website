@@ -194,6 +194,15 @@ ol {
   font-weight: bold;
 }
 
+.date-time .location {
+  font-size: 1em; /* Adjust the size for better readability */
+  color: #2a2a2a; /* Dark gray for location */
+  font-weight: bold; /* Bold for emphasis */
+  margin-top: 5px; /* Space above the location */
+  display: inline-block; /* Keep it on the same line as date and time */
+  padding-left: 5px; /* Space between time and location */
+}
+
 /* Additional styling for the event description */
 .event-description {
   background-color: #f7f7f7;

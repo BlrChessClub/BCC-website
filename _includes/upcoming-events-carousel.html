@@ -2,6 +2,8 @@
 {% assign upcomingEvents = ""|split:"," %}
 
 {% assign events = site.pages | where: 'layout', 'event' %}
+{% assign checkmate_lounge_events = site.pages | where: 'layout', 'checkmate_lounge_event' %}
+{% assign events = events | concat: checkmate_lounge_events %}
 {% for E in events %}
   {% assign eDate = E.startsAt | date:"%s" %}
   {% if eDate > now %}
