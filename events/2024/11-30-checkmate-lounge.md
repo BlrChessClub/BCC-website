@@ -32,6 +32,6 @@ Let’s come together and cheer for `Gukesh`! 🎉♟️
 ## Schedule
 
 - 30th November – **Uru Brewpark**, JP Nagar (4:00 PM - 7:30 PM)
-- 1st December – **RMZ Infinity**, Bennigana Halli (4:00 PM - 8:00 PM)
+- 1st December – **RMZ Infinity**, Bennigana Halli (3:00 PM - 7:30 PM)
 - 7th December – **Oyster Bar & Kitchen**, HSR (4:00 PM - 8:00 PM)
 - `Disclaimer`: Drinks will be served at Uru Brewpark and Oyster Bar & Kitchen. Kids are welcome to join but must be accompanied by their parents
