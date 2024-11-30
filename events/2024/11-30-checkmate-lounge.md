@@ -8,8 +8,8 @@ layout: checkmate_lounge_event
 payment:
     price: 150-300
     razorpay: pl_PPap3pzSwsMUWH
-startsAt: 2024-11-30T16:00
-endsAt: 2024-11-30T19:30
+startsAt: 2024-12-1T15:00
+endsAt: 2024-12-1T19:30
 image: checkmate_lounge.jpeg
 permalink: /checkmate-lounge/
 ---
