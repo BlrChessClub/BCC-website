@@ -14,7 +14,7 @@ endsAt: 2024-12-14T12:30
 permalink: /chess-cafe/2024-12-14/
 payment:
   price: 350
-  razorpay: pl_PE9rQFCtCNSXgB
+  razorpay: pl_PPap3pzSwsMUWH
 ---
 
 ## Event Details
