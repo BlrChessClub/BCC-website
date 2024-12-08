@@ -9,8 +9,8 @@ variations:
 - antichess
 layout: event
 image: chesscafe_20241214.jpeg
-startsAt: 2024-11-10T09:30
-endsAt: 2024-11-10T12:30
+startsAt: 2024-12-14T10:00
+endsAt: 2024-12-14T12:30
 permalink: /chess-cafe/2024-12-14/
 payment:
   price: 350
@@ -27,4 +27,4 @@ enjoying the intellectual challenge that chess brings.
 ## What's Included
 
 - `Ticket includes food coupon ₹200`
-- 3 Hours of multiple Fun-filled Chess Variants
+- 2.5 Hours of multiple Fun-filled Chess Variants
