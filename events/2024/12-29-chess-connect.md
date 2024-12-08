@@ -5,7 +5,7 @@ variations: standard-swiss
 layout: event
 sponsor: paramountchess
 payment:
-    price: 150
+    price: 250
     razorpay: pl_PPap3pzSwsMUWH
 image: chessconnect_20241229.jpeg
 permalink: /chess-connect/2024-12-29/
