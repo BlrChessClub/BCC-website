@@ -28,3 +28,16 @@ Mark your calendar, bring your passion for chess, and get ready to create some r
 - `Special Prizes` for the Top 3 Players
 - Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
 - Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
+
+## Schedule
+
+- Registration and Player Briefing (10:00 AM)
+- Round 1 (10:15 AM)
+- Round 2 (10:50 AM)
+- Round 3 (11:25 AM)
+- Round 4 (12:00 PM)
+- `Lunch Break (12:35 PM)`
+- Round 5 (1:20 PM)
+- Round 6 (1:55 PM)
+- Round 7 (2:30 PM)
+
