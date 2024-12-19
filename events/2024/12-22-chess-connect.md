@@ -1,6 +1,6 @@
 ---
 title: "Chess Connect: Making Chess Fun"
-location: the-market-place-rmz-millenia
+location: the-market-place-rmz-infinity
 variations: standard-swiss
 layout: event
 image: chessconnect_20241222.jpeg
