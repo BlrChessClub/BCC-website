@@ -5,9 +5,6 @@ location:
 - uru-brewpark
 - oyster-hsr
 layout: checkmate_lounge_event
-payment:
-    price: 150-300
-    razorpay: pl_PPap3pzSwsMUWH
 startsAt: 2024-12-7T15:00
 endsAt: 2024-12-7T19:00
 image: checkmate_lounge.jpeg
