@@ -4,7 +4,7 @@ location:
 - the-market-place-rmz-infinity
 - uru-brewpark
 - oyster-hsr
-layout: checkmate_lounge_event
+layout: event
 startsAt: 2024-12-7T15:00
 endsAt: 2024-12-7T19:00
 image: checkmate_lounge.jpeg
