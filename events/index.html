@@ -16,7 +16,7 @@ title: All Events
   label="Subscribe"
 ></add-to-calendar-button>
 
-{% assign eventsByYearMonth = site.pages | where:"layout", "event"| where:"layout", "checkmate_lounge_event" | sort:'startsAt' | reverse | group_by_exp:"event", "event.startsAt | date: '%b %Y'" %}
+{% assign eventsByYearMonth = site.pages | where:"layout", "event"| sort:'startsAt' | reverse | group_by_exp:"event", "event.startsAt | date: '%b %Y'" %}
 
 {% for yearMonth in eventsByYearMonth %}
 <div class=event-section>
