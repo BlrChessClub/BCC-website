@@ -9,7 +9,7 @@ startsAt: 2025-01-19T10:00
 endsAt: 2025-01-19T13:00
 payment:
     price: 250
-    razorpay: pl_PdMZ4jpCeUwjSY
+    razorpay: pl_PdMjp8rVNWxInU
 ---
 ## Event Details:
 
