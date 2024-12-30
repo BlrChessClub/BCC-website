@@ -7,6 +7,14 @@ standard-swiss:
         a laid-back vibe. It's not just about winning, but about the
         shared love for the game and the camaraderie that makes every move
         memorable.
+960-swiss:
+    name: Casual Chess960 (Swiss Format)
+    description: |
+        Step into the exciting world of Chess960, where creativity and adaptability
+        take center stage! In this Swiss Format tournament spanning 6-7 rounds, 
+        experience a fresh challenge as the starting positions are randomized, 
+        testing your ingenuity from move one. Enjoy the thrill of strategic surprises, friendly banter,
+        and a relaxed atmosphere, all while celebrating the joy of chess in its most dynamic form.
 standard-swiss-5-rounds:
     name: Standard Chess
     description: 5 Rounds of Swiss Chess followed by a Semi Final and Finale!
