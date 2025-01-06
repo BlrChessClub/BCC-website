@@ -1,5 +1,5 @@
 ---
-title: "Chess Connect: Making Chess Fun"
+title: "Chess Connect: FreeStyle"
 location: kaavu-whitefield
 variations: 960-swiss
 layout: event
@@ -19,6 +19,9 @@ Step into the World of Freestyle Chess at “Chess Connect”!
 Get ready to experience the thrill of Chess960, where creativity takes the lead, and every game is a new adventure! With randomized starting positions, this freestyle format challenges your strategic skills and adds an exciting twist to traditional chess.
 
 Join us to embrace the unexpected, connect with fellow chess lovers, and create memorable moments over a shared passion for the game. Let’s make every move count!
+
+- `Disclaimer`: Drinks will be served at Kaavu. Kids are welcome to join but must be accompanied by their parents
+
 
 ## What's Included:
 - `Ticket includes food coupon ₹200`
