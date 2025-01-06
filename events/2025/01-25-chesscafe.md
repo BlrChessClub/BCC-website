@@ -14,7 +14,7 @@ endsAt: 2025-01-25T12:30
 permalink: /chess-cafe/2025-01-25/
 payment:
   price: 350
-  razorpay: pl_PE9rQFCtCNSXgB
+  razorpay: pl_PdMZ4jpCeUwjSY
 ---
 
 ## Event Details
