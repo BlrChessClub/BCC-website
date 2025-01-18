@@ -14,17 +14,13 @@ payment:
 ---
 ## Event Details
 
-Join us at RMZ Infinity, Bennigana Halli for our next chess meetup for a
-fantastic chess spirit! Whether you're a seasoned player or just discovering
-your love for the game, come embrace the thrill of chess, forge new
-connections, and make every move count. 
-Mark your calendar, bring your passion for chess, and get ready to create some remarkable memories with fellow chess enthusiasts. We can`t wait to see you at “Chess Connect”!
-
+Play chess, make a difference! Join us for a special Chess Connect meetup where every move supports a greater cause. All proceeds from this event will be donated to `HelpChess.org, an initiative by ChessBase India empowering young chess talents across the country. Whether you're a seasoned player or a beginner, this is your chance to enjoy the thrill of chess while contributing to something meaningful. Let’s come together, play with purpose, and make an impact. See you at Chess Connect!
 
 ## What's Included
 
+* Ticket sales will be `donated to Helpchess` (https://helpchess.org/)
 * 5 Hours of **Rapid Chess** (Format 10+5)
-* `Special Prizes` for the Top 3 Players
+* Special Prizes for the Top 3 Players
 * Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
 * Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
 
