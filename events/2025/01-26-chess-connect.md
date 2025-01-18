@@ -14,7 +14,7 @@ payment:
 ---
 ## Event Details
 
-Play chess, make a difference! Join us for a special Chess Connect meetup where every move supports a greater cause. All proceeds from this event will be donated to `HelpChess.org, an initiative by ChessBase India empowering young chess talents across the country. Whether you're a seasoned player or a beginner, this is your chance to enjoy the thrill of chess while contributing to something meaningful. Let’s come together, play with purpose, and make an impact. See you at Chess Connect!
+Play chess, make a difference! Join us for a special Chess Connect meetup where every move supports a greater cause. All proceeds from this event will be donated to `HelpChess.org, an initiative by ChessBase India` empowering young chess talents across the country. Whether you're a seasoned player or a beginner, this is your chance to enjoy the thrill of chess while contributing to something meaningful. Let’s come together, play with purpose, and make an impact. See you at Chess Connect!
 
 ## What's Included
 
