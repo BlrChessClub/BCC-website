@@ -2,7 +2,7 @@
 title: "Check-in Chess"
 location: starbucks-jayanagar
 layout: event
-image: check-in-chess.jpeg
+image: check_in_chess_square.png
 permalink: /check-in-chess/
 form_id: 2D1wqBEHQNPJSXpR9
 ---
