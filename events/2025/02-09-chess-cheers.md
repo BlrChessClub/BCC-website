@@ -20,7 +20,7 @@ It's a game of trust, laughter, and surprises, where collaboration is the key to
 
 `Special Pair Offer`: Come as a mixed pair (one male, one female) and get a `₹200 discount` on your total entry fee!
 
-Please Note: **This event is strictly for ages 21 and above.**
+Please Note: **The discount is only applicable if your team consists of one male and one female. If the pair is not mixed, the discount will not be valid.**
 
 ## What's Included
 
