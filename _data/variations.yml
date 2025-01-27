@@ -15,6 +15,15 @@ standard-swiss:
         experience a fresh challenge as the starting positions are randomized, 
         testing your ingenuity from move one. Enjoy the thrill of strategic surprises, friendly banter,
         and a relaxed atmosphere, all while celebrating the joy of chess in its most dynamic form.
+hand-brain-swiss:
+    name: Casual Hand & Brain Chess (Swiss Format)
+    description: |
+        Dive into the fun and collaborative world of Hand & Brain chess! In this Swiss Format tournament spanning 6-7 rounds, 
+        pair up with a partner to strategize and laugh your way through each game. 
+        One of you will be the "Brain," calling out the type of piece to move, while the other, the "Hand," makes the actual moves on the board. 
+        It's a perfect blend of teamwork, creativity, and friendly banter, making every match an unforgettable experience. 
+        Celebrate chess in its most interactive and entertaining form!
+
 standard-swiss-5-rounds:
     name: Standard Chess
     description: 5 Rounds of Swiss Chess followed by a Semi Final and Finale!
