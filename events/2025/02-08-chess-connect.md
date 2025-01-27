@@ -2,7 +2,7 @@
 title: "Chess Connect: FreeStyle"
 location: kaavu-whitefield
 variations: 960-swiss
-layout: event_not_listed
+layout: event
 image: chessconnect_20250208.png
 permalink: /chess-connect/2025-02-08/
 startsAt: 2025-02-08T16:00
