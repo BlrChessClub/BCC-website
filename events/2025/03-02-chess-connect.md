@@ -10,7 +10,7 @@ endsAt: 2025-03-02T13:00
 sponsor: paramountchess
 payment:
     price: 150
-    razorpay: pl_PlHR1ChYXlnHzV
+    razorpay: pl_PzcXcRBKF2PYOV
 ---
 ## Event Details:
 
