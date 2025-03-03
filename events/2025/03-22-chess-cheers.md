@@ -1,7 +1,7 @@
 ---
 location: uru-brewpark
 title: "Chess and Cheers: Hand & Brain"
-image: chesscheers_20250323.jpg
+image: chesscheers_20250322.jpg
 variations: hand-brain-swiss
 layout: event
 sponsor: enterrochess
@@ -9,9 +9,9 @@ payment:
   price: 400
   razorpay: pl_Q21ZYfPEJoHiIC
 
-startsAt: 2025-03-23T16:00
-endsAt: 2025-03-23T19:00
-permalink: /chess-cheers/2025-03-23/
+startsAt: 2025-03-22T16:00
+endsAt: 2025-03-22T19:00
+permalink: /chess-cheers/2025-03-22/
 
 ---
 ## Event Details
