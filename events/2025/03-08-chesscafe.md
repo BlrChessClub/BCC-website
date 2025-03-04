@@ -19,7 +19,7 @@ payment:
 ---
 
 ## Event Details
-- **ChessCafe -** `Powered by Enterro`: 
+- **ChessCafe -** `Powered by Enterro Chess`: 
 Join us for an exciting gathering of chess aficionados where we'll be
 combining our passion for the game with the pleasure of sipping on freshly
 brewed coffee. This event is all about camaraderie, friendly competition, and
