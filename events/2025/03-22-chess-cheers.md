@@ -24,7 +24,7 @@ It's a game of trust, laughter, and surprises, where collaboration is the key to
 
 **Please Note: The discount is only applicable if your team consists of one male and one female. If the pair is not mixed, the discount will not be valid.**
 
-Disclaimer: Drinks will be served at Kaavu. Kids are welcome to join but must be accompanied by their parents
+Disclaimer: Drinks will be served at URU. Kids are welcome to join but must be accompanied by their parents
 
 ## What's Included
 
