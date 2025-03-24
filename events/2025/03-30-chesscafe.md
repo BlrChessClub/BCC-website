@@ -1,5 +1,5 @@
 ---
-title: "Chess Cafe: Bug House Special"
+title: "Chess Cafe: A Chess Meetup with a Twist"
 location: starbucks-churchstreet
 variations:
 - standard-knockout
