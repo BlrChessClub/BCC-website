@@ -2,7 +2,11 @@
 title: "Chess Cafe: Bug House Special"
 location: starbucks-churchstreet
 variations:
-- bughouse-swiss
+- standard-knockout
+- hand&brain
+- bughouse
+- simul
+- antichess
 layout: event
 sponsor: enterrochess
 image: chesscafe_20250330.jpg
