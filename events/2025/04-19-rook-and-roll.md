@@ -23,11 +23,12 @@ But first, bring the heat in our Blitz Tournament (Standard Swiss format) where 
 
 And don’t worry if you’re not a blitz beast — we’re picking 10 lucky players on the spot for the Simul too! It could be anyone. It could be you.
 
-Join us for an electrifying evening of blitz battles, grandmaster moves, and a whole lot of chess energy!
+Join us for an electrifying evening of blitz battles, grandmaster moves, surprises from `Merwans` Cake Stop and a whole lot of chess energy!
 
 ## What's Included:
 - `Chance to play Simul with GM Iniyan Panneerselvam`
 - 2 Hours of Blitz Chess (Format 5+3)
+- Delicious surprises from `Merwans` Cake Stop
 - Challenges,puzzles and a lot of giveaways
 
 
