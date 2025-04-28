@@ -6,11 +6,11 @@ layout: event
 sponsor: paramountchess
 payment:
     price: 250
-    razorpay: pl_PzcXcRBKF2PYOV
-image: chessconnect_20250309.jpeg
-permalink: /chess-connect/2025-03-09/
-startsAt: 2025-03-09T10:00
-endsAt: 2025-03-09T15:30
+    razorpay: pl_QOTdD7tUtCdfoP
+image: chessconnect_20250504.jpeg
+permalink: /chess-connect/2025-05-04/
+startsAt: 2025-05-04T10:00
+endsAt: 2025-05-04T15:30
 ---
 ## Event Details
 
