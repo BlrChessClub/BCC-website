@@ -1,6 +1,6 @@
 ---
 title: "Chess Connect - Blitz"
-location: the-market-place-rmz-ecoworld
+location: the-market-place
 variations: standard-swiss
 layout: event
 image: chessconnect_20250511.jpeg
