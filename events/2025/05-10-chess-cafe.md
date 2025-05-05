@@ -12,7 +12,7 @@ sponsor: enterrochess
 image: chesscafe_20250510.jpeg
 startsAt: 2025-05-10T10:00
 endsAt: 2025-05-10T12:30
-permalink: /chess-cafe/2025-05-12/
+permalink: /chess-cafe/2025-05-10/
 payment:
   price: 350
   razorpay: pl_QOTdD7tUtCdfoP
