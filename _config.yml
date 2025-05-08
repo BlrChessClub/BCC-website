@@ -27,6 +27,10 @@ defaults:
     values:
       gallery: true
   - scope:
+      path: "images/merch/*"
+    values:
+      merch: true
+  - scope:
       path: "images/team/*"
     values:
       teamPic: true
