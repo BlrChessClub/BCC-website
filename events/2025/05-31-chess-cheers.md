@@ -9,7 +9,7 @@ variations:
 - antichess
 layout: event
 image: chesscheers_20250531.jpeg
-permalink: /chess-connect/2025-05-31/
+permalink: /chess-cheers/2025-05-31/
 startsAt: 2025-05-31T16:00
 endsAt: 2025-05-31T19:00
 payment:
