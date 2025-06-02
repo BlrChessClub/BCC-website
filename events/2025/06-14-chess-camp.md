@@ -1,9 +1,9 @@
 ---
 title: 
-  Chess Camp
+  Summerr Chess Camp
 location: garuda-mall
 layout: event_not_listed
-startsAt: 2025-06-14T14:30
+startsAt: 2025-06-14T14:00
 endsAt: 2025-06-15T19:00
 image: chesscamp_20250614.jpeg
 permalink: /chess-camp-2025/
@@ -13,7 +13,7 @@ payment:
 ---
 ## Event Details:
 
-`Bangalore Chess Club presents` a **2-Day Chess Camp**, in collaboration with `ChessBase India` – your perfect opportunity to learn, solve, play, and grow your chess skills, no matter where you’re starting from!
+`Bangalore Chess Club presents` a **2-Day Summer Chess Camp**, in collaboration with `ChessBase India` – your perfect opportunity to learn, solve, play, and grow your chess skills, no matter where you’re starting from!
 
 - Proudly supported by our sponsor `Circle Chess`, this camp is designed to bring the joy of chess to everyone – whether you're picking up your first pawn or looking to sharpen your strategies.
 
