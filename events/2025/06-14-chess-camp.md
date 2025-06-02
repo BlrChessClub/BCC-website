@@ -1,6 +1,6 @@
 ---
 title: 
-  Summerr Chess Camp
+  Summer Chess Camp
 location: garuda-mall
 layout: event_not_listed
 startsAt: 2025-06-14T14:00
@@ -19,7 +19,7 @@ payment:
 
 - With expert volunteers to guide you, printed worksheets in hand, and challenges tailored for beginners and intermediates alike, this camp is all about learning chess the fun way!
 
-- Come for the camp, stay for the community. No pressure. No prior experience needed.
+- Open for all – **Walk in, join anytime.** Come for the camp, stay for the community. No pressure. No prior experience needed.
 
 
 ## What's Included:
@@ -28,4 +28,3 @@ payment:
 - Special Surprises from `Circle Chess`
 - `Mini tournaments` at the end of each day
 - `Certificates` for participants meeting the minimum criteria
-- Open for all – **Walk in, join anytime,** and enjoy the learning journey!
