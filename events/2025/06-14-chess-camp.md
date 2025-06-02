@@ -15,7 +15,7 @@ payment:
 
 `Bangalore Chess Club presents` a **2-Day Summer Chess Camp**, in collaboration with `ChessBase India` – your perfect opportunity to learn, solve, play, and grow your chess skills, no matter where you’re starting from!
 
-- Proudly supported by our sponsor `Circle Chess`, this camp is designed to bring the joy of chess to everyone – whether you're picking up your first pawn or looking to sharpen your strategies.
+- Proudly supported by our sponsor `CircleChess` and venue partner `Garuda Mall`. This camp is designed to bring the joy of chess to everyone – whether you’re picking up your first pawn or looking to sharpen your strategies.
 
 - With expert volunteers to guide you, printed worksheets in hand, and challenges tailored for beginners and intermediates alike, this camp is all about learning chess the fun way!
 
@@ -23,8 +23,9 @@ payment:
 
 
 ## What's Included:
-- 2 Days of guided Chess Camp (2 PM to 7 PM)
-- `Printed worksheets` with volunteer support (Beginner & Intermediate levels)
-- Special Surprises from `Circle Chess`
-- `Mini tournaments` at the end of each day
-- `Certificates` for participants meeting the minimum criteria
+- 2 Days of Chess Thrill (2 PM to 7 PM)
+- Engagement with **Chess Workbooks** on various topics with volunteer support (Beginner & Intermediate levels)
+- Chess Trivia and Challenges throughout the event
+- `Exclusive Goodies` and more surprises from BCC and Circle Chess
+- Swiss Tournaments at the end of the day
+- `Certificates` for participants finishing Intermediate course.
