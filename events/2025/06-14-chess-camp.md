@@ -9,7 +9,7 @@ image: chesscamp_20250614.jpeg
 permalink: /chess-camp-2025/
 payment:
   price: 99
-  razorpay: pl_QHl5gky7NN9qtK
+  razorpay: pl_QbwLk6pEcvbPLT
 ---
 ## Event Details:
 
