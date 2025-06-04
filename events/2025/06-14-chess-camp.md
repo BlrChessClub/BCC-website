@@ -19,7 +19,7 @@ payment:
 
 - With expert volunteers to guide you, specialized workbooks, and challenges tailored for beginners and intermediates alike, this camp is all about learning chess the fun way!
 
-- Open for all – `Walk-in,anytime,anyday` Come for the camp, stay for the community. No pressure. No prior experience needed.
+- Open for all – `Walk-in, anytime, anyday.` Come for the camp, stay for the community. No pressure. No prior experience needed.
 
 
 ## What's Included:
