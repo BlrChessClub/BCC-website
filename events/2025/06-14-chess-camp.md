@@ -13,7 +13,7 @@ payment:
 ---
 ## Event Details:
 
-`Bangalore Chess Club presents` a **2-day Big Summer Chess Camp**, in collaboration with `ChessBase India` – your perfect opportunity to learn, solve, play, and grow your chess skills, no matter where you’re starting from!
+`Bangalore Chess Club presents` a **2-day Big Summer Chess Camp**, in collaboration with `ChessBase India` and `Teach Chess India` – your perfect opportunity to learn, solve, play, and grow your chess skills, no matter where you’re starting from!
 
 - Powered by `CircleChess`, `Merwans Cake Stop` and venue our partner `Garuda Mall`, This camp is designed to bring the joy of chess to everyone – whether you’re picking up your first pawn or looking to sharpen your strategies.
 
