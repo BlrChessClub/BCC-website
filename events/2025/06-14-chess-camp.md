@@ -2,9 +2,9 @@
 title: 
   Summer Chess Camp
 location: garuda-mall
-layout: event_not_listed
+layout: event
 startsAt: 2025-06-14T14:00
-endsAt: 2025-06-15T19:00
+endsAt: 2025-06-14T19:00
 image: chesscamp_20250614.jpeg
 permalink: /chess-camp-2025/
 payment:
