@@ -29,3 +29,5 @@ payment:
 - `Exclusive Goodies` and more surprises from BCC, Circle Chess and Merwans.
 - Swiss Tournaments at the end of the day
 - `Certificates` for participants finishing Intermediate course.
+- All the Ticket sales will be donated to `Helpchess`, a Chessbase India Initiative (https://helpchess.org/)
+
