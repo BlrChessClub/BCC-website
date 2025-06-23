@@ -20,8 +20,8 @@ Whether you're a speed chess enthusiast, a fan of creative openings, or a strate
 
 ## What's Included:
 - `9 rounds` of chess in three formats:
-    - Blitz (5+3) – 3 rounds
-    - Freestyle Chess (5+3) – 3 rounds
+    - Blitz (3+2) – 3 rounds
+    - Freestyle Chess (8+3) – 3 rounds
     - Rapid (10+5) – 3 rounds
 - `Special prizes` for the Top 3 players
 - Chance to win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
