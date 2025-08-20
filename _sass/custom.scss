@@ -1115,6 +1115,24 @@ section.gallery_section {
   }
 }
 
+.merch_section {
+  .merch-caption {
+    font-size: 1.35em;
+    font-weight: bold;
+    color: white;
+  }
+  .merch-price {
+    color: #FDBE33;
+  }
+  .buy-btn {
+    background-color: $color_8;
+    a {
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
 .form-detail-box {
     display:flex;
     width:100%;
