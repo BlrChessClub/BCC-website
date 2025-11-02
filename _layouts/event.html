@@ -117,7 +117,7 @@ later if we decide to allow Ruby in the codebase. It does two things:
 
         {% include locations.html %}
 
-        {% if page.payment and eventStartTime > now %}
+        {% if page.payment.razorpay and eventStartTime > now %}
 
         <div class="button-container">
           <div class="book-now-button-container">
@@ -128,6 +128,9 @@ later if we decide to allow Ruby in the codebase. It does two things:
         {% if page.form_id %}
            {% include form-based-registration.html id=page.form_id %}
         {% endif %}
+        {% if page.payment.link %}
+        {% include external-payment-button.html link=page.payment.link %}
+        {% endif %}
       </div>
 
       
@@ -136,7 +139,11 @@ later if we decide to allow Ruby in the codebase. It does two things:
 
     <div class="fixed-footer">
       <div class="footer-price"><strong>PRICE ₹{{page.payment.price}}</strong></div>
-      {% include razorpay-payment.html id=page.payment.razorpay %}
+        {% if page.payment.razorpay %}
+        {% include razorpay-payment.html id=page.payment.razorpay %}
+        {% elsif page.payment.link %}
+        {% include external-payment-button.html link=page.payment.link %}
+        {% endif %}
     </div>
     {% endif %}
 
