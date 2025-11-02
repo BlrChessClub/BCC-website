@@ -5,7 +5,7 @@ variations: triathlon-swiss
 layout: event
 sponsor: paramountchess
 payment:
-    price: 250
+    price: 300
     razorpay: pl_RMigX1uXqB7i52
 image: chessconnect_20251012.jpeg
 permalink: /chess-connect/2025-10-12/
