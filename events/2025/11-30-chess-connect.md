@@ -1,6 +1,6 @@
 ---
 title: "Chess Connect - Rapid"
-location: the-market-place-rmz-infinity
+location: the-market-place
 variations: standard-swiss
 layout: event
 sponsor: paramountchess
