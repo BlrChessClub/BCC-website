@@ -7,7 +7,7 @@ sponsor: paramountchess
 payment:
     price: 300
     razorpay: pl_RdXvLbemW58r7G
-image: chessconnect_20251207.jpeg
+image: chessconnect_20251207.jpg
 permalink: /chess-connect/2025-12-07/
 startsAt: 2025-12-07T10:00
 endsAt: 2025-12-07T15:30
