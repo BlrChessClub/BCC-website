@@ -3,7 +3,7 @@ title: "Chess Connect - Blitz"
 location: the-market-place
 variations: standard-swiss
 layout: event
-image: chessconnect_20251116.jpeg
+image: chessconnect_20251116.jpg
 permalink: /chess-connect/2025-11-16/
 startsAt: 2025-11-16T10:00
 endsAt: 2025-11-16T13:00
