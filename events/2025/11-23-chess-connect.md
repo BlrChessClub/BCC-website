@@ -26,7 +26,7 @@ We can’t wait to see you at Chess Connect: The Gambit Cup – Rapid!
 - `Top Teams`:
 - 🥇 Team Rank 1  – American Gambits T-Shirts
 - 🥈 Team Rank 2 – American Gambits Tote Bags
-- 🥉 Team Rand 3 – American Gambits Caps
+- 🥉 Team Rank 3 – American Gambits Caps
 - 🎁 Bonus: A special surprise goodie from American Gambits for every participant!
 - 🎁 Top 5 Teams are eligible to win `GCL Passes`
 
