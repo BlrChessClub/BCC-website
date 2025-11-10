@@ -3,7 +3,7 @@ title: "Chess Connect: Team Battle"
 location: the-market-place-rmz-infinity
 variations: swiss-team-4
 layout: event
-image: chessconnect_20251123.jpeg
+image: chessconnect_20251123.jpg
 permalink: /chess-connect/2025-11-23/
 startsAt: 2025-11-23T10:00
 endsAt: 2025-11-23T13:00
@@ -26,7 +26,7 @@ We can’t wait to see you at Chess Connect: The Gambit Cup – Rapid!
 - `Top Teams`:
 - 🥇 Team Rank 1  – American Gambits T-Shirts
 - 🥈 Team Rank 2 – American Gambits Tote Bags
-- 🥉 Team Rand 3 – American Gambits Caps
+- 🥉 Team Rank 3 – American Gambits Caps
 - 🎁 Bonus: A special surprise goodie from American Gambits for every participant!
 - 🎁 Top 5 Teams are eligible to win `GCL Passes`
 

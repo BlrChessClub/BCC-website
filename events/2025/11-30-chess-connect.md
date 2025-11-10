@@ -1,13 +1,13 @@
 ---
 title: "Chess Connect - Rapid"
-location: the-market-place-rmz-infinity
+location: the-market-place
 variations: standard-swiss
 layout: event
 sponsor: paramountchess
 payment:
     price: 300
     razorpay: pl_RdXvLbemW58r7G
-image: chessconnect_20251130.jpeg
+image: chessconnect_20251130.jpg
 permalink: /chess-connect/2025-11-30/
 startsAt: 2025-11-30T10:00
 endsAt: 2025-11-30T15:30
