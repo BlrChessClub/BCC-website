@@ -8,7 +8,7 @@ endsAt: 2025-11-08T19:00
 permalink: /checkmate-lounge/2025-11-08/
 payment:
   price: 0
-  link: "https://www.district.in/events/chess-connect-freestyle-nov2-2025-buy-tickets"
+  link: "https://www.district.in/events/checkmate-lounge-world-cup-goa-2025-watch-party-nov8-2025-buy-tickets?disableSSR=true"
 ---
 
 ## Event Details
@@ -33,4 +33,4 @@ Let’s make Bangalore the loudest cheering squad for India at the FIDE World Cu
 - `💎 2 Chess.com Diamond Memberships (3 months)`
 - 🎁 `Free Surprise Gift from Bangalore Chess Club` for all participants
 - ⚡ Mini Tournaments with prizes for top performers
-- Chance to win paramount chess sets
+- 🎁 Chance to win paramount chess sets
