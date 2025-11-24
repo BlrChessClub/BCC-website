@@ -26,13 +26,12 @@ Bring your speed, your strategy, and your best game face —
 
 ## Special Prizes & Giveaways
 
-- `Top 20 Players`:
 - 🏆 Tournament Prizes
 - 🥇 1st Place — `₹4,000 + GCL Pass`
 - 🥈 2nd Place — `₹3,000 + GCL Pass`
 - 🥉 3rd Place — ₹2,000
 - 👑 `Best Girl Player` — ₹1,000
-- Rank 4–8: American Gambits Jerseys
+- Rank 4–8: `American Gambits Jerseys`
 - Rank 9–13: American Gambits Tote Bags
 - Rank 14–50: American Gambits Caps
 - Rank 50+: American Gambits Pop Sockets
