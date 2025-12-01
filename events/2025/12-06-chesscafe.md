@@ -8,7 +8,7 @@ variations:
 - simul
 - antichess
 layout: event
-image: chesscafe_20251206.jpeg
+image: chesscafe20251206.jpeg
 startsAt: 2025-12-06T10:00
 endsAt: 2025-12-06T12:30
 permalink: /chess-cafe/2025-12-06/
