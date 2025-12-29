@@ -8,8 +8,8 @@ permalink: /chess-connect/2026-01-18/
 startsAt: 2026-01-18T10:00
 endsAt: 2026-01-18T13:00
 payment:
-price: 250
-razorpay: pl_Rx7aE5pvCs9nHM
+  price: 250
+  razorpay: pl_Rx7aE5pvCs9nHM
 ---
 ## Event Details:
 
