@@ -103,3 +103,10 @@ simul:
         multiple opponents at once. Test your skills against a master
         player, and see if you have what it takes to outwit them in this
         exciting and challenging format.
+4player-chess:
+    name: 4-Player Chess
+    description: |
+        Jump into the wild and social world of 4-Player Chess, where four minds battle it out on a single board!  
+        This free-for-all variant adds a whole new layer to chess with shifting dynamics, tactical chaos, and constant action.  
+        Every move can change the balance of the game as players navigate attacks, defenses, and unexpected twists from all sides.  
+        Expect plenty of laughs, friendly banter, and unforgettable moments in this fast, fun, and highly interactive chess experience.
