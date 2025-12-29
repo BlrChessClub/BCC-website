@@ -9,8 +9,8 @@ endsAt: 2026-01-25T15:30
 image: chessconnect_20260125.jpeg
 permalink: /chess-connect/2026-01-25/
 payment:
-price: 300
-razorpay: pl_Rx7Ve2YmANRfaf
+  price: 300
+  razorpay: pl_Rx7Ve2YmANRfaf
 ---
 ## Event Details
 
