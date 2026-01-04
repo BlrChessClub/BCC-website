@@ -17,7 +17,7 @@ payment:
 
 Play chess, make a difference! Join us for a special Chess Connect meetup where every move supports a greater cause. All proceeds from this event will be donated to `HelpChess.org, an initiative by ChessBase India` empowering underprivileged and aspiring young chess talents across the country. Whether you're a seasoned player or a beginner, this is your chance to enjoy the thrill of chess while contributing to something meaningful.
 
-This event also features `chess prizes and resources worth ₹12,000+ from ChessBase India`, making it a perfect mix of competitive play and giving back.
+This event also features `prizes and resources worth ₹12,000+ from ChessBase India`, making it a perfect mix of competitive play and giving back.
 
 Let’s come together, play with purpose, and make an impact. See you at Chess Connect!
 
