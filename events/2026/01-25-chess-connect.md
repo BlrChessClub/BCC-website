@@ -11,7 +11,9 @@ permalink: /chess-connect/2026-01-25/
 payment:
   price: 300
   razorpay: pl_Rx7Ve2YmANRfaf
----## Event Details
+---
+
+## Event Details
 
 Play chess, make a difference! Join us for a special Chess Connect meetup where every move supports a greater cause. All proceeds from this event will be donated to `HelpChess.org, an initiative by ChessBase India` empowering underprivileged and aspiring young chess talents across the country. Whether you're a seasoned player or a beginner, this is your chance to enjoy the thrill of chess while contributing to something meaningful.
 
