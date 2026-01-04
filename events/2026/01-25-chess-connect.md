@@ -17,7 +17,7 @@ payment:
 
 Play chess, make a difference! Join us for a special Chess Connect meetup where every move supports a greater cause. All proceeds from this event will be donated to `HelpChess.org, an initiative by ChessBase India` empowering underprivileged and aspiring young chess talents across the country. Whether you're a seasoned player or a beginner, this is your chance to enjoy the thrill of chess while contributing to something meaningful.
 
-This event also features `prizes and resources worth ₹12,000+ from ChessBase India`, making it a perfect mix of competitive play and giving back.
+This event also features `chess prizes and resources worth ₹12,000+ from ChessBase India`, making it a perfect mix of competitive play and giving back.
 
 Let’s come together, play with purpose, and make an impact. See you at Chess Connect!
 
@@ -25,9 +25,9 @@ Let’s come together, play with purpose, and make an impact. See you at Chess C
 
 * Ticket sales will be `donated to HelpChess` ([https://helpchess.org/](https://helpchess.org/))
 * 5 Hours of **Rapid Chess** (Format 10+5)
-* Special Prizes for the Top 3 Players
-* Chance to win `ChessBase prizes worth ₹12,000+` through Lucky Draw, including:
+* 🏆 **Winner Prize**:
   * [`ChessBase 26 + Mega Database 2026 Combo`](https://shop.chessbase.in/products/chessbase-26-mega-database-2026-combo) *(Worth ₹10,000)*
+* 🎁 **Lucky Draw Prizes (2 winners)**:
   * [`Attack Like a Super GM by D. Gukesh`](https://shop.chessbase.in/products/attack-like-a-super-gm-with-d-gukesh?_pos=1&_sid=1baec1657&_ss=r) *(Worth ₹1,200)*
   * [`Master Advanced Tactics & Calculations Like a Super Grandmaster by Vidit Gujrathi`](https://shop.chessbase.in/products/master-advanced-tactics-and-calculations-like-a-super-grandmaster-by-vidit-gujrathi?_pos=2&_psq=vidit&_ss=e&_v=1.0) *(Worth ₹1,200)*
 * Chance to win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
