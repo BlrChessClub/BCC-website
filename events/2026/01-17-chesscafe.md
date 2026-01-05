@@ -1,6 +1,6 @@
 ---
 title: "Chess Cafe: A Chess Meetup with a Twist"
-location: starbucks-jayanagar
+location: qube-jayanagar
 variations:
 - standard-knockout
 - hand&brain
