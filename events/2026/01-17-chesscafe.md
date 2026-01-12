@@ -28,4 +28,3 @@ enjoying the intellectual challenge that chess brings.
 
 - `Ticket includes food coupon ₹200`
 - 3 Hours of multiple Fun-filled Chess Variants
-- Get a chance to play on the `AI-powered GoChess Smart Board` at the event
