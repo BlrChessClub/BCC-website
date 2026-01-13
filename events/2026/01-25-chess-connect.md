@@ -24,9 +24,8 @@ Let’s come together, play with purpose, and make an impact. See you at Chess C
 ## What's Included
 
 * Ticket sales will be `donated to HelpChess` ([https://helpchess.org/](https://helpchess.org/))
-* 5 Hours of **Rapid Chess** (Format 10+5)
 * 🏆 **Winner Prize**: [ChessBase 26 + Mega Database 2026 Combo](https://shop.chessbase.in/products/chessbase-26-mega-database-2026-combo) *(Worth ₹10,000)*
-* Top 10 gets special `Chocolate boxes from **Melted Joy**'
+* Top 10 gets special `Chocolate boxes from **Melted Joy**`
 * 🎁 **Lucky Draw Prizes**:
 * [Attack Like a Super GM by D. Gukesh](https://shop.chessbase.in/products/attack-like-a-super-gm-with-d-gukesh?_pos=1&_sid=1baec1657&_ss=r) *(Worth ₹1,200)*
 * [Master Advanced Tactics & Calculations Like a Super Grandmaster by Vidit Gujrathi](https://shop.chessbase.in/products/master-advanced-tactics-and-calculations-like-a-super-grandmaster-by-vidit-gujrathi?_pos=2&_psq=vidit&_ss=e&_v=1.0) *(Worth ₹1,200)*
