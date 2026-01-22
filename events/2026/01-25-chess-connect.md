@@ -22,7 +22,7 @@ This event also features `chess prizes and resources worth ₹12,000+ from Chess
 Let’s come together, play with purpose, and make an impact. See you at Chess Connect!
 
 ## What's Included
-
+* Format : 10 +5 Swiss Tournament
 * Ticket sales will be `donated to HelpChess` ([https://helpchess.org/](https://helpchess.org/))
 * 🏆 **Winner Prize**: [ChessBase 26 + Mega Database 2026 Combo](https://shop.chessbase.in/products/chessbase-26-mega-database-2026-combo) *(Worth ₹10,000)*
 * Top 10 gets special `Chocolate boxes from **Melted Joy**`
