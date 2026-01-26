@@ -9,7 +9,7 @@ variations:
 - simul
 - antichess
 layout: event
-image: chesscafe20260201.jpeg
+image: chesscafe_20260201.jpeg
 startsAt: 2026-02-01T10:00
 endsAt: 2026-02-01T12:30
 permalink: /chess-cafe/2026-02-01/
@@ -29,3 +29,4 @@ enjoying the intellectual challenge that chess brings.
 
 - `Ticket includes food coupon ₹200`
 - 2.5 Hours of multiple Fun-filled Chess Variants
+
