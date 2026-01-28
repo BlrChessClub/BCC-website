@@ -1,7 +1,7 @@
 ---
 location: boozy-dozzy-btm
 title: "Chess Connect: Hand & Brain"
-image: chesscheers_20250209.jpeg
+image: chessconnect_20250209.jpg
 variations: hand-brain-swiss
 layout: event
 payment:
