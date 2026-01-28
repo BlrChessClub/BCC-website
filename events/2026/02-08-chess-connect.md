@@ -9,8 +9,8 @@ startsAt: 2026-02-08T10:00
 endsAt: 2026-02-08T13:00
 sponsor: paramountchess
 payment:
-price: 200
-razorpay: pl_S8Tnm57knWPX0a
+  price: 200
+  razorpay: pl_S8Tnm57knWPX0a
 ---
 ## Event Details:
 
