@@ -8,15 +8,14 @@ variations:
 - bughouse
 - simul
 - antichess
-
-  layout: event
-  image: chesscafe_20260207_1.jpeg
-  startsAt: 2026-02-07T10:00
-  endsAt: 2026-02-07T12:30
-  permalink: /chess-cafe/2026-02-07-1/
-  payment:
-  price: 350
-  razorpay: pl_S8Tnm57knWPX0a
+layout: event
+image: chesscafe_20260207_1.jpg
+startsAt: 2026-02-07T10:00
+endsAt: 2026-02-07T12:30
+permalink: /chess-cafe/2026-02-07-1/
+payment:
+price: 350
+razorpay: pl_S8Tnm57knWPX0a
 ---
 
 ## Event Details
