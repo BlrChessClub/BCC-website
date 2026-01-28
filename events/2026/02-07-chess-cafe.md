@@ -14,8 +14,8 @@ startsAt: 2026-02-07T10:00
 endsAt: 2026-02-07T12:30
 permalink: /chess-cafe/2026-02-07-1/
 payment:
-price: 350
-razorpay: pl_S8Tnm57knWPX0a
+  price: 350
+  razorpay: pl_S8Tnm57knWPX0a
 ---
 
 ## Event Details
