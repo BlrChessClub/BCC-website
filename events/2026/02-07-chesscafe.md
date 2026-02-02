@@ -1,5 +1,5 @@
 ---
-title: "Chess Cafe: A Chess Meetup with a Twist"
+title: "Chess and Cheers"
 location: kaavu-whitefield
 variations:
 - standard-knockout
@@ -12,7 +12,7 @@ layout: event
 image: chesscafe_20260207_2.jpg
 startsAt: 2026-02-07T16:00
 endsAt: 2026-02-07T19:00
-permalink: /chess-cafe/2026-02-07-2/
+permalink: /chess-cheers/2026-02-07-2/
 payment:
   price: 350
   razorpay: pl_S8Tnm57knWPX0a
