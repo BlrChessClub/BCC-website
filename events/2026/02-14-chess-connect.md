@@ -24,7 +24,10 @@ It's a game of trust, laughter, and surprises, where collaboration is the key to
 
 ## What's Included
 
-* 3 Hours of multiple Fun-filled Hand&Brain Chess
+* 3 Hours of multiple Fun-filled Hand&Brain Chess (Time Format : 8+3)
 - `Ticket includes Food/Beverage coupon worth ₹200`
-- Time Format : 8+3
-
+- Winning Team gets special Chocolate boxes from **Melted Joy**
+- Exclusive BCC goodies for Runner-up Team
+* 🎁 **Lucky Draw Prizes**:
+* `Premium Chess Sets` from Paramount Chess
+* `Chess.com Diamond Membership`
