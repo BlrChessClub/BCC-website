@@ -13,15 +13,15 @@ startsAt: 2026-02-22T10:00
 endsAt: 2025-02-22T15:30
 ---
 
-## 📍 Event Details
+## Event Details
 
-Join us for the next edition of Chess Connect, presented by Original Burger Co.
+Join us for the next edition of `Chess Connect, presented by Original Burger Co.`
 
 Enjoy a day of friendly rapid chess, connect with fellow chess enthusiasts, and make the most of exclusive food offers at the venue. Whether you’re a regular tournament player or just getting back to the board, Chess Connect is designed to be fun, social, and welcoming for all levels.
 
 Great games, good vibes, and exciting rewards await you at the board.
 
-## ♟️ What’s Included
+## What's Included:
 
 - 5 Hours of Rapid Chess (10+5 format)
 - Trophies for the `Top 3` players from `Original Burger Co`
