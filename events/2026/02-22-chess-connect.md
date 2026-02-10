@@ -12,22 +12,23 @@ permalink: /chess-connect/2026-02-22/
 startsAt: 2026-02-22T10:00
 endsAt: 2025-02-22T15:30
 ---
-## Event Details:
 
-Join us for our next chess meetup and celebrate the festive season with an amazing chess spirit!
+## 📍 Event Details
 
-Whether you’re a seasoned player or just discovering your love for the game, come enjoy great games, festive vibes, and meaningful connections over the chessboard.
+Join us for the next edition of Chess Connect, presented by Original Burger Co.
 
-Mark your calendar, bring your love for chess, and let’s make this Christmas extra special with memorable games and good company.
+Enjoy a day of friendly rapid chess, connect with fellow chess enthusiasts, and make the most of exclusive food offers at the venue. Whether you’re a regular tournament player or just getting back to the board, Chess Connect is designed to be fun, social, and welcoming for all levels.
 
-We can’t wait to see you at Chess Connect this Christmas! 🎅♟️
+Great games, good vibes, and exciting rewards await you at the board.
 
-## What's Included:
-- 5 Hours of `Rapid Chess` (Format 10+5)
-- `Special Prizes` for the Top 3 Players
-- Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
-- Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
-- `Christmas Surprises` waiting for you!
+## ♟️ What’s Included
+
+- 5 Hours of Rapid Chess (10+5 format)
+- Trophies for the `Top 3` players from `Original Burger Co`
+- `Flat ₹100 OFF` on any burger at Original Burger Co, RMZ Ecoworld (for participants)
+- `Merchandise and Food Voucher Giveaways` from Original Burger Co
+- Chance to win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
+- Chance to win a `Chess.com Diamond Membership` through a Lucky Draw
 
 ## Schedule
 
