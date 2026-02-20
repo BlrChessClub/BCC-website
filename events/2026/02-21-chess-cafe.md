@@ -12,7 +12,7 @@ layout: event
 image: chesscafe_20260221.jpg
 startsAt: 2026-02-21T10:00
 endsAt: 2026-02-21T12:30
-permalink: /chess-cafe/2025-02-21/
+permalink: /chess-cafe/2026-02-21/
 payment:
   price: 350
   razorpay: pl_S8Tnm57knWPX0a
