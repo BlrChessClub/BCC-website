@@ -1,6 +1,6 @@
 ---
 title: "Chess Connect: Team Battle"
-location: the-market-place-rmz-infinity
+location: the-market-place
 variations: swiss-team-4
 layout: event
 image: chessconnect_20260301.jpg
