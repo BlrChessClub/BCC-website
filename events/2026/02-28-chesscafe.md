@@ -10,8 +10,8 @@ variations:
 - antichess
 layout: event
 image: chesscafe_20260228.jpg
-startsAt: 2026-01-28T10:00
-endsAt: 2026-01-28T12:30
+startsAt: 2026-02-28T10:00
+endsAt: 2026-02-28T12:30
 permalink: /chess-cafe/2026-02-28/
 payment:
   price: 350
