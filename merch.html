@@ -1,0 +1,58 @@
+---
+permalink: /merch/
+title: Merch
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <div class="container-fluid">
+      <div class="heading_container heading_center mb-3">
+        <h2>{{page.title}}</h2>
+      </div>
+    </div>
+
+    <section class="merch_section text-center">
+      <div class="container-fluid"><div class=row>
+        {% assign merch_files = site.static_files | where: "merch", true |sort: "basename" %}
+        {% for pic in merch_files %}
+        {% assign item_price = pic.basename | split: "_" | last %}
+        {% assign item_name = pic.basename | split: "_" | first %}
+        <div class="col-lg-4 col-sm-6 text-center my-3">
+          <img
+            src="{{pic.path}}"
+            class="img-fluid rounded"
+            alt=""
+          />
+          <div class="d-flex justify-content-between p-2">
+            <figcaption class="figure-caption merch-caption merch-price">
+                ₹{{item_price}}
+            </figcaption>
+            <figcaption class="figure-caption merch-caption">
+                {{item_name}}
+            </figcaption>
+            <button class="btn btn-primary buy-btn">
+              {% assign buy_text = "Hey! I would like to purchase " |
+                  append: item_name  |
+                  append: " for ₹"   |
+                  append: item_price |
+                  append: ", Can you please process my order?" |
+                  url_encode
+              %}
+              <a href="https://wa.me/918109600254?text={{buy_text}}">BUY NOW</a>
+            </button>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    {% include bottom.html %}
+    {% include footer.html %}
+
+    {% include scripts.html %}
+  </body>
+</html>
