@@ -27,15 +27,19 @@ To celebrate Women’s Day, `women participants can register at a special discou
 
 
 ## Event Format:
-- `2:45 PM – 5:00 PM:` Blitz Tournament (5-6 rounds)
+- `2:45 PM – 5:00 PM:` Blitz Tournament (5-6 rounds format 5+3 )
 - `5:00 PM – 7:00 PM:` Simultaneous Exhibition with WGM Priyanka Nutakki
 
 ## What's Included:
 - Chance to play a `Simul against a Woman Grandmaster`
-- 2 hours of `Blitz Chess` (5+3 format)
-- Special `goodies and surprises for women participants`
+- Flat ₹500 off coupons from `Shoppers Stop`: 
+  - Top 10 in Blitz
+  - Top 10 Women in Blitz
+  - All Simul qualified players
+- Buy1 Get1 Voucher for all Women participants from `Gelato Italiano`
 - Chess puzzles, quizzes, and BCC giveaways
 - Free-to-play boards for walk-in visitors
+
 
 ## Qualification for Simul:
 - `Top 3 overall players` from the Blitz Tournament
@@ -43,5 +47,6 @@ To celebrate Women’s Day, `women participants can register at a special discou
 - `10 lucky participants` selected via lucky draw
   - 5 spots reserved for Women
   - 5 open lucky draw spots
+
 
 Join us for an inspiring Women’s Day evening filled with chess, community, and celebration — whether you’re competing, spectating, or just discovering the board.
