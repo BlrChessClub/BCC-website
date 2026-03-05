@@ -17,13 +17,15 @@ payment:
 ---
 ## Event Details:
 
-Bangalore Chess Club presents `Rook & Roll – Women’s Day Special`, a celebration of `Women in Chess`, featuring a simultaneous exhibition with `Woman Grandmaster Priyanka Nutakki`.
+Bangalore Chess Club presents `Rook & Roll – Women’s Day Special`, a celebration of `Women in Chess`, featuring a simultaneous exhibition with `Woman Grandmaster Priyanka Nutakki`. 
 
 This special edition is designed to celebrate, encourage, and spotlight women in the chess community — while keeping the event open, inclusive, and fun for everyone.
 
-The day kicks off with a `Blitz Tournament (Swiss format)`, where top performers and selected participants will earn the opportunity to challenge the WGM in a Simul later in the evening.
+The day kicks off with a `Blitz Tournament (Swiss format)`, where top performers and selected participants will earn the opportunity to challenge the WGM in a Simul
 
-To celebrate Women’s Day, `women participants can register at a special discounted price of ₹99`.
+To celebrate Women’s Day, `women participants can register at a special discounted price of ₹99`. 
+
+To add to the celebrations, `Shoppers Stop` joins us as the Fashion Partner, offering special rewards for participants.
 
 
 ## Event Format:
@@ -50,3 +52,4 @@ To celebrate Women’s Day, `women participants can register at a special discou
 
 
 Join us for an inspiring Women’s Day evening filled with chess, community, and celebration — whether you’re competing, spectating, or just discovering the board.
+
