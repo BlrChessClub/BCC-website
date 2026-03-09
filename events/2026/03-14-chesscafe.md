@@ -1,6 +1,6 @@
 ---
 title: "Chess Cafe: A Chess Meetup with a Twist"
-location: Espressoulster-koramangala.yml
+location: Espressoulster-koramangala
 variations:
 - standard-knockout
 - 4player-chess
@@ -9,7 +9,7 @@ variations:
 - simul
 - antichess
 layout: event
-image: chesscafe_20260314.jpg
+image: chesscafe_20260314.jpeg
 startsAt: 2026-03-14T10:00
 endsAt: 2026-03-14T12:30
 permalink: /chess-cafe/2026-03-14/
