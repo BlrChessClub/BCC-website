@@ -7,7 +7,6 @@ image: chessconnect_20260315.jpeg
 permalink: /chess-connect/2026-03-15/
 startsAt: 2026-03-15T10:00
 endsAt: 2026-01-15T13:00
-sponsor: paramountchess
 payment:
   price: 200
   razorpay: pl_SJIgEhgytgD7wH
