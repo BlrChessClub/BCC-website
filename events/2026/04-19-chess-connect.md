@@ -14,13 +14,11 @@ endsAt: 2026-04-19T15:30
 ---
 ## Event Details:
 
-Join us for our next chess meetup and celebrate the festive season with an amazing chess spirit!
+Join us for the next edition of `Chess Connect`
 
-Whether you’re a seasoned player or just discovering your love for the game, come enjoy great games, festive vibes, and meaningful connections over the chessboard.
+Enjoy a day of friendly rapid chess, connect with fellow chess enthusiasts, and make the most of exclusive food offers at the venue. Whether you’re a regular tournament player or just getting back to the board, Chess Connect is designed to be fun, social, and welcoming for all levels.
 
-Mark your calendar, bring your love for chess, and let’s make this Christmas extra special with memorable games and good company.
-
-We can’t wait to see you at Chess Connect this Christmas! 🎅♟️
+Great games, good vibes, and exciting rewards await you at the board.
 
 ## What's Included:
 - 5 Hours of `Rapid Chess` (Format 10+5)
