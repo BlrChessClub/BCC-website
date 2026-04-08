@@ -25,7 +25,6 @@ Great games, good vibes, and exciting rewards await you at the board.
 - `Special Prizes` for the Top 3 Players
 - Chance to Win `Premium Chess Sets` from Paramount Chess through a Lucky Draw
 - Chance to Win a `Chess.com Diamond Membership` through Lucky Draw
-- `Christmas Surprises` waiting for you!
 
 ## Schedule
 
