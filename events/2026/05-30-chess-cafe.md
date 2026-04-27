@@ -9,10 +9,10 @@ variations:
 - simul
 - antichess
 layout: event
-image: chesscafe_20260531.jpg
-startsAt: 2026-05-31T10:00
-endsAt: 2026-05-31T12:30
-permalink: /chess-cafe/2026-05-31/
+image: chesscafe_20260530.jpg
+startsAt: 2026-05-30T10:00
+endsAt: 2026-05-30T12:30
+permalink: /chess-cafe/2026-05-30/
 payment:
   price: 350
   razorpay: pl_SibT8EN9nioMPp
