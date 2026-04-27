@@ -3,7 +3,7 @@ title: "Chess Connect - Blitz"
 location: the-market-place-rmz-millenia
 variations: standard-swiss
 layout: event
-image: chessconnect_20260315.jpeg
+image: chessconnect_20260503.jpeg
 permalink: /chess-connect/2026-05-03/
 startsAt: 2026-05-03T10:00
 endsAt: 2026-05-03T13:00
