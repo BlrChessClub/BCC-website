@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Refund & Cancellation Policy
+permalink: /refund-policy/
 ---
 
 <div class="policy-page">

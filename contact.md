@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Us
+permalink: /contact/
 ---
 
 <div class="policy-page">

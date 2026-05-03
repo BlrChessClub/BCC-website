@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Shipping & Delivery Policy
+permalink: /shipping-policy/
 ---
 
 <div class="policy-page">
