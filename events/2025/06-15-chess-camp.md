@@ -6,7 +6,7 @@ layout: event
 startsAt: 2025-06-15T14:00
 endsAt: 2025-06-15T19:00
 image: chesscamp_20250614.jpeg
-permalink: /chess-camp-2025/
+permalink: /chess-camp-2025/day-2/
 payment:
   price: 50
   razorpay: pl_QbwLk6pEcvbPLT

@@ -51,6 +51,10 @@
                 {% endif %}
                 <span class="separator"> | </span>
                 <span class="time">{{page.startsAt | date:"%l:%M %p"}} - {{page.endsAt | date: "%l:%M %p"}}</span>
+                {% if page.payment.price %}
+                <span class="separator price-separator"> | </span>
+                <span class="price">Entry Fee: ₹{{page.payment.price}}</span>
+                {% endif %}
               </div>
             </div>
             <div style="float: right;"><add-to-calendar-button

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCC Event Creator</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #1a1a2e; color: #eee; min-height: 100vh; padding: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; margin-bottom: 2rem; color: #00d4ff; }
+        .form-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.4rem; font-weight: 600; color: #aaa; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        input, select, textarea { width: 100%; padding: 0.75rem; border: 1px solid #333; border-radius: 8px; background: #16213e; color: #eee; font-size: 1rem; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #00d4ff; box-shadow: 0 0 0 2px rgba(0,212,255,0.2); }
+        .row { display: flex; gap: 1rem; }
+        .row .form-group { flex: 1; }
+        .checkbox-group { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem; }
+        .checkbox-group label { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.8rem; background: #16213e; border: 1px solid #333; border-radius: 20px; cursor: pointer; font-size: 0.85rem; text-transform: none; letter-spacing: 0; font-weight: normal; color: #ccc; }
+        .checkbox-group input[type="checkbox"] { width: auto; margin: 0; }
+        .checkbox-group label:has(input:checked) { border-color: #00d4ff; background: #0f3460; color: #00d4ff; }
+        button { padding: 0.75rem 2rem; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; font-weight: 600; }
+        .btn-primary { background: #00d4ff; color: #1a1a2e; }
+        .btn-primary:hover { background: #00b8e6; }
+        .btn-secondary { background: #333; color: #eee; }
+        .btn-secondary:hover { background: #444; }
+        .actions { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+        .image-preview { max-width: 200px; max-height: 200px; border-radius: 8px; margin-top: 0.5rem; display: none; }
+        .image-info { margin-top: 0.5rem; font-size: 0.85rem; color: #888; }
+        .output-section { margin-top: 2rem; padding: 1.5rem; background: #16213e; border-radius: 12px; border: 1px solid #333; display: none; }
+        .output-section h3 { color: #00d4ff; margin-bottom: 1rem; }
+        .output-file { margin-bottom: 1.5rem; }
+        .output-file h4 { color: #aaa; margin-bottom: 0.5rem; font-size: 0.85rem; }
+        .output-file pre { background: #0a0a1a; padding: 1rem; border-radius: 8px; overflow-x: auto; font-size: 0.85rem; color: #76ff7a; white-space: pre-wrap; }
+        .download-btn { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #0f3460; border: 1px solid #00d4ff; color: #00d4ff; border-radius: 6px; cursor: pointer; font-size: 0.8rem; text-decoration: none; }
+        .download-btn:hover { background: #1a4a7a; }
+        .new-location-fields { display: none; margin-top: 1rem; padding: 1rem; border: 1px dashed #333; border-radius: 8px; }
+        .new-location-fields.show { display: block; }
+        #permalink-preview { color: #888; font-size: 0.85rem; margin-top: 0.3rem; }
+        .section-title { font-size: 1.1rem; color: #00d4ff; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ BCC Event Creator</h1>
+
+        <!-- Event Basic Info -->
+        <div class="section-title">Event Details</div>
+
+        <div class="form-group">
+            <label>Event Title</label>
+            <input type="text" id="title" placeholder='e.g. Chess Connect - Rapid'>
+        </div>
+
+        <div class="form-group">
+            <label>Event Type (for image name & permalink)</label>
+            <select id="event-type">
+                <option value="">-- Select --</option>
+                <option value="chess-connect">Chess Connect</option>
+                <option value="chess-cafe">Chess Cafe</option>
+                <option value="chess-cheers">Chess Cheers</option>
+                <option value="checkmate-lounge">Checkmate Lounge</option>
+                <option value="coffee-checkmate">Coffee & Checkmate</option>
+                <option value="rook-and-roll">Rook and Roll</option>
+                <option value="freestyle-chess">Freestyle Chess</option>
+                <option value="chess-camp">Chess Camp</option>
+                <option value="checkmate-park">Checkmate Park</option>
+                <option value="chess-quiz">Chess Quiz</option>
+                <option value="custom">Custom...</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="custom-type-group" style="display:none;">
+            <label>Custom Event Type Slug</label>
+            <input type="text" id="custom-type" placeholder="e.g. my-new-event">
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Starts At</label>
+                <input type="datetime-local" id="starts-at">
+            </div>
+            <div class="form-group">
+                <label>Ends At</label>
+                <input type="datetime-local" id="ends-at">
+            </div>
+        </div>
+
+        <div id="permalink-preview"></div>
+
+        <!-- Location -->
+        <div class="section-title">Location</div>
+
+        <div class="form-group">
+            <label>Location</label>
+            <select id="location">
+                <option value="">-- Select --</option>
+                <option value="adityas">Adityas</option>
+                <option value="azzure-hsr">Azzure HSR</option>
+                <option value="azzure-mg">Azzure MG</option>
+                <option value="board-in-the-city">Board in the City</option>
+                <option value="boozy-dozzy-btm">Boozy Dozzy BTM</option>
+                <option value="brikoven-hsr">Brik Oven HSR</option>
+                <option value="brikoven-koramangala">Brik Oven Koramangala</option>
+                <option value="ccd-brigade">CCD Brigade</option>
+                <option value="cubbon-park">Cubbon Park</option>
+                <option value="cubbon-park-bandstand">Cubbon Park Bandstand</option>
+                <option value="dialogues-cafe">Dialogues Cafe</option>
+                <option value="freedom-park">Freedom Park</option>
+                <option value="freedom-park-parking">Freedom Park Parking</option>
+                <option value="garuda-mall">Garuda Mall</option>
+                <option value="gillys-bel-road">Gillys Bel Road</option>
+                <option value="gillys-stmarks">Gillys St Marks</option>
+                <option value="kaavu-whitefield">Kaavu Whitefield</option>
+                <option value="ksc">KSC</option>
+                <option value="lahe-lahe">Lahe Lahe</option>
+                <option value="merwans">Merwans</option>
+                <option value="online">Online</option>
+                <option value="oyster-hsr">Oyster HSR</option>
+                <option value="petriqor">Petriqor</option>
+                <option value="qube-jayanagar">Qube Jayanagar</option>
+                <option value="qube-koramangala">Qube Koramangala</option>
+                <option value="slay-hsr">Slay HSR</option>
+                <option value="spinny-park">Spinny Park</option>
+                <option value="starbucks-churchstreet">Starbucks Church Street</option>
+                <option value="starbucks-jayanagar">Starbucks Jayanagar</option>
+                <option value="stories-hsr">Stories HSR</option>
+                <option value="the-hub">The Hub</option>
+                <option value="the-market-place">The Market Place</option>
+                <option value="the-market-place-rmz-infinity">The Market Place RMZ Infinity</option>
+                <option value="the-market-place-rmz-millenia">The Market Place RMZ Millenia</option>
+                <option value="underline">Underline</option>
+                <option value="urban-solace">Urban Solace</option>
+                <option value="uru-brewpark">Uru Brewpark</option>
+                <option value="wework-galaxy">WeWork Galaxy</option>
+                <option value="zugzwang-academy">Zugzwang Academy</option>
+                <option value="__new__">➕ Add New Location...</option>
+            </select>
+        </div>
+
+        <div class="new-location-fields" id="new-location-fields">
+            <div class="form-group">
+                <label>Location Slug (filename)</label>
+                <input type="text" id="loc-slug" placeholder="e.g. cafe-name-area">
+            </div>
+            <div class="form-group">
+                <label>Location Name</label>
+                <input type="text" id="loc-name" placeholder="e.g. My Cafe">
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" id="loc-address" placeholder="e.g. 123 Street, Area Name">
+            </div>
+            <div class="form-group">
+                <label>Google Maps Link</label>
+                <input type="url" id="loc-link" placeholder="https://maps.app.goo.gl/...">
+            </div>
+            <div class="form-group">
+                <label>Short (Area name)</label>
+                <input type="text" id="loc-short" placeholder="e.g. Koramangala">
+            </div>
+        </div>
+
+        <!-- Variations -->
+        <div class="section-title">Variations</div>
+
+        <div class="form-group">
+            <label>Select Variations</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="standard-swiss"> Standard Swiss</label>
+                <label><input type="checkbox" value="960-swiss"> Chess960 Swiss</label>
+                <label><input type="checkbox" value="hand-brain-swiss"> Hand & Brain Swiss</label>
+                <label><input type="checkbox" value="bughouse-swiss"> Bughouse Swiss</label>
+                <label><input type="checkbox" value="triathlon-swiss"> Triathlon Swiss</label>
+                <label><input type="checkbox" value="standard-swiss-5-rounds"> Standard 5 Rounds</label>
+                <label><input type="checkbox" value="standard-knockout"> Standard Knockout</label>
+                <label><input type="checkbox" value="hand&brain"> Hand & Brain</label>
+                <label><input type="checkbox" value="bughouse"> Bughouse</label>
+                <label><input type="checkbox" value="antichess"> Anti Chess</label>
+                <label><input type="checkbox" value="swiss-team-4"> Swiss Team (4)</label>
+                <label><input type="checkbox" value="standard-arena"> Standard Arena</label>
+                <label><input type="checkbox" value="simul"> Simul</label>
+                <label><input type="checkbox" value="4player-chess"> 4-Player Chess</label>
+            </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="section-title">Payment</div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Price (INR)</label>
+                <input type="number" id="price" placeholder="e.g. 300">
+            </div>
+            <div class="form-group">
+                <label>Razorpay Button ID</label>
+                <input type="text" id="razorpay" placeholder="e.g. pl_RmPuM6zynrwj4c">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>OR External Payment Link (optional)</label>
+            <input type="url" id="payment-link" placeholder="https://...">
+        </div>
+
+        <div class="form-group">
+            <label>OR Google Form ID (for free events)</label>
+            <input type="text" id="form-id" placeholder="e.g. 2D1wqBEHQNPJSXpR9">
+        </div>
+
+        <!-- Optional -->
+        <div class="section-title">Optional</div>
+
+        <div class="form-group">
+            <label>Sponsor slug (optional)</label>
+            <input type="text" id="sponsor" placeholder="e.g. paramountchess">
+        </div>
+
+        <div class="form-group">
+            <label>Event Body Content (auto-filled based on event type — edit as needed)</label>
+            <textarea id="body-content" rows="16" placeholder="Will auto-fill when you select an event type..."></textarea>
+            <div style="margin-top:0.5rem; font-size:0.8rem; color:#888;">💡 Auto-generated based on event type. Modify freely before generating.</div>
+        </div>
+
+        <!-- Image -->
+        <div class="section-title">Event Image</div>
+
+        <div class="form-group">
+            <label>Upload Image (will be compressed to JPG &lt; 500KB)</label>
+            <input type="file" id="image-input" accept="image/*">
+            <img id="image-preview" class="image-preview">
+            <div id="image-info" class="image-info"></div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button class="btn-primary" onclick="generateFiles()">Generate & Download Files</button>
+            <button class="btn-secondary" onclick="resetForm()">Reset</button>
+        </div>
+
+        <!-- Output -->
+        <div class="output-section" id="output-section">
+            <h3>Generated Files</h3>
+
+            <div class="output-file" id="output-md">
+                <h4>Event MD File: <span id="md-filename"></span></h4>
+                <pre id="md-content"></pre>
+                <a class="download-btn" id="download-md">⬇ Download MD</a>
+            </div>
+
+            <div class="output-file" id="output-location" style="display:none;">
+                <h4>Location File: <span id="loc-filename"></span></h4>
+                <pre id="loc-content"></pre>
+                <a class="download-btn" id="download-loc">⬇ Download YML</a>
+            </div>
+
+            <div class="output-file" id="output-image">
+                <h4>Image File: <span id="img-filename"></span></h4>
+                <div id="img-info-output" class="image-info"></div>
+                <a class="download-btn" id="download-img">⬇ Download Image</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Body content templates per event type
+        const bodyTemplates = {
+            'chess-connect': `## Event Details:
+
+Join us for our next chess meetup for a fantastic chess spirit!
+
+Whether you're a seasoned player or just discovering your love for the game, come embrace the thrill of chess, forge new connections, and make every move count.
+
+Mark your calendar, bring your passion for chess, and get ready to create some remarkable memories with fellow chess enthusiasts. We can\`t wait to see you at "Chess Connect"!
+
+## What's Included:
+- 5 Hours of \`Rapid Chess\` (Format 10+5)
+- \`Special Prizes\` for the Top 3 Players
+- Chance to Win \`Premium Chess Sets\` from Paramount Chess through a Lucky Draw
+- Chance to Win a \`Chess.com Diamond Membership\` through Lucky Draw
+
+## Schedule
+
+- Registration and Player Briefing (10:00 AM)
+- Round 1 (10:20 AM)
+- Round 2 (11:00 AM)
+- Round 3 (11:40 AM)
+- Round 4 (12:15 PM)
+- \`Lunch Break (12:40 PM)\`
+- Round 5 (1:30 PM)
+- Round 6 (2:10 PM)
+- Round 7 (2:45 PM)`,
+
+            'chess-cafe': `## Event Details
+
+Join us for an exciting gathering of chess aficionados where we'll be combining our passion for the game with the pleasure of sipping on freshly brewed coffee. This event is all about camaraderie, friendly competition, and enjoying the intellectual challenge that chess brings.
+
+## What's Included
+
+- \`Ticket includes food coupon ₹200\`
+- 2.5 Hours of multiple Fun-filled Chess Variants`,
+
+            'chess-cheers': `## Event Details
+
+Get ready for an evening of chess, craft beer, and great company!
+
+Whether you're a seasoned player or just getting started, come enjoy a relaxed chess session with a pint in hand. It's the perfect way to unwind, challenge your brain, and meet fellow chess lovers.
+
+## What's Included:
+- 3 Hours of \`Hand & Brain Chess\` (Swiss Format)
+- Great vibes with craft beer and chess
+- Prizes for top performers`,
+
+            'checkmate-lounge': `## Event Details
+
+Welcome to Checkmate Lounge — a relaxed, social chess experience in a cozy setting.
+
+Drop in, grab a drink, and enjoy casual games of chess. No tournament pressure — just great conversations and chess with like-minded people.
+
+## What's Included:
+- Open chess boards for casual play
+- Relaxed lounge atmosphere
+- Meet fellow chess enthusiasts`,
+
+            'coffee-checkmate': `## Event Details
+
+Start your morning with chess and coffee! A beginner-friendly chess meetup designed for casual players who want to learn, improve, and have fun.
+
+## What's Included:
+- 2 Hours of casual chess
+- Beginner-friendly environment
+- Tips and guidance from experienced players
+- Great coffee and conversations`,
+
+            'rook-and-roll': `## Event Details:
+
+Bangalore Chess Club presents \`Rook & Roll\` — a special chess event featuring exciting formats and amazing prizes!
+
+## Event Format:
+- Blitz Tournament (Swiss format)
+- Special exhibition games
+
+## What's Included:
+- Hours of competitive chess
+- Special goodies and surprises
+- Chess puzzles, quizzes, and BCC giveaways
+- Free-to-play boards for walk-in visitors`,
+
+            'freestyle-chess': `## Event Details
+
+A unique chess experience where creativity meets strategy! Freestyle Chess brings unconventional formats and a fresh take on the game we all love.
+
+## What's Included:
+- Multiple exciting chess variants
+- Prizes for top performers
+- Fun, social atmosphere`,
+
+            'checkmate-park': `## Event Details
+
+Chess in the open air! Join us for an outdoor chess meetup in one of Bangalore's beautiful parks.
+
+Bring your friends, enjoy the weather, and play some chess in a refreshing outdoor setting.
+
+## What's Included:
+- Open-air chess boards
+- Casual games and friendly matches
+- Fresh air and good company`,
+
+            'chess-quiz': `## Event Details
+
+Think you know chess? Put your knowledge to the test at our Chess Quiz!
+
+From openings to endgames, famous games to player trivia — challenge yourself and compete with fellow chess enthusiasts.
+
+## What's Included:
+- Multiple rounds of chess trivia
+- Team and individual rounds
+- Prizes for top scorers`,
+
+            'chess-camp': `## Event Details
+
+An intensive chess learning experience designed to level up your game! Whether you're a beginner looking to build a strong foundation or an intermediate player aiming to break through, this camp has something for you.
+
+## What's Included:
+- Structured lessons from experienced coaches
+- Practical playing sessions
+- Game analysis and feedback
+- Study materials and resources`
+        };
+
+        // Event type to image prefix mapping
+        const typeToImagePrefix = {
+            'chess-connect': 'chessconnect',
+            'chess-cafe': 'chesscafe',
+            'chess-cheers': 'chesscheers',
+            'checkmate-lounge': 'checkmate_lounge',
+            'coffee-checkmate': 'coffee_and_checkmate',
+            'rook-and-roll': 'rook_and_roll',
+            'freestyle-chess': 'freestyle_chess',
+            'chess-camp': 'chess_camp',
+            'checkmate-park': 'checkmate_park',
+            'chess-quiz': 'chess_quiz'
+        };
+
+        // Show/hide custom type field + auto-fill body content
+        document.getElementById('event-type').addEventListener('change', function() {
+            document.getElementById('custom-type-group').style.display = this.value === 'custom' ? 'block' : 'none';
+            updatePermalink();
+            autoFillBody();
+        });
+
+        function autoFillBody() {
+            const type = getEventType();
+            const textarea = document.getElementById('body-content');
+            if (bodyTemplates[type]) {
+                textarea.value = bodyTemplates[type];
+            }
+        }
+
+        // Show/hide new location fields
+        document.getElementById('location').addEventListener('change', function() {
+            document.getElementById('new-location-fields').classList.toggle('show', this.value === '__new__');
+        });
+
+        // Update permalink preview
+        document.getElementById('starts-at').addEventListener('change', updatePermalink);
+        document.getElementById('event-type').addEventListener('change', updatePermalink);
+        document.getElementById('custom-type').addEventListener('input', updatePermalink);
+
+        function updatePermalink() {
+            const type = getEventType();
+            const startsAt = document.getElementById('starts-at').value;
+            if (type && startsAt) {
+                const date = startsAt.split('T')[0];
+                document.getElementById('permalink-preview').textContent = `Permalink: /${type}/${date}/`;
+            } else {
+                document.getElementById('permalink-preview').textContent = '';
+            }
+        }
+
+        function getEventType() {
+            const sel = document.getElementById('event-type').value;
+            if (sel === 'custom') return document.getElementById('custom-type').value.trim();
+            return sel;
+        }
+
+        // Image preview & compression
+        let compressedImageBlob = null;
+        let compressedImageName = '';
+
+        document.getElementById('image-input').addEventListener('change', async function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const preview = document.getElementById('image-preview');
+            const info = document.getElementById('image-info');
+
+            preview.style.display = 'block';
+            info.textContent = `Original: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+
+            // Load image
+            const img = new Image();
+            const url = URL.createObjectURL(file);
+            img.onload = async function() {
+                preview.src = url;
+
+                // Compress to JPG < 500KB
+                compressedImageBlob = await compressImage(img, 500);
+                info.textContent = `Original: ${file.name} (${(file.size / 1024).toFixed(1)} KB) → Compressed: ${(compressedImageBlob.size / 1024).toFixed(1)} KB`;
+            };
+            img.src = url;
+        });
+
+        async function compressImage(img, maxSizeKB) {
+            const canvas = document.createElement('canvas');
+            let width = img.naturalWidth;
+            let height = img.naturalHeight;
+
+            // Scale down if very large
+            const maxDim = 1600;
+            if (width > maxDim || height > maxDim) {
+                const ratio = Math.min(maxDim / width, maxDim / height);
+                width = Math.round(width * ratio);
+                height = Math.round(height * ratio);
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+
+            // Binary search for quality that gives < maxSizeKB
+            let quality = 0.85;
+            let blob = await canvasToBlob(canvas, quality);
+
+            if (blob.size > maxSizeKB * 1024) {
+                let lo = 0.1, hi = 0.85;
+                for (let i = 0; i < 10; i++) {
+                    quality = (lo + hi) / 2;
+                    blob = await canvasToBlob(canvas, quality);
+                    if (blob.size > maxSizeKB * 1024) {
+                        hi = quality;
+                    } else {
+                        lo = quality;
+                    }
+                }
+                // If still too large, scale down further
+                if (blob.size > maxSizeKB * 1024) {
+                    const scale = Math.sqrt((maxSizeKB * 1024) / blob.size) * 0.9;
+                    canvas.width = Math.round(width * scale);
+                    canvas.height = Math.round(height * scale);
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    blob = await canvasToBlob(canvas, 0.8);
+                }
+            }
+
+            return blob;
+        }
+
+        function canvasToBlob(canvas, quality) {
+            return new Promise(resolve => {
+                canvas.toBlob(resolve, 'image/jpeg', quality);
+            });
+        }
+
+        function getImageFilename() {
+            const type = getEventType();
+            const startsAt = document.getElementById('starts-at').value;
+            if (!type || !startsAt) return 'event.jpeg';
+
+            const date = startsAt.split('T')[0].replace(/-/g, '');
+            const prefix = typeToImagePrefix[type] || type.replace(/-/g, '_');
+            return `${prefix}_${date}.jpeg`;
+        }
+
+        function generateFiles() {
+            const title = document.getElementById('title').value.trim();
+            const eventType = getEventType();
+            const startsAt = document.getElementById('starts-at').value;
+            const endsAt = document.getElementById('ends-at').value;
+            const locationVal = document.getElementById('location').value;
+            const price = document.getElementById('price').value.trim();
+            const razorpay = document.getElementById('razorpay').value.trim();
+            const paymentLink = document.getElementById('payment-link').value.trim();
+            const formId = document.getElementById('form-id').value.trim();
+            const sponsor = document.getElementById('sponsor').value.trim();
+            const bodyContent = document.getElementById('body-content').value.trim();
+
+            // Validation
+            if (!title || !eventType || !startsAt || !endsAt || !locationVal) {
+                alert('Please fill in: Title, Event Type, Start/End time, and Location');
+                return;
+            }
+
+            // Get selected variations
+            const variations = [];
+            document.querySelectorAll('.checkbox-group input:checked').forEach(cb => {
+                variations.push(cb.value);
+            });
+
+            // Build location value
+            let locationSlug = locationVal;
+            if (locationVal === '__new__') {
+                locationSlug = document.getElementById('loc-slug').value.trim();
+                if (!locationSlug) {
+                    alert('Please enter a location slug for the new location');
+                    return;
+                }
+            }
+
+            // Build permalink
+            const date = startsAt.split('T')[0];
+            const permalink = `/${eventType}/${date}/`;
+
+            // Build image filename
+            const imageFilename = getImageFilename();
+
+            // --- Generate MD content ---
+            let md = '---\n';
+            md += `title: "${title}"\n`;
+            md += `location: ${locationSlug}\n`;
+            md += `layout: event\n`;
+            md += `startsAt: ${startsAt}\n`;
+            md += `endsAt: ${endsAt}\n`;
+            md += `image: ${imageFilename}\n`;
+            md += `permalink: ${permalink}\n`;
+
+            if (variations.length === 1) {
+                md += `variations: ${variations[0]}\n`;
+            } else if (variations.length > 1) {
+                md += `variations:\n`;
+                variations.forEach(v => { md += `- ${v}\n`; });
+            }
+
+            if (price && razorpay) {
+                md += `payment:\n`;
+                md += `  price: ${price}\n`;
+                md += `  razorpay: ${razorpay}\n`;
+            } else if (price && paymentLink) {
+                md += `payment:\n`;
+                md += `  price: ${price}\n`;
+                md += `  link: ${paymentLink}\n`;
+            }
+
+            if (formId) {
+                md += `form_id: ${formId}\n`;
+            }
+
+            if (sponsor) {
+                md += `sponsor: ${sponsor}\n`;
+            }
+
+            md += '---\n';
+
+            if (bodyContent) {
+                md += '\n' + bodyContent + '\n';
+            }
+
+            // MD filename
+            const dateForFilename = startsAt.split('T')[0]; // 2026-04-30
+            const parts = dateForFilename.split('-'); // [2026, 04, 30]
+            const mdFilename = `${parts[1]}-${parts[2]}-${eventType}.md`;
+            const mdPath = `events/${parts[0]}/${mdFilename}`;
+
+            // Show output
+            document.getElementById('output-section').style.display = 'block';
+            document.getElementById('md-filename').textContent = mdPath;
+            document.getElementById('md-content').textContent = md;
+            document.getElementById('download-md').onclick = () => downloadFile(mdFilename, md, 'text/markdown');
+
+            // --- Location file ---
+            if (locationVal === '__new__') {
+                const locName = document.getElementById('loc-name').value.trim();
+                const locAddress = document.getElementById('loc-address').value.trim();
+                const locLink = document.getElementById('loc-link').value.trim();
+                const locShort = document.getElementById('loc-short').value.trim();
+
+                let locYml = `name: ${locName}\n`;
+                locYml += `address: ${locAddress}\n`;
+                locYml += `link: ${locLink}\n`;
+                locYml += `short: ${locShort}\n`;
+
+                const locFilename = `${locationSlug}.yml`;
+
+                document.getElementById('output-location').style.display = 'block';
+                document.getElementById('loc-filename').textContent = `_data/locations/${locFilename}`;
+                document.getElementById('loc-content').textContent = locYml;
+                document.getElementById('download-loc').onclick = () => downloadFile(locFilename, locYml, 'text/yaml');
+            } else {
+                document.getElementById('output-location').style.display = 'none';
+            }
+
+            // --- Image ---
+            document.getElementById('img-filename').textContent = `images/${imageFilename}`;
+            if (compressedImageBlob) {
+                document.getElementById('img-info-output').textContent = `Size: ${(compressedImageBlob.size / 1024).toFixed(1)} KB`;
+                document.getElementById('download-img').onclick = () => {
+                    const url = URL.createObjectURL(compressedImageBlob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = imageFilename;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                };
+            } else {
+                document.getElementById('img-info-output').textContent = 'No image uploaded';
+                document.getElementById('download-img').onclick = () => alert('No image to download');
+            }
+
+            // Scroll to output
+            document.getElementById('output-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function downloadFile(filename, content, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function resetForm() {
+            document.querySelectorAll('input, textarea, select').forEach(el => {
+                if (el.type === 'checkbox') el.checked = false;
+                else el.value = '';
+            });
+            document.getElementById('image-preview').style.display = 'none';
+            document.getElementById('image-info').textContent = '';
+            document.getElementById('output-section').style.display = 'none';
+            document.getElementById('new-location-fields').classList.remove('show');
+            document.getElementById('custom-type-group').style.display = 'none';
+            document.getElementById('permalink-preview').textContent = '';
+            compressedImageBlob = null;
+        }
+    </script>
+</body>
+</html>

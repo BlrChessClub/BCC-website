@@ -1,6 +1,14 @@
 ---
 title: "Chess Cafe: A Chess Meetup with a Twist"
 location: qube-jayanagar
+layout: event
+image: chesscafe_20260207_1.jpeg
+startsAt: 2026-02-07T10:00
+endsAt: 2026-02-07T12:30
+permalink: /chess-cafe/2026-02-07-1/
+payment:
+price: 350
+razorpay: pl_S8Tnm57knWPX0a
 variations:
 - standard-knockout
 - hand&brain
@@ -8,14 +16,6 @@ variations:
 - bughouse
 - simul
 - antichess
-layout: event
-image: chesscafe_20260207_1.jpg
-startsAt: 2026-02-07T10:00
-endsAt: 2026-02-07T12:30
-permalink: /chess-cafe/2026-02-07-1/
-payment:
-  price: 350
-  razorpay: pl_S8Tnm57knWPX0a
 ---
 
 ## Event Details
