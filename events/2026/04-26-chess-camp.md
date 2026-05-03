@@ -6,7 +6,7 @@ layout: event
 startsAt: 2026-04-25T14:00
 endsAt: 2026-04-26T19:00
 image: chesscamp_20260425.jpeg
-permalink: /chess-camp-2026/
+permalink: /chess-camp-2026/day2/
 payment:
   price: 150
   razorpay: pl_ScCd4xr7vbXkSj
