@@ -7,7 +7,6 @@ endsAt: 2026-05-24T19:00
 image: chesscheers_20260524.jpeg
 permalink: /chess-cheers/2026-05-24/
 variations:
-- hand-brain-swiss
 - standard-knockout
 - hand&brain
 - bughouse
