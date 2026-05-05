@@ -9,9 +9,9 @@ permalink: /shipping-policy/
   <p class="policy-intro">Last updated: May 2026</p>
 
   <div class="policy-section">
-    <h2>Service-Based Organisation</h2>
-    <p>Bangalore Chess Club is an <strong>event-based services organisation</strong>. We organise and facilitate chess events, tournaments, and community gatherings across Bengaluru.</p>
-    <p><strong>We do not sell or ship any physical products.</strong> No physical goods will be dispatched as part of any transaction on this website.</p>
+    <h2>Community Chess Club — No Physical Products</h2>
+    <p>Bangalore Chess Club is a <strong>community chess club</strong>. We organise our own chess meetups, sessions, and tournaments for our community in Bengaluru. We are not an event ticketing marketplace.</p>
+    <p><strong>We do not sell or ship any physical products.</strong> No physical goods will be dispatched as part of any transaction on this website. All payments collected are registration fees for BCC's own community events.</p>
   </div>
 
   <div class="policy-section">
@@ -29,7 +29,11 @@ permalink: /shipping-policy/
   </div>
 
   <div class="policy-section">
-    <h2>Questions?</h2>
-    <p>If you have not received your registration confirmation, no worries, a successful transaction is enough to confirm your registration.</p>
+    <h2>Contact Us</h2>
+    <p>If you have not received your registration confirmation or have any queries, please contact us:</p>
+    <ul>
+      <li>📱 <a href="tel:+919187212641">+91 91872 12641</a></li>
+      <li>📧 <a href="mailto:bangalorechessclubofficial@gmail.com">bangalorechessclubofficial@gmail.com</a></li>
+    </ul>
   </div>
 </div>

@@ -35,8 +35,7 @@ permalink: /privacy-policy/
     <ul>
       <li>Payment processors (e.g. Razorpay) solely to facilitate secure transactions</li>
       <li>Authorities, if required by law</li>
-      <li>Venue partners, if required</li>
-      <li>Venue partners, if required</li>
+      <li>Venue partners, if required for event coordination</li>
     </ul>
   </div>
 

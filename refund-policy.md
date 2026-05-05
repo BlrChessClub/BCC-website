@@ -10,12 +10,12 @@ permalink: /refund-policy/
 
   <div class="policy-section">
     <h2>1. Booking Confirmation</h2>
-    <p>Once a registration or booking is confirmed and payment is received, it is considered final. Please review all event details carefully before completing your purchase.</p>
+    <p>Once a registration is confirmed and payment is received, it is considered final. Please review all event details carefully before completing your registration.</p>
   </div>
 
   <div class="policy-section">
     <h2>2. No-Refund Policy</h2>
-    <p>All event registrations are <strong>non-refundable</strong>. Cancellations are not accepted once a booking has been made. We encourage participants to ensure they are available before registering.</p>
+    <p>All event registrations are <strong>non-refundable</strong>. Cancellations are not accepted once a registration has been completed. We encourage participants to ensure they are available before registering.</p>
   </div>
 
   <div class="policy-section">
