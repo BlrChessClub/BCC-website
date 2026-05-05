@@ -9,8 +9,9 @@ permalink: /terms-and-conditions/
   <p class="policy-intro">Last updated:May 2026. By registering for any Bangalore Chess Club event, you agree to the following terms.</p>
 
   <div class="policy-section">
-    <h2>1. About Our Services</h2>
-    <p>Bangalore Chess Club ("BCC", "we", "us") provides event registration and management services for chess-based events across Bengaluru. We do not sell physical products.</p>
+    <h2>1. About Us</h2>
+    <p>Bangalore Chess Club ("BCC", "we", "us") is a community chess club based in Bengaluru. We organise our own chess meetups, sessions, and tournaments exclusively for our community members. Participants pay a registration fee to attend these events.</p>
+    <p><strong>BCC is not an event ticketing marketplace or platform.</strong> We do not sell tickets on behalf of third parties. All events listed on this website are organised and conducted solely by Bangalore Chess Club. We do not sell physical products.</p>
   </div>
 
   <div class="policy-section">
@@ -30,7 +31,7 @@ permalink: /terms-and-conditions/
 
   <div class="policy-section">
     <h2>4. Payments</h2>
-    <p>All registration fees are collected at the time of booking. Payments are final and subject to our <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>. BCC uses secure third-party payment processors and does not store your card details.</p>
+    <p>All registration fees are collected at the time of registration. Fees are displayed in Indian Rupees (INR) and are subject to our <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>. BCC uses secure third-party payment processors (Razorpay) and does not store your card details.</p>
   </div>
 
   <div class="policy-section">
