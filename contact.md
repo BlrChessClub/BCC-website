@@ -11,7 +11,7 @@ permalink: /contact/
   <div class="contact-grid">
     <div class="contact-card">
       <div class="contact-icon">📱</div>
-      <h3>Phone</h3>
+      <h3>Phone (Whatsapp Only)</h3>
       <p><a href="tel:+919187212641">+91 91872 12641</a></p>
     </div>
 
