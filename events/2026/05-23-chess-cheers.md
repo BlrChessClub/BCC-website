@@ -1,16 +1,9 @@
 ---
-title: "Chess and Cheers"
+title: "Chess Connect : Showdown"
 location: uru-brewpark
-variations:
-- standard-knockout
-- 4player-chess
-- hand&brain
-- bughouse
-- simul
-- antichess
 layout: event
-image: chessandcheers_20260523.jpg
-permalink: /chess-cheers/2026-05-23/
+image: chessconnect_20260523.jpg
+permalink: /chess-connect/2026-05-23/
 startsAt: 2026-05-23T16:00
 endsAt: 2026-05-23T19:00
 payment:
