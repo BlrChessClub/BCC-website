@@ -24,12 +24,12 @@ Sip on some of the finest beverages, meet fellow chess enthusiasts, engage in th
 - All games will be played in 5+3 time control
 
 ## Round Format:
-R1: Opening Challenge
-R2: 3-Check Chess
-R3: Antichess
-R4: King of the Hill
-R5: Racing Kings
-R6: Chess960
+- R1: Opening Challenge
+- R2: 3-Check Chess
+- R3: Antichess
+- R4: King of the Hill
+- R5: Racing Kings
+- R6: Chess960
 
 ## Variant Details:
 
