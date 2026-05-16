@@ -31,7 +31,7 @@ Great games, good vibes, and exciting rewards await you at the board.
 ## Schedule
 
 - Registration and Player Briefing (10:00 AM)
-- Round 1 (10:20 AM)
+- Round 1 (10:10 AM)
 - Round 2 (11:00 AM)
 - Round 3 (11:40 AM)
 - Round 4 (12:15 PM)
