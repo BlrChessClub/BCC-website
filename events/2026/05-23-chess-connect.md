@@ -2,7 +2,7 @@
 title: "Chess Connect : Showdown"
 location: uru-brewpark
 layout: event
-image: chessconnect_20260523.jpg
+image: chessconnect_20260523.jpeg
 permalink: /chess-connect/2026-05-23/
 startsAt: 2026-05-23T16:00
 endsAt: 2026-05-23T19:00
