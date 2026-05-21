@@ -4,7 +4,7 @@ location: play-arena
 layout: event
 startsAt: 2026-05-24T16:00
 endsAt: 2026-05-24T19:00
-image: chesscheers_20260524.jpeg
+image: chessandcheers_20260524.jpeg
 permalink: /chess-cheers/2026-05-24/
 sponsor: makeanygift
 variations:
