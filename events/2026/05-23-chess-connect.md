@@ -6,6 +6,7 @@ image: chessconnect_20260523.jpg
 permalink: /chess-connect/2026-05-23/
 startsAt: 2026-05-23T16:00
 endsAt: 2026-05-23T19:00
+sponsor:makeanygift
 payment:
     price: 350
     razorpay: pl_SibT8EN9nioMPp
@@ -22,6 +23,7 @@ Sip on some of the finest beverages, meet fellow chess enthusiasts, engage in th
 - `Ticket includes food coupon ₹200`
 - 3 Hours of multiple Fun-filled Chess Variants
 - All games will be played in 5+3 time control
+- Chance to play on a special `Harry Potter Themed Set` by MAG(Make Any Gift)
 
 ## Round Format:
 - R1: Opening Challenge
