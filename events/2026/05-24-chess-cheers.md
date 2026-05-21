@@ -6,6 +6,7 @@ startsAt: 2026-05-24T16:00
 endsAt: 2026-05-24T19:00
 image: chesscheers_20260524.jpeg
 permalink: /chess-cheers/2026-05-24/
+sponsor: makeanygift
 variations:
 - standard-knockout
 - hand&brain
@@ -24,3 +25,4 @@ Join us for a one-of-a-kind chess event, Whether you’re a grandmaster or a beg
 ## What's Included:
 - 3 Hours of multiple Fun-filled Chess Variants
 - Ticket includes food coupon ₹200
+- Chance to play on a special `Harry Potter Themed Set` by MAG(Make Any Gift)
