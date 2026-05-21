@@ -6,7 +6,7 @@ image: chessconnect_20260523.jpg
 permalink: /chess-connect/2026-05-23/
 startsAt: 2026-05-23T16:00
 endsAt: 2026-05-23T19:00
-sponsor:makeanygift
+sponsor : makeanygift
 payment:
     price: 350
     razorpay: pl_SibT8EN9nioMPp
