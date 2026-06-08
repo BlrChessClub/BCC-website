@@ -8,7 +8,7 @@ startsAt: 2026-06-27T16:00
 endsAt: 2026-06-27T19:00
 sponsor : makeanygift
 payment:
-    price: 350
+    price: 400
     razorpay: pl_SvUvEY708RIe70
 ---
 ## Event Details:
