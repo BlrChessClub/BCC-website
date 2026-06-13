@@ -2,7 +2,7 @@
 title: "Chess Connect : Showdown"
 location: play-arena
 layout: event
-image: chessconnect_20260627.jpg
+image: chessconnect_20260627.jpeg
 permalink: /chess-connect/2026-06-27/
 startsAt: 2026-06-27T16:00
 endsAt: 2026-06-27T19:00
