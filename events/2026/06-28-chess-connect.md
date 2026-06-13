@@ -5,7 +5,7 @@ variations: triathlon-swiss
 layout: event
 payment:
     price: 300
-    razorpay: pl_SvUw9F5gaMQzUe
+    razorpay: pl_SvUvEY708RIe70
 image: chessconnect_20260531.jpg
 permalink: /chess-connect/2026-06-28/
 startsAt: 2026-06-28T10:00
