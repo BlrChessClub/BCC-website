@@ -6,7 +6,7 @@ layout: event
 payment:
     price: 300
     razorpay: pl_SvUvEY708RIe70
-image: chessconnect_20260531.jpg
+image: chessconnect_20260629.jpeg
 permalink: /chess-connect/2026-06-28/
 startsAt: 2026-06-28T10:00
 endsAt: 2026-06-28T15:30
