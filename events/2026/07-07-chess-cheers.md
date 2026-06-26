@@ -1,6 +1,6 @@
 ---
 title: "Chess and Cheers"
-location:tht-indiranagar
+location: tht-indiranagar
 variations:
 - standard-knockout
 - hand&brain
