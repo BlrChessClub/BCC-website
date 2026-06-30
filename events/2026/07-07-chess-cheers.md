@@ -14,7 +14,7 @@ startsAt: 2026-07-07T19:00
 endsAt: 2026-07-07T22:00
 permalink: /chess-cheers/2026-07-07/
 payment:
-  price: 350
+  price: 400
   razorpay: pl_T6KSFiSuRpeoro
 ---
 
