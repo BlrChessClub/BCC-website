@@ -26,5 +26,5 @@ enjoying the intellectual challenge that chess brings.
 
 ## What's Included
 
-- `Ticket includes food coupon ₹200`
+- `Ticket includes food coupon worth ₹300`
 - 3 Hours of multiple Fun-filled Chess Variants
