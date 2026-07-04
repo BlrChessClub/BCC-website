@@ -1,9 +1,9 @@
 ---
 title: "Chess Connect : Showdown"
-location: uru-brewpark
+location: uru-whitefield
 layout: event
 image: chessconnect_20260712.jpg
-permalink: /chess-connect/2026-07-12-01/
+permalink: /chess-connect/2026-07-12-02/
 startsAt: 2026-07-12T16:00
 endsAt: 2026-07-12T19:00
 sponsor : makeanygift
