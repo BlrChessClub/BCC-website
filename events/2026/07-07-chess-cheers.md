@@ -1,6 +1,6 @@
 ---
 title: "Chess and Cheers"
-location:tht-indiranagar
+location: tht-indiranagar
 variations:
 - standard-knockout
 - hand&brain
@@ -14,7 +14,7 @@ startsAt: 2026-07-07T19:00
 endsAt: 2026-07-07T22:00
 permalink: /chess-cheers/2026-07-07/
 payment:
-  price: 350
+  price: 400
   razorpay: pl_T6KSFiSuRpeoro
 ---
 
@@ -26,5 +26,5 @@ enjoying the intellectual challenge that chess brings.
 
 ## What's Included
 
-- `Ticket includes food coupon ₹200`
+- `Ticket includes food coupon worth ₹300`
 - 3 Hours of multiple Fun-filled Chess Variants
