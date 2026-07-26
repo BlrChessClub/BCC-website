@@ -5,7 +5,7 @@ layout: event
 image: chessconnect_20260802.jpg
 permalink: /chess-connect/2026-08-02/
 startsAt: 2026-08-02T10:00
-endsAt: 2026-08-02T13:00
+endsAt: 2026-08-02T12:30
 payment:
     price: 350
     razorpay: pl_TI7awp4wNX7rBB
