@@ -15,7 +15,7 @@ endsAt: 2026-08-04T22:00
 permalink: /chess-cheers/2026-08-04/
 payment:
   price: 350
-  razorpay: pl_T6KSFiSuRpeoro
+  razorpay: pl_TI7awp4wNX7rBB
 ---
 
 ## Event Details
