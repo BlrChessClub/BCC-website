@@ -9,7 +9,7 @@ variations:
 - simul
 - antichess
 layout: event
-image: chessandcheers_20260804.png
+image: chess_cheers_20260818.jpeg
 startsAt: 2026-08-18T19:00
 endsAt: 2026-08-18T22:00
 permalink: /chess-cheers/2026-08-18/
