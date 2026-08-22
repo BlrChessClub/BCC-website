@@ -3,7 +3,7 @@ title: "Chess Connect: Team Battle"
 location: the-market-place
 variations: swiss-team-4
 layout: event
-image: chessconnect_20260890.jpg
+image: chessconnect_20260830.jpg
 permalink: /chess-connect/2026-08-30/
 startsAt: 2026-08-30T16:00
 endsAt: 2026-08-30T19:00
