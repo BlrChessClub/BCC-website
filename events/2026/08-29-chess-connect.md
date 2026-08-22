@@ -1,6 +1,6 @@
 ---
 title: "Chess Connect - Rapid"
-location: the-market-place
+location: blue-tokai-wtc-malleshwaram
 variations: standard-swiss
 layout: event
 payment:
