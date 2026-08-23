@@ -4,7 +4,7 @@ location: blue-tokai-wtc-malleshwaram
 variations: standard-swiss
 layout: event
 payment:
-    price: 300
+    price: 500
     razorpay: pl_TI7awp4wNX7rBB
 image: chessconnect_20260829.jpg
 permalink: /chess-connect/2026-08-29/
