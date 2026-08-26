@@ -22,6 +22,7 @@ Great games, good vibes, and exciting rewards await you at the board.
 
 ## What's Included:
 
+- Ticket includes `Rs.200 Food Coupon`
 - 5 Hours of Rapid Chess (10+5 format)
 - BCC Goodies for the `Top 3` players
 - BCC Goodies for the best `Female Player` of the tournament
